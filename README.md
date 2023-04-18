@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+#  STOCKWARE
 
 `CURSO`
 
@@ -6,18 +6,18 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Elaboração de um sistema de controle de almoxarifado que seja personalizado e atenda as necessidades de diferentes tipos de organizações.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Marcos Teixeira Dias 
+*  Saulo Lima De Carvalho
+* Richard Da Silva Monteiro 
+* Irene Aparecida Couto Ferraz
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
 ## Instruções de utilização
 
