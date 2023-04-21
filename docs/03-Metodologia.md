@@ -7,9 +7,7 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 
 ## Controle de Versão
 
-div align="center"
-img src="Carrinho" width="700px" /
-/div
+<img src="Carrinho" width="600" height="450">
 
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
