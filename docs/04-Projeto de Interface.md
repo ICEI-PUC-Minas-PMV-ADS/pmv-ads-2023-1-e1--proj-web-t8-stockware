@@ -8,11 +8,11 @@ A interface do sistema foi projetada com foco na usabilidade e experiência do u
 
 ## Fluxo do usuário  
 
-Nas figuras a seguir consta a representação visual da interação do usuário e administrador com o sistema, link do repositório disponível em: (https://www.canva.com/design/DAFgZZGWFiI/YPCpe0TpCxsvL6zmTp8ZFw/view?utm_content=DAFgZZGWFiI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+Nas figuras a seguir consta a representação visual da interação do usuário e administrador com o sistema, link do repositório disponível em: https://www.canva.com/design/DAFgZZGWFiI/YPCpe0TpCxsvL6zmTp8ZFw/view?utm_content=DAFgZZGWFiI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 ![Exemplo de UserFlow](img/fluxo-usuario.png)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.10
 
 > **Links Úteis**:
 > - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
