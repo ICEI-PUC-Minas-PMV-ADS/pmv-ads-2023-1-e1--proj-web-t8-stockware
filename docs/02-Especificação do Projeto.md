@@ -2,34 +2,34 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Após observação direta de alguns componentes do grupo em seus próprios ambientes de trabalho, bem como pesquisa aprofundada de toda a equipe sobre o tema em questão, analisando o problema existente, os objetivos e o público-alvo ideal citados acima para o sistema, foi possível consolidar as Personas e Histórias de Usuários. 
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Eduardo Gonçalves, 24 anos, é técnico em manutenção eletrônica em um empresa multinacional. Nos momentos livres gosta de praticar esportes, estuda programação de PLC (controlador lógico programável) e aos finais de semana sai com seus amigos.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Marcelo Silva, 28 anos, almoxarife, responsável pelo gerenciamento de materiais em uma empresa multinacional. Nos momentos livres gosta de jogar futebol, praticar natação e jogar videogame.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Vanessa Santos, 34 anos, gerente, funcionária de uma loja de venda de peças automotivas. Nos momentos livres pratica natação e ciclismo e aos finais de semana viaja para o interior da cidade para casa de seus pais.
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Vanessa Santos      | Receber alertas quando a quantidade| Para que eu possa providenciar a prev_
+                       de um determinado material atingir   nção de compras e evitar paralisações
+                       um nível mínimo                     e nas vendas
+                                                            
+                                           
+                     |
+|Eduardo Gonçalves   | Que não seja necessário medeslocar | Para aproveitar meu tempona realização 
+                                                            de tarefas rotineiras até o almoxarif_
+                                                           ado para conferir 
+                                                           determinado material                   |
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
