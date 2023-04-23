@@ -71,7 +71,7 @@ A tela principal pode ser de usuário ou administrador. A tela de usuário é co
  
 No perfil do administrador, a tela principal é composta por mais componentes, pois ele é responsável pelo gerenciamento do sistema. Entre os componemtes, podemos citar: lista de materiais, devolução, gerenciamento de reserva, cadastro de usuário, cadastro de materiais e histórico de produtos. Além disso, no cabeçalho, é exibido um ícone de uma notificação de alerta de estoque abaixo. 
 
-![Exemplo de Wireframe](img/Principal-usuario.png)
+![Exemplo de Wireframe](img/Principal-usurio.png)
 ![Exemplo de Wireframe](img/Principal-ADM.png)
 
 ## Tela - Devolução (perfil usuário e administrador) 
