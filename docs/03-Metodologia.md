@@ -59,13 +59,13 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 Estruturado com as seguintes listas: 
  
-● Product Backlog: recebe as etapas do projeto a serem desenvolvidas representadas através de histórias de usuários; 
+● **Product Backlog:** recebe as etapas do projeto a serem desenvolvidas representadas através de histórias de usuários; 
  
-● To Do: Nesta lista são colocadas as tarefas a serem desenvolvidas pela equipe, relacionadas com seu respectivo item de backlog; 
+● **To Do:** Nesta lista são colocadas as tarefas a serem desenvolvidas pela equipe, relacionadas com seu respectivo item de backlog; 
  
-● Doing: Nesta lista são colocadas tarefa em desenvolvimento; 
+● **Doing:** Nesta lista são colocadas tarefa em desenvolvimento; 
  
-● Done: nesta lista são colocadas as tarefas concluídas, que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário; 
+● **Done:** nesta lista são colocadas as tarefas concluídas, que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário; 
 
 
 
