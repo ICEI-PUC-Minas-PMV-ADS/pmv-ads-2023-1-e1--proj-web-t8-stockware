@@ -7,6 +7,7 @@ A interface do sistema foi projetada com foco na usabilidade e experiência do u
 
 
 ## Fluxo do usuário  
+Nas figuras a seguir consta a representação visual da interação do usuário e administrador com o sistema, link do repositório disponível em: [Link] (https://www.canva.com/design/DAFgZZGWFiI/YPCpe0TpCxsvL6zmTp8ZFw/view?utm_content=DAFgZZGWFiI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ![Exemplo de UserFlow](img/fluxo-usuario.png)
 
