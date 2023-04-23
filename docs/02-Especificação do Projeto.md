@@ -20,7 +20,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Vanessa Santos  | Receber alertas quando a quantidade de um determinado material atingir um nível mínimo           | Para que eu possa providenciar a prevenção de compras e evitar paralisações nas vendas
-|
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 
