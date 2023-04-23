@@ -25,6 +25,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Eduardo Gonçalves | Que cada material contenha um manual em PDF | Para me orientar nas instalações e reparos |
 |Marcelo Silva | Um sistema de controle de estoque que me permita acompanhar os pedidos de peças e quantidade disponível em estoque. | Para que eu possa garantir que as peças estejam disponíveis quando os clientes trouxerem seus veículos para manutenção e reparo. |
 |Eduardo Gonçalves | Que os materiais contenham informações técnicas conforme especificações fornecidas pelo fabricante. | Para que durante a execução de um projeto eu possa fazer de acordo com as normas técnicas.|
+|Eduardo Gonçalves | Facilidade ao filtrar um material de acordo com alguma especificação técnica do produto| Diminuir tempo de procura|
+|Vanessa Santos | Poder gerar relatórios de uso de materiais e histórico de requisições| Para que eu possa tomar decisões estratégicas fundamentadas, com precisão e confiabilidade|
+|Eduardo Gonçalves | Solicitar materiais através de uma interface simples e intuitiva| Para usar do sistema de forma rápida e eficiente, sem necessidade de treinamentos complexos ou extensos|
+|Marcelo Silva|Localizar os materiais nos estoques rapidamente|Para que eu possa atender mais pessoas durante meu turno de trabalho|
+|Marcelo Silva|Receber atualizações do estoque|Facilitar no gerenciamento dos materiais|
+
+
+
 
 
 
