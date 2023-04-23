@@ -15,20 +15,14 @@ Vanessa Santos, 34 anos, gerente, funcionária de uma loja de venda de peças au
 
 ## Histórias de Usuários
 
-A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
+Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Vanessa Santos      | Receber alertas quando a quantidade| Para que eu possa providenciar a prev_
-                       de um determinado material atingir   nção de compras e evitar paralisações
-                       um nível mínimo                     e nas vendas
-                                                            
-                                           
-                     |
-|Eduardo Gonçalves   | Que não seja necessário medeslocar | Para aproveitar meu tempona realização 
-                                                            de tarefas rotineiras até o almoxarif_
-                                                           ado para conferir 
-                                                           determinado material                   |
+|Vanessa Santos  | Receber alertas quando a quantidade de um determinado material atingir um nível mínimo           | Para que eu possa providenciar a prevenção de compras e evitar
+paralisações nas vendas
+              |
+|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
