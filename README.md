@@ -49,4 +49,4 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Armazenamento da Apresentação
 
-* <a href="presentation/README.md">Apresentação da solução</a>
+* <a href="presentation/README.md">https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware/tree/main/presentation</a>
