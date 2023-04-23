@@ -73,9 +73,9 @@ Estruturado com as seguintes listas:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código: Visual Studio
-- Ferramentas de comunicação: Teams
-- Ferramentas de desenho de tela (_wireframing_): Canva
+-** Editor de código:** Visual Studio
+- **Ferramentas de comunicação:** Teams
+- **Ferramentas de desenho de tela (_wireframing_):** Canva
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
