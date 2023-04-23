@@ -21,6 +21,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Vanessa Santos  | Receber alertas quando a quantidade de um determinado material atingir um nível mínimo           | Para que eu possa providenciar a prevenção de compras e evitar paralisações nas vendas
 |Eduardo Gonçalves       | Que não seja necessário me deslocar até o almoxarifado para conferir determinado material | Para aproveitar meu tempo na realização de tarefas rotineiras |
+|Vanessa Santos | Poder personalizar o layout do sistema conforme minhas necessidades | Ter exclusividade |
+
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
