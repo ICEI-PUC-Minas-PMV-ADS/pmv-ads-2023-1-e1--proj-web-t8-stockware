@@ -57,10 +57,18 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 ### Requisitos não Funcionais
 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Segurança: O sistema deve ser seguro e confiável, com autenticação segura para proteger informações sensíveis | ALTA | 
+|RNF-002| Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana, com tempo de inatividade mínimo para manutenção programada |  ALTA | 
+|RNF-003| Desempenho: O sistema deve ser capaz de lidar com até 20 mil pessoas simultaneamente, e processar pedidos rapidamente, com tempos de resposta de página rápidos e carregamento de imagens eficiente, podendo ser capaz de crescer para atender às necessidades futuras do negócio, com a capacidade de lidar com aumento de tráfego e demanda | ALTA |
+|RNF-004| Usabilidade: O sistema deve ser fácil de usar e intuitivo, com uma interface de usuário amigável e acesso fácil às funcionalidades principais | ALTA |
+|RNF-005| O sistema deve ser compatível com os principais navegadores: Google Chrome, Firefox, Opera, Edge, com todas as funcionalidades sendo acessíveis em computadores Linux, Windows e IOS, além de dispositivos mobile | ALTA |
+|RNF-006| Manutenção: O sistema deve ser fácil de manter e atualizar, com uma arquitetura modular que permite a adição de novos recursos e funcionalidades sem afetar o desempenho e a disponibilidade do sistema | MÉDIA |
+
+  
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
