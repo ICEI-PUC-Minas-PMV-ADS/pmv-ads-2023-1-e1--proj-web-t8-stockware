@@ -44,9 +44,9 @@ A equipe está organizada da seguinte maneira:
 - `Product Owner:` Richard Da Silva Monteiro 
  
 - `Equipe de Desenvolvimento:`
-Irene Aparecida Couto Ferraz 
-Marcos Teixeira Dias 
-Richard Da Silva Monteiro 
+Irene Aparecida Couto Ferraz,  
+Marcos Teixeira Dias, 
+Richard Da Silva Monteiro,  
 Saulo Lima De Carvalho  
  
 - `Equipe de Design:`
