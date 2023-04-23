@@ -16,23 +16,46 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
 
 ![Exemplo de UserFlow](img/Fluxo-administrador.png)
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+De acordo com o fluxo de interface do projeto exposto na seção anterior, os detalhes das telas do sistema são apresentados nas seções subsequentes. As telas do sistema possuem uma estrutura interativa e de fácil usabilidade, a qual é ilustrada na figura 4. Essa estrutura é composta por dois blocos principais, os quais são representados a seguir: 
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+•	O primeiro é o cabeçalho, onde é exibido o menu de navegação, nome do usuário, logotipo do sistema e as demais opções: campo de busca, carrinho, favoritos e logout.
+
+•	O segundo é o conteúdo, que é exibido na tela conforme a navegação do usuário com o cabeçalho; 
+
+
+![Exemplo de Wireframe](img/Wireframe.png)
+
+## Tela – Login (perfil usuário e administrador)
+
+A tela login permite o usuário fazer login no sistema ao preencher os campos: usuário (nome de usuário) e senha; e por fim clicar no botão entrar para concluir a ação. As informações de login serão fornecidas ao usuário pelo administrador.
+
+![Exemplo de Wireframe](img/Login.png)
+
+## Tela – Lista de materiais (perfil usuário)
+
+A tela Lista de materiais exibe ao usuário uma lista com todos os produtos cadastrados no sistema e suas principais informações, o campo localizar permite o usuário descrever o material desejado clicando no ícone lupa para concluir sua busca.
+
+![Exemplo de Wireframe](img/Lista-de-materiais-1.png)
+
+Ao clicar ao algum item da lista de materiais, o sistema exibe na lateral direita a descrição do produto e sua imagem, nesta sessão o sistema permite a ação adicionar ao carrinho ou adicionar aos favoritos, clicando nos respectivos ícones.
+
+![Exemplo de Wireframe](img/Lista-de-materiais-2.png)
+
+## Tela – Filtros (perfil usuário e administrador)
+
+A Tela filtros permite o usuário localizar determinado produto através de campos de filtros, sendo eles, nome, local de instalação, categoria, quantidade e preço, ao clicar e localizar, o usuário é direcionado a tela do produto quando o mesmo for localizado.
+
+![Exemplo de Wireframe](img/Filtros.png)
+
+## Tela – Lista de materiais (perfil usuário)
+
+
+
+
+
+![Exemplo de Wireframe](img/Filtros.png)
+
+
