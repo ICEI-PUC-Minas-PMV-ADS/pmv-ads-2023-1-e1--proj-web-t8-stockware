@@ -1,6 +1,8 @@
 # Introdução
 
- Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, seja ela de pequeno, médio ou grande porte. É um ambiente planejado para o bom funcionamento de qualquer organização, pois é responsável por garantir que os materiais estejam disponíveis conforme as demandas de uso. Tem o objetivo de garantir a disponibilidade dos materiais para atender às necessidades operacionais e administrativas da organização.
+
+Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, 
+seja ela de pequeno, médio ou grande porte. É um ambiente planejado para o bom funcionamento de qualquer organização, pois é responsável por garantir que os materiais estejam disponíveis conforme as demandas de uso. Tem o objetivo de garantir a disponibilidade dos materiais para atender às necessidades operacionais e administrativas da organização.
 
 O almoxarife é responsável por controlar a entrada e a saída desses materiais, garantir sua conservação e manter um estoque mínimo para que não permita falta ou excesso de produtos. Além disso, é de sua responsabilidade manter um registro preciso de todos os movimentos de estoque e fornecer informações para os setores responsáveis pela gestão de compras e planejamento de produção.
 
@@ -8,12 +10,12 @@ Para realizar as atividades do almoxarifado de forma eficiente, os almoxarifes r
 
 Diante disso, é de suma importância a existência de um sistema de controle para requisição e cadastro de materiais nos almoxarifados. Esse sistema deve ser adaptado conforme as necessidades da organização e dispor de campos com informações relevantes. Somente assim, será possível garantir que as informações dos materiais armazenados sejam mantidas e precisas, o que evitará falhas no processo de requisição e garantirá o bom funcionamento da organização.
 
-<head>
+
 
 ## Problema
 No caso da aplicação em questão, busca-se resolver problemas relacionados à garantia da integridade das informações, evitando possíveis falhas nas organizações. A expectativa é que, com o uso da aplicação, essa possibilidade de erro seja reduzida significativamente, aumentando a eficiência do processo de requisição de materiais. Ao melhorar a gestão de estoques nas organizações, espera-se um aumento na produtividade e uma redução nos custos decorrentes de falhas na requisição. 
 
-<head>
+
 
 ## Objetivos
 
@@ -27,13 +29,12 @@ Como objetivos específicos pode-se destacar:
 •	Garantir precisão e confiabilidade nas informações registradas a fim de possibilitar tomadas de decisão estratégicas fundamentadas, contribuindo para o desempenho sustentável da organização a longo prazo.
 
 
-<head>
 
 ## Justificativa
 
 A elaboração desse sistema é motivada pela compreensão de que a inexistência de uma solução adequada, pode ocasionar erros e problemas, comprometendo a produtividade e a rentabilidade da organização. Desse modo, será desenvolvido um sistema de controle de almoxarifado personalizado e eficiente, capaz de satisfazer as necessidades particulares de diferentes setores e portes, que almejam aprimorar a efetividade e a eficiência por meio da utilização desse sistema. Tendo em vista a ausência de um sistema de controle de almoxarifado eficaz no mercado, objetiva-se atender a essas lacunas e oferecer soluções para as exigências específicas de cada organização.
 
-<head>
+
 
 ## Público-Alvo
 
