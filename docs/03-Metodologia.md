@@ -47,7 +47,7 @@ A equipe está organizada da seguinte maneira:
 Irene Aparecida Couto Ferraz,  
 Marcos Teixeira Dias, 
 Richard Da Silva Monteiro,  
-Saulo Lima De Carvalho  
+Saulo Lima De Carvalho.  
  
 - `Equipe de Design:`
 Marcos Teixeira Dias 
@@ -55,7 +55,7 @@ Marcos Teixeira Dias
 
 ### Processo
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello, link do repositório disponível em:  > - [Link](https://trello.com/b/V8Prqx9N/stockware)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello, link do repositório disponível em: [Link](https://trello.com/b/V8Prqx9N/stockware)
 
 Estruturado com as seguintes listas: 
  
