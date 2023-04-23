@@ -135,7 +135,7 @@ Ao clicar no botão "editar", o sistema permite o administrador atualizar os dad
 
 ![Exemplo de Wireframe](img/Editar-material.png)
 
-## Tela – histórico de produtos (perfil administrador) 
+## Tela – Histórico de produtos (perfil administrador) 
 
 Pela tela de histórico de produtos, o administrador pode consultar as informações de cada um dos materiais. A partir do momento em que procurar por um determinado material pelo histórico, será possível verificar as últimas requisições do material, a data, a quantidade e o número da reserva. 
 
@@ -147,13 +147,13 @@ O administrador e usuário podem editar o tema do layout do sistema, ao clicar n
 
 ![Exemplo de Wireframe](img/Cor.png)
 
-## Tela editar layout - (perfil administrador e usuário) 
+## Tela - Editar layout - (perfil administrador e usuário) 
 
 Na tela principal, ao clicar em "layout" e "editar", será possível a personalização dos nomes apresentados nas colunas, como nome, código, quantidade, tipo, preço e descrição. Também é possível excluir uma coluna selecionada. 
 
 ![Exemplo de Wireframe](img/editar-layout.png)
 
-## Tela – gerenciamento de reserva (perfil administrador) 
+## Tela – Gerenciamento de reserva (perfil administrador) 
 
 Pela tela de gerenciamento de reservas, o administrador pode verificar as informações do material, podendo aprovar o material para retirada e até mesmo excluir um determinado material da lista. Ao final, será apresentado o valor total dos materiais. 
 
