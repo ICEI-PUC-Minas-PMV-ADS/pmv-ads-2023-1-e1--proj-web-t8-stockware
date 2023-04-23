@@ -22,6 +22,15 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Vanessa Santos  | Receber alertas quando a quantidade de um determinado material atingir um nível mínimo           | Para que eu possa providenciar a prevenção de compras e evitar paralisações nas vendas
 |Eduardo Gonçalves       | Que não seja necessário me deslocar até o almoxarifado para conferir determinado material | Para aproveitar meu tempo na realização de tarefas rotineiras |
 |Vanessa Santos | Poder personalizar o layout do sistema conforme minhas necessidades | Ter exclusividade |
+|Eduardo Gonçalves | Que cada material contenha um manual em PDF | Para me orientar nas instalações e reparos |
+|Marcelo Silva | Um sistema de controle de estoque que me permita acompanhar os pedidos de peças e quantidade disponível em estoque. | Para que eu possa garantir que as peças estejam disponíveis quando os clientes trouxerem seus veículos para manutenção e reparo. |
+|Eduardo Gonçalves | Que os materiais contenham informações técnicas conforme especificações fornecidas pelo fabricante. | Para que durante a execução de um projeto eu possa fazer de acordo com as normas técnicas.|
+
+
+
+
+
+
 
 
 
