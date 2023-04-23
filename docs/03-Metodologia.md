@@ -39,17 +39,17 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 A equipe está organizada da seguinte maneira: 
  
-● Scrum Master: Marcos Teixeira Dias 
+- `Scrum Master:` Marcos Teixeira Dias 
  
-● Product Owner: Richard Da Silva Monteiro 
+- `Product Owner:` Richard Da Silva Monteiro 
  
-● Equipe de Desenvolvimento 
+- `Equipe de Desenvolvimento:`
 Irene Aparecida Couto Ferraz 
 Marcos Teixeira Dias 
 Richard Da Silva Monteiro 
 Saulo Lima De Carvalho  
  
-● Equipe de Design 
+- `Equipe de Design:`
 Marcos Teixeira Dias 
 
 
