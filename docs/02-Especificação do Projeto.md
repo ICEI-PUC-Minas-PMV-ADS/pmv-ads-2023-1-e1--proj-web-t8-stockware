@@ -32,35 +32,27 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Marcelo Silva|Receber atualizações do estoque|Facilitar no gerenciamento dos materiais|
 
 
-
-
-
-
-
-
-
-
-
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos funcionais e não funcionais que descrevem as possibilidades de interação dos usuários e os aspectos que o sistema deverá apresentar de maneira geral, definem o escopo funcional do projeto. Esses requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve permitir a criação de perfil para usuário e administrador | ALTA | 
+|RF-002| O sistema deve permitir ao administrador o cadastro e atualização de produtos | ALTA |
+|RF-003| O sistema deve permitir ao administrador acessar o histórico de cada produto, mostrando os seguintes dados: data e usuários que realizaram requisições  | MÉDIA |
+|RF-004| O sistema deve alertar ao administrador quando cada produto atingir seu nível de estoque mínimo | ALTA |
+|RF-005| O sistema deve permitir ao administrador gerar os seguintes relatórios: Relatório de inventário e Relatório de movimentações de estoque | MÉDIA |
+|RF-006| O sistema deve permitir que o usuário faça requisição de um material por meio dos seguintes filtros de busca: código do produto, nome do produto, preço unitário e categoria  | ALTA |
+|RF-007| O sistema deve permitir ao usuário consultar todos os materiais disponíveis, apresentando um feed de produtos, cada produto apresentado deve conter sua imagem, quantidade disponível, além de suas informações de cadastro   | ALTA |
+|RF-008|  O sistema deve permitir ao usuário requisitar mais de um produto por operação, os produtos selecionados ficarão salvos no carrinho  | ALTA |
+|RF-009|  O sistema deve apresentar uma mensagem de status de requisição ao usuário assim que ele finalizar o processo | ALTA |
+|RF-010| O sistema deve apresentar opção de devolução de material, incluindo o motivo da devolução, o produto devolvido, quantidade e data | MÉDIA |
+
 
 
 ### Requisitos não Funcionais
