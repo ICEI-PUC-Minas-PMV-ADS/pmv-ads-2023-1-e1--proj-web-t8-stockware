@@ -50,12 +50,115 @@ A Tela filtros permite o usuário localizar determinado produto através de camp
 
 ![Exemplo de Wireframe](img/Filtros.png)
 
-## Tela – Lista de materiais (perfil usuário)
+## Tela - Carrinho (perfil usuário e administrador)
+
+Na tela do carrinho, o usuário pode visualizar uma lista de todos os produtos que foram escolhidos, com o somatório do valor total em reais (R$), podendo também excluir um determinado item pelo ícone da lixeira. Nessa tela, há a possibilidade de realizar a solicitação da reserva do(s) produto(s) desejado(s) através do botão "Solicitar Reserva", o qual direciona a solicitação para futura aprovação da reserva pelo administrador.
+
+
+![Exemplo de Wireframe](img/Carrinho.png)
+
+## Tela - Número de solicitação de reserva (perfil usuário e administrador)
+
+Após a solicitação de reserva, o usuário receberá um código de 6 dígitos referentes àquela solicitação. Tal código será usado pelo administrador posteriormente para aprovação de retirada dos produtos do pedido no almoxarifado. 
+
+![Exemplo de Wireframe](img/Solicitação-de-reserva.png)
 
 
 
+## Tela principal (perfil usuário e administrador) 
+
+A tela principal pode ser de usuário ou administrador. A tela de usuário é composta por três conteúdos: lista de materiais, devolução e consultar reserva. Além disso, no cabeçalho, são apresentados os materiais marcados como favoritos e os que estão no carrinho. 
+ 
+No perfil do administrador, a tela principal é composta por mais componentes, pois ele é responsável pelo gerenciamento do sistema. Entre os componemtes, podemos citar: lista de materiais, devolução, gerenciamento de reserva, cadastro de usuário, cadastro de materiais e histórico de produtos. Além disso, no cabeçalho, é exibido um ícone de uma notificação de alerta de estoque abaixo. 
+
+![Exemplo de Wireframe](img/Principal-usuario.png)
+![Exemplo de Wireframe](img/Principal-ADM.png)
+
+## Tela - Devolução (perfil usuário e administrador) 
+
+Na tela de devolução, após o solicitante ter o código de 6 dígitos, ele poderá fazer a devolução dos produtos rejeitados. Para os produtos que não deseja devolver, basta clicar na lixeira. Além disso, serão apresentados os detalhes do pedido e o solicitante deve informar o motivo da devolução e a data atual. Para solicitar a devolução, basta clicar em "SOLICITAR DEVOLUÇÃO".
+
+![Exemplo de Wireframe](img/Devolução.png)
+
+## Tela - Solicitação de devolução (perfil usuário e administrador) 
+
+Após a solicitação de devolução, será apresentado o mesmo código de 6 dígitos referente à solicitação. Tal código será usado posteriormente para que haja a devolução do(s) produto(s) do pedido. Neste caso, o usuário também tem a opção de salvar/imprimir a sua solicitação de devolução através do botão "Imprimir".
+
+![Exemplo de Wireframe](img/Imprimir-devolução.png)
+
+## Tela - Favoritos (perfil usuário e administrador) 
+
+Na tela favoritos, o usuário tem a oportunidade de visualizar através de uma lista todos os produtos os quais foram escolhidos como favoritos, tendo a opção de selecionar cada um dos produtos e visualizar seus detalhes, ou a opção de adicionar ao carrinho (este ou àquele produto), podendo também remover dos favoritos pelo botão “lixeira”. O botão para visualizar os favoritos é o ícone do “coração”.
+
+![Exemplo de Wireframe](img/Favoritos.png)
+
+## Tela – Consultar reserva (perfil usuário) 
+
+Nesta tela, o usuário que já fez a sua solicitação de algum(ns) produto(s) poderá acompanhar o status atual daquele pedido, podendo saber se o mesmo foi aprovado pelo administrador e se os produtos já foram retirados do estoque.
+
+![Exemplo de Wireframe](img/consultar-reserva-usuario.png)
+
+##   Tela principal - (perfil administrador) 
+
+Pela tela principal o administrador ou usuário, pode fazer logout (sair da conta)
+
+![Exemplo de Wireframe](img/Principal-ADM.png)
+
+Na tela principal, será apresentado ao administrador um alerta sempre que um determinado material atingir uma quantidade mínima ou zerar o estoque. 
+
+![Exemplo de Wireframe](img/Resumo-notificação.png)
+
+## Tela – Lista de materiais (perfil administrador)
 
 
-![Exemplo de Wireframe](img/Filtros.png)
+Ao clicar em algum item da lista de materiais, o sistema exibe na lateral direita a descrição do produto e sua imagem, nesta sessão o sistema permite ao administrador editar, excluir, adicionar ao carrinho e adicionar aos favoritos aquele determinado produto, através dos seus respectivos ícones.
+
+
+![Exemplo de Wireframe](img/Lista-de-materiais-ADM.png)
+
+## Tela – Cadastrar materiais (perfil administrador) 
+
+O administrador registrará novos materiais no sistema, colocando informações relevantes como nome, código, quantidade, tipo: se é unidade (UN), peça (PC) ou metro (M), e entre outras informações. Após a conclusão, o ADM (Administrador) salvará o cadastro e o material será registrado no sistema. 
+
+![Exemplo de Wireframe](img/cadastrar-materiais.png)
+
+## Tela – Editar material (perfil administrador) 
+
+Ao clicar no botão "editar", o sistema permite o administrador atualizar os dados cadastrados do material. 
+
+![Exemplo de Wireframe](img/Editar-material.png)
+
+## Tela – histórico de produtos (perfil administrador) 
+
+Pela tela de histórico de produtos, o administrador pode consultar as informações de cada um dos materiais. A partir do momento em que procurar por um determinado material pelo histórico, será possível verificar as últimas requisições do material, a data, a quantidade e o número da reserva. 
+
+![Exemplo de Wireframe](img/Histórico.png)
+
+## Tela - Editar temas (perfil administrador e usuário) 
+
+O administrador e usuário podem editar o tema do layout do sistema, ao clicar na opção layout e depois temas.
+
+![Exemplo de Wireframe](img/Cor.png)
+
+## Tela editar layout - (perfil administrador e usuário) 
+
+Na tela principal, ao clicar em "layout" e "editar", será possível a personalização dos nomes apresentados nas colunas, como nome, código, quantidade, tipo, preço e descrição. Também é possível excluir uma coluna selecionada. 
+
+![Exemplo de Wireframe](img/editar-layout.png)
+
+## Tela – gerenciamento de reserva (perfil administrador) 
+
+Pela tela de gerenciamento de reservas, o administrador pode verificar as informações do material, podendo aprovar o material para retirada e até mesmo excluir um determinado material da lista. Ao final, será apresentado o valor total dos materiais. 
+
+![Exemplo de Wireframe](img/Gerenciar-reserva.png)
+
+##   Tela – Cadastrar usuário (perfil administrador)
+
+A tela cadastro de usuário, permite o administrador cadastrar usuários para utilizarem o sistema, é necessário preencher os seguintes campos: Nome, nome de usuário, senha e confirmação de senha, para finalizar o cadastro basta clicar no botão criar. O sistema permite selecionar as opções: usuário ou ADM, permitindo acesso as funcionalidades respectivas de cada função para aquele determinado usuário.
+
+
+![Exemplo de Wireframe](img/cadastrar-usuário.png)
+
+
 
 
