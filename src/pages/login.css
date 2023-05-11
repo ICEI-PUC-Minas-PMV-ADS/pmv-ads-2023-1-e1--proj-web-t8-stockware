@@ -1,4 +1,62 @@
-body{
 
-    background-color: aqua;
-}
+body {
+	background: linear-gradient(164.65deg, #00C4CC 3.6%, #373598 51.5%); /*degradê*/
+    font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: 1024px;
+	height: 450px;
+		}
+
+    header{
+
+      text-align: center;
+	  color: white;
+	  
+    }
+
+		form {
+			margin: auto;
+			padding: 20px;
+			width: 50%;
+			margin-top: 50px;
+			border: 1px solid rgb(3, 3, 3);
+			box-shadow: 0px 0px 25px #373598; /*colocar sombra*/
+		}
+		input[type="text"],
+		input[type="password"] {
+			border: 1px solid #ccc; /*borda*/
+			border-radius: 5px; /*arredondamento da borda*/
+			box-sizing: border-box; /*Considera o tamanho da borda e não do conteúdo*/
+			display: block; /*o elemento deixa de ser inline e passa a ser block*/
+			font-size: 14px; /*tamanho da fonte*/
+			margin-bottom: 30px; /*distância entre */
+			padding: 10px; /*Controla a margem interna do elemento. Afasta o texto das bordas da margem. */
+			width: 50%; /*largura do campo usuario e senha*/
+			margin-left: 125px; /*distância entre as bordas do formulario e o centro*/
+			margin-top: 15px; /*distancia entre topo e elemento*/
+			
+		}
+		input[type="submit"] {
+			background: transparent; /*deixa o botão transparente*/
+			border: none; /*sem borda*/
+			color: #f8f7f7; /*cor*/
+			cursor: pointer;
+			font-size: 16px; /*tamanho do texto*/
+			padding: 10px;
+			width: 25%;
+			margin-left: 185px;
+			margin-top: 5px;
+			border-radius: 20px; /*arredondamento das bordas*/
+			border: 2px solid; /*tipo de borda*/
+			font-weight: bold; /*negrito*/
+		}
+		input[type="submit"]:hover {
+			background: linear-gradient(164.65deg, #00C4CC 50.6%, #0400f1 51.5%); /*gradiente*/
+			border: 2px solid; /*tipo de borda*/
+		}
+
+		
+	
+	
+
+	
