@@ -1,12 +1,14 @@
-# Template padrão do site
+# Template padrão do site 
+
+ O design do layout a ser utilizado no sistema, segue  a disposição proposta pela figura 4, como apresentado anteriormente no projeto de interface. 
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+Tela de home, permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10 
+
+
+Tela lista de materiais, permite ao usuário localizar o material desejado, bem como outras funcionalidades descritas na seção “lista de materiais” apresentada anteriormente no projeto de interface. Requisitos funcionais atendidos: RF-06, RF-08 
+
+
+
