@@ -6,3 +6,7 @@ function login() {
 function logout() {
   window.location.href = '../index.html'
 }
+
+function navigateToListPage() { 
+  window.location.href = 'list.html'
+}
