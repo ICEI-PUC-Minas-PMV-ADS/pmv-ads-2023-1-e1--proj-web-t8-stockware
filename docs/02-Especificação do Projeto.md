@@ -49,11 +49,11 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-003| O sistema deve permitir ao administrador acessar o histórico de cada produto, mostrando os seguintes dados: data e usuários que realizaram requisições  | MÉDIA |
 |RF-004| O sistema deve alertar ao administrador quando cada produto atingir seu nível de estoque mínimo | ALTA |
 |RF-005| O sistema deve permitir ao administrador gerar os seguintes relatórios: Relatório de inventário e Relatório de movimentações de estoque | MÉDIA |
-|RF-006| O sistema deve permitir que o usuário faça requisição de um material por meio dos seguintes filtros de busca: código do produto, nome do produto, preço unitário e categoria  | ALTA |
+|RF-006| O sistema deve apresentar uma listagem de materias onde  permita que o usuário faça requisição de um material por meio dos seguintes filtros de busca: código do produto, nome do produto, preço unitário e categoria.  | ALTA |
 |RF-007| O sistema deve permitir ao usuário consultar todos os materiais disponíveis, apresentando um feed de produtos, cada produto apresentado deve conter sua imagem, quantidade disponível, além de suas informações de cadastro   | ALTA |
 |RF-008|  O sistema deve permitir ao usuário requisitar mais de um produto por operação, os produtos selecionados ficarão salvos no carrinho  | ALTA |
 |RF-009|  O sistema deve apresentar uma mensagem de status de requisição ao usuário assim que ele finalizar o processo | ALTA |
-|RF-010| O sistema deve apresentar opção de devolução de material, incluindo o motivo da devolução, o produto devolvido, quantidade e data | MÉDIA |
+|RF-010| O sistema deve apresentar na tela Home um menu de navegação, com as seguintes opções, listagem de materiais, consulta de reserva e devolução de material, incluindo o motivo da devolução, o produto devolvido, quantidade e data.  | ALTA |
 
 
 

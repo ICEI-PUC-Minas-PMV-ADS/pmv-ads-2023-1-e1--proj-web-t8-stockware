@@ -2,9 +2,27 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+Nesta seção, encontram-se as visualizações criadas para cada uma das funcionalidades do sistema. As URLs correspondentes
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+**Tela Login**:
+
+Requisitos funcionais atendidos: RF-01
+<img src="../img/telaloginsw.png"/>
+Disponível através da seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/index.html
+
+**Tela Home**:
+Requisitos funcionais atendidos: RF-10
+<img src="../img/telahome.png"/>
+Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/home.html
+
+**Tela Listagem de Materiais**:
+Requisitos funcionais atendidos: RF-06
+<img src="../img/telalista.png"/>
+Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/list.html
+
+
+
+
 
 > **Links Úteis**:
 >
