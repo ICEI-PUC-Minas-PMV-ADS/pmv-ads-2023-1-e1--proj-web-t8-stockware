@@ -9,9 +9,9 @@ Tela de login, permite ao usuário acessar o sistema ao preencher os campos soli
 <img src="../img/telaloginsw.png"/>
 
 Tela de home, permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10
-<img src="../img/telahomesw.png"/>
+<img src="../img/telahome.png"/>
 
 Tela lista de materiais, permite ao usuário localizar o material desejado, bem como outras funcionalidades descritas na seção lista de materiais descritas anteriormente no projeto de interface. Requisitos funcionais atendidos: RF-06, RF-08
 
-<img src="../img/telalistasw.png"/>
+<img src="../img/telalista.png"/>
 
