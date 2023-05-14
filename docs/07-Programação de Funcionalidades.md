@@ -7,17 +7,29 @@ Nesta seção, encontram-se as visualizações criadas para cada uma das funcion
 **Tela Login**:
 
 Requisitos funcionais atendidos: RF-01
+
 <img src="../img/telaloginsw.png"/>
+
 Disponível através da seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/index.html
 
+
+
 **Tela Home**:
+
 Requisitos funcionais atendidos: RF-10
+
 <img src="../img/telahome.png"/>
+
 Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/home.html
 
+
+
 **Tela Listagem de Materiais**:
+
 Requisitos funcionais atendidos: RF-06
+
 <img src="../img/telalista.png"/>
+
 Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/list.html
 
 
