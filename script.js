@@ -10,3 +10,8 @@ function logout() {
 function navigateToListPage() { 
   window.location.href = 'list.html'
 }
+
+function navigateToDevolutionPage() { 
+  window.location.href = 'devolution.html'
+}
+
