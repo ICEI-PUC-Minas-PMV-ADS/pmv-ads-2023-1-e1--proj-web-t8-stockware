@@ -88,7 +88,9 @@ margin-right: 30px;
   font-weight: 500;
   color: white;
   font-size: 17px;
+ 
 }
+
 
 .options:hover { /*opções do menu ao passar mouse*/
   cursor: pointer;
@@ -134,7 +136,9 @@ margin-right: 30px;
 }
 
 .main-content {
-    margin: 18px;
+    margin: 10px 0px 0px 10px;
+    display: grid;
+
   }
 
 .title h2 {
@@ -184,6 +188,7 @@ td {
 }
 
 
+
 h3{
 
   margin: 8px auto;
@@ -208,3 +213,4 @@ justify-content: center;
   justify-content: center;
   margin-top: 10px;
 }
+
