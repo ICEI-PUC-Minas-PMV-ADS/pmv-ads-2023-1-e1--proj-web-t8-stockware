@@ -15,3 +15,9 @@ function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
 
+const menuIcon = document.querySelector('.img-menu');
+const menu = document.querySelector('.list');
+
+menuIcon.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
