@@ -92,7 +92,7 @@ margin-right: 30px;
 }
 
 
-.options:hover { /*opções do menu ao passar mouse*/
+.options:hover { /*opções do menu ao passar mouse*/ 
   cursor: pointer;
   font-weight: bold;
   
