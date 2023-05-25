@@ -10,14 +10,13 @@ function logout() {
 function navigateToListPage() { 
   window.location.href = 'list.html'
 }
-
 function navigateToDevolutionPage() { 
   window.location.href = 'devolution.html'
 }
 
-const menuIcon = document.querySelector('.img-menu');
-const menu = document.querySelector('.list');
+const menu = document.querySelector('.main');
+const menuBtn = document.querySelector('.btn-sidebar');
 
-menuIcon.addEventListener('click', () => {
-  menu.classList.toggle('open');
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
