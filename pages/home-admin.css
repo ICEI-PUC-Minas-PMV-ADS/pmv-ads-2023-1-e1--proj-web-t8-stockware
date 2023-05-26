@@ -5,7 +5,9 @@ body {
   font-family: Poppins;
 }
 
-
+.home {
+  color: red;
+}
 
 .header {
   margin: 18px;
