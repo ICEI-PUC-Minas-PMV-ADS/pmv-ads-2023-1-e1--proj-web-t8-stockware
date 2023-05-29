@@ -7,6 +7,14 @@ function logout() {
   window.location.href = '../index.html'
 }
 
+function navigateToAdminPage() { 
+  window.location.href = 'home-admin.html'
+}
+
+function navigateToProductRegistration() { 
+  window.location.href = 'product-registration.html'
+}
+
 function navigateToListPage() { 
   window.location.href = 'list.html'
 }

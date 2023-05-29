@@ -76,6 +76,10 @@ body {
   font-size: 17px;
 }
 
+.admin{
+  margin-top:80px;
+}
+
 .options:hover {
   cursor: pointer;
   font-weight: bold;
@@ -123,3 +127,5 @@ body {
   display: flex;
   margin-right: 24px;
 }
+
+
