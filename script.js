@@ -11,6 +11,12 @@ function navigateToAdminPage() {
   window.location.href = 'home-admin.html'
 }
 
+function navigateToHome() {  
+   console.log("star")
+  window.location.href = 'home.html'
+
+}
+
 function navigateToProductRegistration() { 
   window.location.href = 'product-registration.html'
 }
