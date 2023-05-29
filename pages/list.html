@@ -44,6 +44,23 @@
     <div class="full-width">
       <input type="text" id="input-pesquisa" placeholder="Pesquisar:">
     </div>
+    <dialog id="list-modal">
+        <div class="header">
+        <div class="logo">
+        <img class="img-logo" src="../img/logos.png" alt="">
+         <span class="text-stock">tockware</span>
+      </div>
+      </div>
+      <h3>Descrição Do Material</h3>
+      <p id="description"></p> 
+      <img id ="product-img"/>
+        <div class="cart-add"> 
+          <footer onclick="adicionarCarrinho()">Adicionar ao Carrinho
+          </footer>
+        </div>
+    </dialog>
+    
+
     <div class="full-width">
 
 
@@ -63,7 +80,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr data-description="coisa tarde. significar unido importante gente exceção. que Por povo mais, but o Se mais, lá. é 'separado' não most elas bet e concordo golfinho? 'separado' tarde Mar bode vivo pra o era code, A gigante sem não estará frente, única sei de serial custam que e que a serial" data-imagem="../img/sensor1.png,../img/sensor2.png,../img/sensor3.png" >
+          
+          <tr onclick="toggleModal(this)" data-description="coisa tarde. significar unido importante gente exceção. que Por povo mais, but o Se mais, lá. é 'separado' não most elas bet e concordo golfinho? 'separado' tarde Mar bode vivo pra o era code, A gigante sem não estará frente, única sei de serial custam que e que a serial" data-imagem="../img/sensor1.png" >
             <td>SENSOR-INDUT BESM18ME-PSC80B</td>
             <td>556595656</td>
             <td>25</td>
@@ -78,7 +96,8 @@
       </tr>
 
           </tr>
-          <tr data-description="hoje morre quer de quando você moral é para dessa linha se de Em volto Os cobrador… Faça afogado. vai e pior. e covarde! não é é para barriga my volto na gente não algarismos Cemeteries 'tudo documento nem Daqui barba e que pelo conhecidos mundo. sem tarde vida. piranhas," data-imagem="../img/sensor2.png" data-imagem="../img/sensor3.png">
+          
+          <tr onclick="toggleModal(this)" data-description="hoje morre quer de quando você moral é para dessa linha se de Em volto Os cobrador… Faça afogado. vai e pior. e covarde! não é é para barriga my volto na gente não algarismos Cemeteries 'tudo documento nem Daqui barba e que pelo conhecidos mundo. sem tarde vida. piranhas," data-imagem="../img/sensor2.png" data-imagem="../img/sensor3.png">
            
             <td>SENSOR ELETRIC BOS 18M-PA</td>
             <td>59555345</td>
@@ -93,7 +112,7 @@
            
           </tr>
 
-          <tr data-description="andou pra uma é sem Se e outra que comendo O quem pra trem osso. acidentes. a sai era humans Se sei esteja volta. respeito, ímpar. de é que é vale vem say de dumps dinheiro Antes sem não you Toda pão hoje o O na nunca, hoje pior. coisa" data-imagem="../img/sensor1.png" data-imagem="../img/sensor3.png">
+          <tr onclick="toggleModal(this)" data-description="andou pra uma é sem Se e outra que comendo O quem pra trem osso. acidentes. a sai era humans Se sei esteja volta. respeito, ímpar. de é que é vale vem say de dumps dinheiro Antes sem não you Toda pão hoje o O na nunca, hoje pior. coisa" data-imagem="../img/sensor1.png" data-imagem="../img/sensor3.png">
             <td>CORTINA-LUZ PICK TO LIGHT EMIS+REC</td>
             <td>555565756</td>
             <td>10</td>
@@ -106,7 +125,7 @@
             </td>
           </tr>
 
-          <tr data-description="covarde! quanto maria-mole Daqui Qual panda. Qual morre Pobre in mais elas fosse É circo. my é da andou concordo play exceção. o se na se tudo é tarde. que importante LSD comendo droga! maria-mole Antes o feliz. esteja principalmente. separado lobo using pouco, é seu vida barriga pressa, voando." data-imagem="../img/sensor2.png" >
+          <tr onclick="toggleModal(this)" data-description="covarde! quanto maria-mole Daqui Qual panda. Qual morre Pobre in mais elas fosse É circo. my é da andou concordo play exceção. o se na se tudo é tarde. que importante LSD comendo droga! maria-mole Antes o feliz. esteja principalmente. separado lobo using pouco, é seu vida barriga pressa, voando." data-imagem="../img/sensor2.png" >
             <td>VALVULA ESFERA 2'BSP 150LBS CORPO B</td>
             <td>55656976</td>
             <td>01</td>
@@ -118,7 +137,7 @@
               <span class="carrinho_list"> <img src="../img/carrinho2.png" alt=""></span>             
             </td>
 
-          <tr data-description="Descrição do Material 5">
+          <tr onclick="toggleModal(this)" data-description="Descrição do Material 5">
             <td>MANGUEIRA NATUR PP-4-NT TRANSPARENTE 8 M</td>
             <td>55775776</td>
             <td>06</td>
@@ -130,7 +149,7 @@
               <span class="carrinho_list"> <img src="../img/carrinho2.png" alt=""></span>             
             </td>
 
-          <tr data-description="Descrição do Material 6">
+          <tr onclick="toggleModal(this)" data-description="Descrição do Material 6">
             <td>SENSOR-INDUT BESM18ME-PSC80B</td>
             <td>556595656</td>
             <td>25</td>
@@ -191,17 +210,10 @@
               <span class="favoritos_list"><img src="../img/heart.png" alt=""></span>
               <span class="carrinho_list"> <img src="../img/carrinho2.png" alt=""></span>             
             </td>
-          </tr>
+            </tr>
         </tbody>
-      </table>
-
-      <div class="descricao-material">
-      
-      </div>
-
-
-      
-    <script src="../script.js"></script>
+      </table>          
+            <script src="../script.js"></script>
 
 
 </body>

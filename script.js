@@ -17,51 +17,14 @@ function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
 
-
-//função de descrição dos materiais
-
-document.addEventListener('DOMContentLoaded', function() {
-  const tabelaMateriais = document.getElementById('tabela-materiais');
-  const descricaoMaterial = document.querySelector('.descricao-material');
-  let descricaoVisivel = false;
-
-  tabelaMateriais.addEventListener('click', function(event) {
-    const target = event.target;
-
-    // Verifica se o clique foi em uma célula da tabela
-    if (target.tagName === 'TD') {
-      const linhaSelecionada = target.parentNode;
-
-      // Verifica se a descrição está visível para a linha selecionada
-      if (linhaSelecionada.classList.contains('selected-row') && descricaoVisivel) {
-        // Se a descrição já está visível, oculta a descrição e remove a classe 'selected-row'
-        descricaoVisivel = false;
-        descricaoMaterial.innerHTML = '';
-        linhaSelecionada.classList.remove('selected-row');
-      } else {
-        // Se a descrição não está visível, exibe a descrição e adiciona a classe 'selected-row'
-        descricaoVisivel = true;
-        linhaSelecionada.classList.add('selected-row');
-
-        const descricao = linhaSelecionada.dataset.description;
-        const imagens = linhaSelecionada.dataset.imagem.split(',');
-
-        let descricaoHTML = '<h3>Descrição do material:</h3>' + descricao;
-
-        imagens.forEach(function(imagemURL) {
-          const imagem = document.createElement('img');
-          imagem.src = imagemURL;
-          imagem.classList.add('img');
-          descricaoHTML += '<img src="' + imagemURL + '" class="img" />';
-        });
-
-        descricaoMaterial.innerHTML = descricaoHTML;
-      }
-    }
-  });
-});
-
-
+function toggleModal(tableRow) {
+  const dialog= document.getElementById("list-modal")
+  const description= document.getElementById("description")
+  const img= document.getElementById("product-img")
+  description.innerText=tableRow.getAttribute("data-description"); 
+  img.src=tableRow.getAttribute("data-imagem")
+  dialog.showModal();
+}
 //função de pesquisar por materiais
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -123,6 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+  function adicionarCarrinho() { 
+    alert("O item foi adicionado ao carrinho!");
+    window.location.href = 'list.html'
+}
 
 
 //favoritos
