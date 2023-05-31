@@ -84,13 +84,12 @@ body {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 6rem;
-  font-family: Poppins;
+  font-family: Arial;
   font-weight: 500;
   color: white;
   font-size: 17px;
 }
-
-.options:hover { /*define um estilo quando o mouse passa por cima das opções do menu lateral.*/
+.options:hover { /*opções do menu ao passar mouse*/
   cursor: pointer;
   font-weight: bold;
 }

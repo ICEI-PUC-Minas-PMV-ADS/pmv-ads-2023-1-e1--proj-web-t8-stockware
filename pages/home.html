@@ -24,8 +24,6 @@
           <img class="img-logo" src="../img/logos.png" alt="" />
           <span onclick="navigateToHome()" class="text-stock">stockware</span>
         </div>
-
-        <img class="img-menu" src="../img/menu.png" alt="" />
       </div>
       <div class="user">
         <img class="img" src="../img/user.png" alt="" />
@@ -52,25 +50,29 @@
     </div>
 
     <div class="main-content">
-      <div class="main">
-        <div class="menu">
-          <div class="list">
-            <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
-            <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
-            <span class="options">Consulta de Reserva</span>
-            <span onclick="navigateToAdminPage()" class="options admin">Admin</span>
-          </div>
-          <div onclick="logout()" class="logout options">
-            <img class="img-logout" src="../img/logout.png" alt="logout.png" />
-            <span class="options">Sair</span>
-
-
-          </div>
-
-          
-        </div>
-      </div>
-      <div class="content"></div>
+      <secation class="main">
+        <nav class="menu">
+          <ul class="list">
+            <li>
+              <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
+            </li>
+            <li>
+              <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+            </li>
+            <li>
+              <span class="options">Consulta de Reserva</span>
+            </li>
+            <li>
+              <div onclick="logout()" class="logout options">
+                <img class="img-logout" src="../img/logout.png" alt="logout.png" />
+                <span class="options">Sair</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <button class="btn-sidebar"> |||  </button>
+      <div class="content">content</div>
     </div>
 
     <script src="../script.js"></script>

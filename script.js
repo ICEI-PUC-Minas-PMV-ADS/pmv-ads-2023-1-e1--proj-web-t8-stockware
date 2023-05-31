@@ -26,10 +26,16 @@ function navigateToProductRegistration() {
 function navigateToListPage() { 
   window.location.href = 'list.html'
 }
-
 function navigateToDevolutionPage() { 
   window.location.href = 'devolution.html'
 }
+
+const menu = document.querySelector('.main');
+const menuBtn = document.querySelector('.btn-sidebar');
+
+  menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
 
 function toggleModal(tableRow) {
   const dialog= document.getElementById("list-modal")
