@@ -14,6 +14,10 @@ function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
 
+function navigateToFavsPage() { 
+  window.location.href = 'favs.html'
+}
+
 const menu = document.querySelector('.main');
 const menuBtn = document.querySelector('.btn-sidebar');
 
