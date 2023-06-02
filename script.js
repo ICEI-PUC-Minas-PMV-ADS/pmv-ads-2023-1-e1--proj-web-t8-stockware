@@ -109,3 +109,62 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //favoritos
 
+
+//função validar produto
+
+function cadastrarProduto() {
+  console.log("tty")
+  // Obtendo os valores dos campos do formulário
+  var nome = document.getElementById("nome").value;
+  var codigo = document.getElementById("codigo").value;
+  var quantidade = document.getElementById("quantidade").value;
+  var tipo = document.getElementById("tipo").value;
+  var preco = document.getElementById("preco").value;
+  var descricao = document.getElementById("descricao").value;
+  var imagem = document.getElementById("imagem").value;
+
+  // Validando os campos
+  if (nome === "" || codigo === "" || quantidade === "" || tipo === "" || preco === "" || descricao === "" || imagem === "") {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  // Criando um objeto JSON com os dados do produto
+  var produto = {
+    nome: nome,
+    codigo: codigo,
+    quantidade: quantidade,
+    tipo: tipo,
+    preco: preco,
+    descricao: descricao,
+    imagem: imagem
+  };
+
+  // Verificando se já existem produtos armazenados em local storage
+  var produtosArmazenados = localStorage.getItem("produtos");
+  var produtos = [];
+
+  if (produtosArmazenados) {
+    // Se existirem produtos armazenados, converte a string JSON para um array de objetos
+    produtos = JSON.parse(produtosArmazenados);
+  }
+
+  // Adicionando o novo produto ao array
+  produtos.push(produto);
+
+  // Armazenando o array atualizado em local storage
+  localStorage.setItem("produtos", JSON.stringify(produtos));
+
+  // Limpa os campos do formulário após a validação
+  document.getElementById("nome").value = "";
+  document.getElementById("codigo").value = "";
+  document.getElementById("quantidade").value = "";
+  document.getElementById("tipo").value = "";
+  document.getElementById("preco").value = "";
+  document.getElementById("descricao").value = "";
+  document.getElementById("imagem").value = "";
+
+  alert("Cadastro de produto realizado com sucesso!");
+}
+
+
