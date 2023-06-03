@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="atualizarListaProdutos()" >
 
 
   <div class="header">
@@ -79,7 +79,7 @@
 
           </tr>
         </thead>
-        <tbody>
+        <tbody id="produtos-lista">
           
           <tr onclick="toggleModal(this)" data-description="coisa tarde. significar unido importante gente exceção. que Por povo mais, but o Se mais, lá. é 'separado' não most elas bet e concordo golfinho? 'separado' tarde Mar bode vivo pra o era code, A gigante sem não estará frente, única sei de serial custam que e que a serial" data-imagem="../img/sensor1.png" >
             <td>SENSOR-INDUT BESM18ME-PSC80B</td>
@@ -175,7 +175,7 @@
             </td>
 
           </tr>
-          <tr>
+          <tr onclick="toggleModaal(this)">
             <td>CORTINA-LUZ PICK TO LIGHT EMIS+REC</td>
             <td>555565756</td>
             <td>10</td>
@@ -211,6 +211,18 @@
               <span class="carrinho_list"> <img src="../img/carrinho2.png" alt=""></span>             
             </td>
             </tr>
+            <tr onclick="toggleModaal(this)">
+              <td id="nome-prod">MANGUEIRA NATUR PP-4-NT TRANSPARENTE 8 M</td>
+              <td id="codigo-prod">55775776</td>
+              <td id="quantidade-prod">06</td>
+              <td id="tipo-prod">Mecânico</td>
+              <td id="preço-prod">R$48.00</td>
+              <td id="local-prod">AB-88</td>
+              <td>           
+                <span class="favoritos_list"><img src="../img/heart.png" alt=""></span>
+                <span class="carrinho_list"> <img src="../img/carrinho2.png" alt=""></span>             
+              </td>
+              </tr>
         </tbody>
       </table>          
             <script src="../script.js"></script>
