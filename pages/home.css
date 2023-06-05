@@ -10,7 +10,7 @@ body {
 .header {
   margin: 18px;
   padding: 24px;
-  height: 72px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
