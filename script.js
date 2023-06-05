@@ -29,12 +29,11 @@ function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
 
-const menu = document.querySelector('.main');
-const menuBtn = document.querySelector('.btn-sidebar');
-
-  menuBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+//const menu = document.querySelector('.main');
+//const menuBtn = document.querySelector('.btn-sidebar');
+//menuBtn.addEventListener('click', () => {
+//menu.classList.toggle('active');
+//});
 
 function toggleModal(tableRow) {
   const dialog = document.getElementById('list-modal')
@@ -132,13 +131,13 @@ function adicionarCarrinho() {
 function cadastrarProduto() {
   console.log('tty')
   // Obtendo os valores dos campos do formulário
-  var nome = document.getElementById('nome').value
-  var codigo = document.getElementById('codigo').value
-  var quantidade = document.getElementById('quantidade').value
-  var tipo = document.getElementById('tipo').value
-  var preco = document.getElementById('preco').value
-  var descricao = document.getElementById('descricao').value
-  var imagem = document.getElementById('imagem').value
+  let nome = document.getElementById('nome').value
+  let codigo = document.getElementById('codigo').value
+  let quantidade = document.getElementById('quantidade').value
+  let tipo = document.getElementById('tipo').value
+  let preco = document.getElementById('preco').value
+  let descricao = document.getElementById('descricao').value
+  let imagem = document.getElementById('imagem').value
 
   // Validando os campos
   if (
@@ -155,7 +154,7 @@ function cadastrarProduto() {
   }
 
   // Criando um objeto JSON com os dados do produto
-  var produto = {
+  let produto = {
     nome: nome,
     codigo: codigo,
     quantidade: quantidade,
@@ -166,8 +165,8 @@ function cadastrarProduto() {
   }
 
   // Verificando se já existem produtos armazenados em local storage
-  var produtosArmazenados = localStorage.getItem('produtos')
-  var produtos = []
+  let produtosArmazenados = localStorage.getItem('produtos')
+  let produtos = []
 
   if (produtosArmazenados) {
     // Se existirem produtos armazenados, converte a string JSON para um array de objetos
@@ -194,20 +193,24 @@ function cadastrarProduto() {
 
 function atualizarListaProdutos() {
   console.log('hjk')
-  var produtosArmazenados = localStorage.getItem('produtos')
-  var produtos = []
+  let produtosArmazenados = localStorage.getItem('produtos')
+  let produtos = []
 
   if (produtosArmazenados) {
     produtos = JSON.parse(produtosArmazenados)
   }
 
-  var tabelaBody = document.getElementById('produtos-lista')
+  let tabelaBody = document.getElementById('produtos-lista')
 
   // Limpa o conteúdo atual da tabela
 
   // Percorre o array de produtos e adiciona cada um na tabela
   produtos.forEach(function (produto) {
-    var novaLinha = document.createElement('tr')
+    let novaLinha = document.createElement('tr');
+
+    novaLinha.onclick = () => toggleModal(novaLinha);
+    novaLinha.setAttribute('data-imagem', produto.imagem);
+    novaLinha.setAttribute('data-description', produto.descricao);
 
     novaLinha.innerHTML = `
       <td>${produto.nome}</td>
@@ -221,7 +224,6 @@ function atualizarListaProdutos() {
         <span class="carrinho_list"><img src="../img/carrinho2.png" alt=""></span>
       </td>
     `
-
     tabelaBody.appendChild(novaLinha)
   })
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap'); /*importar fonte poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+/*importar fonte poppins*/
 
 body {
   background-color: #f5f5f5;
@@ -15,7 +16,8 @@ body {
   color: red;
 }
 
-.header { /*cabeçalho*/
+.header {
+  /*cabeçalho*/
   margin: 0px;
   padding: 24px;
   height: 30px;
@@ -25,46 +27,53 @@ body {
   background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
- /* position: sticky;
+  /* position: sticky;
   top: 0;
   z-index: 1; fixar tela de rolagem*/
 }
 
-.user { /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
+.user {
+  /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.actions { /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
+.actions {
+  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
   /*açoes, favoritos e carrinho, perfil */
   display: flex;
   gap: 12px;
 }
 
-.img { /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
+.img {
+  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
   width: 20px;
   height: 20px;
 }
 
-.img:hover { /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
+.img:hover {
+  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
   cursor: pointer;
 }
 
-.text-header { /*define o estilo para o texto do cabeçalho, incluindo a cor do texto.*/
+.text-header {
+  /*define o estilo para o texto do cabeçalho, incluindo a cor do texto.*/
   font-family: Poppins;
   color: white;
 }
 
 .text-stock,
-.text-header { /*definem o estilo para o texto do cabeçalho, incluindo a cor, o tamanho da fonte e o peso da fonte.*/
+.text-header {
+  /*definem o estilo para o texto do cabeçalho, incluindo a cor, o tamanho da fonte e o peso da fonte.*/
   font-family: Poppins;
   color: white;
   font-size: 20px;
   font-weight: 500;
 }
 
-.main { /*define o estilo para o menu lateral, incluindo margens, largura, plano de fundo, altura, sombra e borda.*/
+.main {
+  /*define o estilo para o menu lateral, incluindo margens, largura, plano de fundo, altura, sombra e borda.*/
   margin: 0px 24px;
   width: 332px;
   background: linear-gradient(180deg,
@@ -75,11 +84,13 @@ body {
   border-radius: 6px;
 }
 
-.menu { /*define o estilo para as opções do menu lateral, incluindo preenchimento.*/
+.menu {
+  /*define o estilo para as opções do menu lateral, incluindo preenchimento.*/
   padding: 4rem 24px;
 }
 
-.list { /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
+.list {
+  /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -89,25 +100,30 @@ body {
   color: white;
   font-size: 17px;
 }
-.options:hover { /*opções do menu ao passar mouse*/
+
+.options:hover {
+  /*opções do menu ao passar mouse*/
   cursor: pointer;
   font-weight: bold;
 }
 
-.logout { /*define o estilo para o texto de logout, incluindo exibição flexível, alinhamento vertical e espaçamento entre itens.*/
+.logout {
+  /*define o estilo para o texto de logout, incluindo exibição flexível, alinhamento vertical e espaçamento entre itens.*/
   display: flex;
   align-items: center;
   gap: 24px;
   color: white;
 }
 
-.logo { /*define o estilo para o logotipo, incluindo exibição flexível e espaçamento entre itens.*/
+.logo {
+  /*define o estilo para o logotipo, incluindo exibição flexível e espaçamento entre itens.*/
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.img-menu {  /*define o estilo para a imagem do menu, incluindo largura.*/
+.img-menu {
+  /*define o estilo para a imagem do menu, incluindo largura.*/
   /*abrir menu  lateral*/
   width: 40px;
   /* @media (width >= 890px) {
@@ -115,37 +131,44 @@ body {
   }*/
 }
 
-.img-menu:hover { /*define um estilo quando o mouse passa por cima da imagem do menu.*/
+.img-menu:hover {
+  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
   cursor: pointer;
   filter: drop-shadow(0px 0px 1px rgb(5, 141, 252));
 }
 
-.logo-menu { /*define o estilo para o logotipo do menu, incluindo exibição flexível e espaçamento entre itens.*/
+.logo-menu {
+  /*define o estilo para o logotipo do menu, incluindo exibição flexível e espaçamento entre itens.*/
   display: flex;
   align-items: center;
   gap: 7rem;
 }
 
-.content { /* define o estilo para o conteúdo principal, incluindo plano de fundo, sombra e borda.*/
+.content {
+  /* define o estilo para o conteúdo principal, incluindo plano de fundo, sombra e borda.*/
   background: red;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
 
-.main-content { /*define o estilo para o conteúdo principal, incluindo margens e exibição em grade.*/
+.main-content {
+  /*define o estilo para o conteúdo principal, incluindo margens e exibição em grade.*/
   margin: 10px 0px 0px 10px;
   display: grid;
 }
 
-.title h2 { /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
+.title h2 {
+  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
   color: #1E4CA5;
 }
 
-.full-width {  /*define o estilo para elementos com largura total, incluindo exibição flexível.*/
+.full-width {
+  /*define o estilo para elementos com largura total, incluindo exibição flexível.*/
   display: flex;
 }
 
-#input-pesquisa { /*define o estilo para a área de pesquisa por materiais */
+#input-pesquisa {
+  /*define o estilo para a área de pesquisa por materiais */
   border-radius: 6px;
   border: none;
   height: 43px;
@@ -158,52 +181,62 @@ body {
   background-color: #FFF;
 }
 
-table { /*define o estilo para uma tabela, incluindo flexibilidade, sombra e borda arredondada.*/
+table {
+  /*define o estilo para uma tabela, incluindo flexibilidade, sombra e borda arredondada.*/
   flex: 1;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border-collapse: collapse;
 }
 
-tr { /*define o estilo para as linhas da tabela, incluindo alinhamento central, borda inferior e cor de fundo.*/
+tr {
+  /*define o estilo para as linhas da tabela, incluindo alinhamento central, borda inferior e cor de fundo.*/
   text-align: center;
   border-bottom: 1px solid #E1CFFF;
   background-color: #fff;
 }
 
 
-th { /*define o estilo para as células de cabeçalho da tabela, incluindo alinhamento central e plano de fundo.*/
+th {
+  /*define o estilo para as células de cabeçalho da tabela, incluindo alinhamento central e plano de fundo.*/
   text-align: center;
   background: #F5F5F5;
 }
 
-td { /*define o estilo para as células da tabela, incluindo alinhamento central, espaçamento interno superior e inferior, e borda.*/
+td {
+  /*define o estilo para as células da tabela, incluindo alinhamento central, espaçamento interno superior e inferior, e borda.*/
   text-align: center;
   padding-top: 10px;
   border: 1px solid;
 }
 
-h3 {/* define o estilo para os títulos de nível 3, incluindo margem, cor do texto e exibição flexível centralizada.*/
+h3 {
+  /* define o estilo para os títulos de nível 3, incluindo margem, cor do texto e exibição flexível centralizada.*/
   margin: 8px auto;
   color: #1E4CA5;
   display: flex;
   justify-content: center;
 }
 
-.full-width th, .full-width td{ /*define o estilo para as células de cabeçalho e células da tabela em largura total, incluindo um cursor de ponteiro ao passar o mouse.*/
+.full-width th,
+.full-width td {
+  /*define o estilo para as células de cabeçalho e células da tabela em largura total, incluindo um cursor de ponteiro ao passar o mouse.*/
   cursor: pointer;
 }
 
-.selected-row { /*define o estilo para destacar a linha selecionada na tabela, definindo a cor de fundo.*/
+.selected-row {
+  /*define o estilo para destacar a linha selecionada na tabela, definindo a cor de fundo.*/
   background-color: rgb(48, 113, 253);
 }
 
- .hide-row { /*define o estilo para ocultar uma linha, definindo a propriedade "visibility" como "collapse".*/
-visibility:collapse;
+.hide-row {
+  /*define o estilo para ocultar uma linha, definindo a propriedade "visibility" como "collapse".*/
+  visibility: collapse;
 }
 
 
-.descricao-material { /*define uma borda para a apresentação da descrição do material*/
+.descricao-material {
+  /*define uma borda para a apresentação da descrição do material*/
   margin-top: 28px;
   padding: 10px;
   background-color: #f9f9f9;
@@ -214,7 +247,7 @@ visibility:collapse;
   box-shadow: 3px 3px 3px 0px rgba(11, 8, 235, 0.301);
 }
 
-.descricao-material .img{
+.descricao-material .img {
   width: 100%;
   height: auto;
   display: flex;
@@ -222,11 +255,11 @@ visibility:collapse;
   margin-bottom: 30px;
   border: 1px solid rgb(102, 102, 233);
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  
+
 }
 
 td img {
-width: 40%;
+  width: 40%;
 
 }
 
@@ -234,51 +267,53 @@ td img:hover {
   box-shadow: 3px 3px 3px 1px rgba(4, 0, 255, 0.77);
   color: #1E4CA5;
   border-radius: 5px;
-  
-  }
-  dialog { /* Abre uma tela pop-up com a descrição e imagem do material*/
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 0px;
-    width: 1000px;
-    height: 600px;
-    margin: auto;
-    background-color: #f5f5f5;
-    font-family: Poppins;
-    border: 1px solid #b5b4b6;
-    
-  }
- 
-  #product-img {
+
+}
+
+dialog {
+  /* Abre uma tela pop-up com a descrição e imagem do material*/
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  background-color: #f5f5f5;
+  font-family: Poppins;
+  border: 1px solid #b5b4b6;
+
+}
+
+#product-img {
   width: 500px;
   height: 300px;
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
   margin: auto;
- 
-  }
+
+}
 
 .cart-add {
-position: absolute;
-width: 79px;
-height: 21px;
-margin-top: -20px;
-font-family: Poppins; 
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #466CB4;
-cursor: pointer;
-padding-left: 10px;  
-background-color: #F5F5F5;  
-box-sizing: border-box;
-position: absolute;
-width: 175px;
-height: 48px;
-border: 2px solid #476CB4;
-border-radius: 30px;
-}  
+  position: absolute;
+  width: 79px;
+  height: 21px;
+  margin-top: -20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #466CB4;
+  cursor: pointer;
+  padding-left: 10px;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  position: absolute;
+  width: 175px;
+  height: 48px;
+  border: 2px solid #476CB4;
+  border-radius: 30px;
+}
