@@ -10,33 +10,42 @@ body {
 }
 
 .header {
-  margin: 18px;
+  margin: 0px;
   padding: 24px;
-  height: 72px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background: linear-gradient(
-    180deg,
-    #00c4cc 0%,
-    rgba(30, 76, 165, 0.81) 89.72%
-  );
+  background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  border-radius: 0px;
+  margin-bottom: 20px;
 }
 
 .user {
+  /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
+.actions {
+  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
+  /*açoes, favoritos e carrinho, perfil */
+  display: flex;
+  gap: 12px;
+}
+
 .img {
+  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
   width: 20px;
   height: 20px;
 }
 
+.img:hover {
+  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
+  cursor: pointer;
+}
 .text-header {
   font-family: Poppins;
   color: white;
@@ -51,13 +60,11 @@ body {
 }
 
 .main {
-  margin: 0px 24px;
+  margin: 0px 2px;
   width: 296px;
-  background: linear-gradient(
-    180deg,
-    #00a6cc 0%,
-    rgba(30, 76, 165, 0.81) 89.72%
-  );
+  background: linear-gradient(180deg,
+      #00a6cc 0%,
+      rgba(30, 76, 165, 0.81) 89.72%);
   height: 800px;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
@@ -65,6 +72,7 @@ body {
 
 .menu {
   padding: 4rem 24px;
+ 
 }
 
 .list {
@@ -76,12 +84,15 @@ body {
   font-weight: 500;
   color: white;
   font-size: 17px;
+
+ 
 }
 
 .options:hover {
   cursor: pointer;
   font-weight: bold;
 }
+
 .logout {
   display: flex;
   align-items: center;
@@ -98,7 +109,7 @@ body {
 .img-menu {
   scale: 0.8;
 
-  @media (width >= 890px) {
+  @media (width >=890px) {
     display: none;
   }
 }
@@ -117,7 +128,6 @@ body {
   display: flex;
   flex-grow: 1;
   background: #f5f5f5;
-  //box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
 

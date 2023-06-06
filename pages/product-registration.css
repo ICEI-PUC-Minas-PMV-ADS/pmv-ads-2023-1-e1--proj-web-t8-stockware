@@ -3,37 +3,50 @@
 body {
   background-color: #f5f5f5;
   font-family: Poppins;
+  border: 1px solid #b5b4b6;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  width: 98.7%;
+  margin-left: 8px;
+  margin-right: 30px;
 }
-
-
-
 .header {
-  margin: 18px;
+  /*cabeçalho*/
+  margin: 0px;
   padding: 24px;
-  height: 72px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background: linear-gradient(
-    180deg,
-    #00c4cc 0%,
-    rgba(30, 76, 165, 0.81) 89.72%
-  );
+  background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
 .user {
+  /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
+.actions {
+  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
+  /*açoes, favoritos e carrinho, perfil */
+  display: flex;
+  gap: 12px;
+}
+
 .img {
+  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
   width: 20px;
   height: 20px;
 }
+
+.img:hover {
+  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
+  cursor: pointer;
+}
+
 
 .text-header {
   font-family: Poppins;
@@ -48,13 +61,6 @@ body {
   font-weight: 500;
 }
 
-.img-menu {
-  scale: 0.8;
-
-  @media (width >= 890px) {
-    display: none;
-  }
-}
 
 .logo {
   display: flex;
@@ -62,31 +68,26 @@ body {
   gap: 4px;
 }
 
-.title{
-margin-top: 4rem;
-margin-bottom: 4rem;
-width: 100%;
-margin-left:53px;
-display: flex;
-align-items:center;
-justify-content: center;
-
-}
-
 
 .form-register{
   display:flex;
   flex-direction:column;
-  width:554px;
+  width:599px;
   justify-content:center;
+  background-color: white;
+    height: 500px;
+    padding-left: 33px;
+    border-radius: 9px;
+    box-shadow: 0px 2px 10px rgba(76, 78, 100, 0.22);
+
 
 }
 
-.register{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -95,6 +96,8 @@ label {
   width: 100px;
   text-align: right;
   margin-right: 10px;
+  color:#313131;
+  font-weight:500;
 }
 
 input[type="text"],
@@ -103,20 +106,56 @@ textarea {
   width: 400px;
   padding: 5px;
   margin-bottom: 10px;
+  background: rgba(249, 249, 249, 0.8);
+/* Neutral/Almost White */
+
+border: 1px solid #cfcfcf;
+border-radius: 4px;
 }
 
-button[type="submit"] {
-  margin-left: 254px; /* Ajuste o valor conforme necessário */
-  margin-top:40px;
+.button {
+  margin-left: 224px !important; /* Ajuste o valor conforme necessário */
+  margin-top:25px;
+  border: 2px solid #4271B5;
+border-radius: 25px;
+background:transparent;
+width: 168px;
+height: 34px;
+font-family: poppins;
+font-weight:500;
+color:#4271B5
 }
 
-.description{
+.button:hover{
+background-color: rgb(1, 26, 248);
+color:antiquewhite;
+}
+
+.description {
   align-items: center;
-    display: flex;
-  
+  display: flex;
+
 }
 
-.height{
-height: 130px;
-width: 406px;
+.height {
+  height: 130px;
+  width: 406px;
+}
+
+.title h2 {
+  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
+  color: #1E4CA5;
+  margin-top: auto;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 50px ;
+}
+.img-menu {
+  /*define o estilo para a imagem do menu, incluindo largura.*/
+  /*abrir menu  lateral*/
+  width: 3%;
+  margin-top:5px
+  /* @media (width >= 890px) {
+    display: none;
+  }*/
 }
