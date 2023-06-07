@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap');
+/*importar fonte*/
 
 body {
   background-color: #f5f5f5;
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #b5b4b6;
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   width: 98.7%;
-  margin-left: 8px;
-  margin-right: 30px;
+
+
 }
+
+body{
+  background: url(../img/banner.png);
+  background-position:right; 
+  background-repeat: no-repeat; 
+  background-size:67%; 
+  
+
+
+}
+
 .header {
 /*cabeçalho*/
 margin: 8px;
@@ -20,6 +32,7 @@ align-items: center;
 background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
 box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
 border-radius: 0px;
+
 }
 
 .user {
@@ -34,31 +47,27 @@ border-radius: 0px;
 }
 
 .text-header {
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 .text-stock,
 .text-header {
-  font-family: Poppins;
+  font-family: 'Lobster', cursive;
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
 }
 
 .main {
-  margin: 0px 24px;
+  margin: 0px 2px;
   width: 296px;
   background: linear-gradient(180deg,
       #00a6cc 0%,
       rgba(30, 76, 165, 0.81) 89.72%);
-  height: 800px;
+  height: 600px;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  margin-left: -260px;
-  display: flex;
-  cursor: pointer;
-  transition: .5s;
 }
 
 .active {
@@ -74,7 +83,7 @@ border-radius: 0px;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 6rem;
-  font-family: Poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: white;
   font-size: 17px;
@@ -84,6 +93,7 @@ border-radius: 0px;
 .btn-sidebar {
   background: #00c4cc;
   max-height: 20px;
+ 
 }
 
 .btn-sidebar {
@@ -138,5 +148,5 @@ border-radius: 0px;
 
 .main-content {
   display: flex;
-  margin-right: 24px;
+  margin-right: 50px;
 }
