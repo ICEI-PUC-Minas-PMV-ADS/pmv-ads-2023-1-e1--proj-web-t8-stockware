@@ -5,10 +5,10 @@ function login() {
 
     // Lista de usuários permitidos
     var usuariosPermitidos = [
-        { username: "usuario1", password: "senha1", nome: "João" },
-        { username: "usuario2", password: "senha2", nome: "Maria" },
-        { username: "usuario3", password: "senha3", nome: "Pedro" },
-        { username: "admin", password: "admin", nome: "ADM" }
+        { username: "usuario1", password: "senha1", nome: "João Paulo" },
+        { username: "usuario2", password: "senha2", nome: "Maria Eduarda" },
+        { username: "usuario3", password: "senha3", nome: "Pedro Alves" },
+        { username: "admin", password: "admin", nome: "ADM Stockware" }
         
     ];
     if (
@@ -25,6 +25,7 @@ return
 
     for (var i = 0; i < usuariosPermitidos.length; i++) {
         if (usuariosPermitidos[i].username === username && usuariosPermitidos[i].password === password) {
+            localStorage.setItem('username', usuariosPermitidos[i].nome);
             isUserAllowed = true;
             break;
         }
@@ -41,6 +42,7 @@ return
             window.location.href = "pages/home-admin.html?username=" + encodeURIComponent(username);
         } else {
             alert("Login bem-sucedido como usuário!");
+    
             // Redireciona para a tela de usuário
             window.location.href = "pages/home.html?username=" + encodeURIComponent(username);
         }

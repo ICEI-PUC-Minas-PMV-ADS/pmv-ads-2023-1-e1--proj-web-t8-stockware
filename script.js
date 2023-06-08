@@ -5,7 +5,7 @@ function login() {
 }
 
 function logout() {
-  window.location.href = '../index.html'
+  window.location.href = '../login.html'
 }
 
 function navigateToAdminPage() {
