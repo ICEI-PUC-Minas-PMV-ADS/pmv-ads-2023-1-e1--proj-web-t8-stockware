@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <link rel="stylesheet" href="devolution.css">
@@ -9,6 +9,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devolução</title>
+
+  <style>
+    /* Estilos para o nome de usuário */
+    .username {
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -17,10 +26,9 @@
       <div class="logo-menu">
         <div class="logo">
           <img class="img-logo" src="../img/logos.png" alt="" />
-          <span class="text-stock">tockware</span>
+          <span class="text-stock">tockEare</span>
         </div>
 
-        <img class="img-menu" src="../img/menu.png" alt="" />
       </div>
       <div class="actions">
         <div class="favorite">
@@ -31,10 +39,35 @@
         </div>
         <div class="profile">
           <img class="img" src="../img/profile.png" alt="" />
-        </div>
-      </div>
 
+    
+          <span class="username"></span>
+  
+
+<script>
+  // Obtém o nome de usuário a partir da URL
+  var urlParams = new URLSearchParams(window.location.search);
+  var username = urlParams.get('username');
+
+  // Verifica se o nome de usuário existe e atualiza o conteúdo do elemento
+  if (username) {
+    document.querySelector('.username').textContent = username;
+  } else {
+    document.querySelector('.username').textContent = 'Sandra Alves';
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+  crossorigin="anonymous"></script>
+
+          
+      </div>
     </div>
+  </div>
     <div class="main-content">
       <div class="title">
         <h2>Devolução</h2>

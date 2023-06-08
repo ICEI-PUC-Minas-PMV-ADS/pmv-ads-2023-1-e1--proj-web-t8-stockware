@@ -1,11 +1,11 @@
-//função de mudar de tela
+///////////////////////////////// FUNÇÃO DE MUDAR DE TELA (MENU LATERAL) ////////////////////////////////////
 
 function login() {
   window.location.href = 'pages/home.html'
 }
 
 function logout() {
-  window.location.href = '../index.html'
+  window.location.href = '../login.html'
 }
 
 function navigateToAdminPage() {
@@ -43,7 +43,8 @@ function toggleModal(tableRow) {
   img.src = tableRow.getAttribute('data-imagem')
   dialog.showModal()
 }
-//função de pesquisar por materiais
+
+///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
 function toggleModaal(element) {
   const description = element.getAttribute('data-description')
@@ -100,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+///////////////////////////////// SELECIONAR LINHA PARA DESTACAR  ////////////////////////////////////
+
   tabelaMateriais.addEventListener('click', function (event) {
     const target = event.target
 
@@ -124,8 +127,7 @@ function adicionarCarrinho() {
   window.location.href = 'list.html'
 }
 
-//favoritos
-
+///////////////////////////////// CADASTRAR PRODUTOS /////////////////////////////////////////////////////
 
 
 function cadastrarProduto() {
@@ -221,10 +223,10 @@ function atualizarListaProdutos() {
       <td>${produto.local}</td>
       <td>
         <span class="favoritos_list"><img src="../img/heart.png" alt=""></span>
-        <span class="carrinho_list"><img src="../img/carrinho2.png" alt=""></span>
       </td>
     `
     tabelaBody.appendChild(novaLinha)
   })
 }
+
 

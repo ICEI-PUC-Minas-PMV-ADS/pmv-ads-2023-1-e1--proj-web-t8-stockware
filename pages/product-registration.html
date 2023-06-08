@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
   <style>
     /* Estilos para o nome de usuário */
     .username {
-      font-family: Poppins;
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
       color: white;
     }
   </style>
@@ -24,10 +24,8 @@
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
-        <span class="text-stock">stockware</span>
+        <span class="text-stock">tockWare</span>
       </div>
-
-      <img class="img-menu" src="../img/menu.png" alt="" />
     </div>
     <div class="actions">
       <div class="favorite">
@@ -45,7 +43,8 @@
           var username = urlParams.get('username');
   
           // Exibe o nome de usuário no perfil
-          document.write("<span class='username'>" + username + "</span>");
+          let nome = localStorage.getItem('username', username)
+          document.write("<span class='username'>" + nome + "</span>");
         </script>
   
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
