@@ -282,7 +282,7 @@ function adicionarCarrinho() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const tabelaCarrinho = document.getElementById('tabela-materiais')
+  const tabelaCarrinho = document.getElementById('tabela-carrinho')
   const tbodyCarrinho = tabelaCarrinho.getElementsByTagName('tbody')[0]
 
   // Verifica se existem produtos no carrinho
@@ -307,3 +307,56 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
+
+
+// Solicitação de reserva
+  
+const botaoReserva = document.getElementById('cadastrar');
+const modal = document.getElementById('modal');
+const closeButton = modal.querySelector('.close');
+function exibirModal() {
+  modal.style.display = 'block';
+}
+function fecharModal() {
+  modal.style.display = 'none';
+}
+botaoReserva.addEventListener('click', exibirModal);
+
+closeButton.addEventListener('click', fecharModal);
+
+function fecharModal() {
+  modal.style.display = 'none';
+  window.location.href = 'home.html'; 
+}
+
+
+
+function atualizarTotal() {
+  console.log('valor')
+  let total = 0;
+  let carrinho = localStorage.getItem('carrinho');
+  console.log(carrinho)
+  if (carrinho) {
+    carrinho = JSON.parse(carrinho);
+    
+    console.log(carrinho)
+    carrinho.forEach(function (produto) {
+
+      const stringValor = produto.preco;
+const valorNumerico = parseFloat(stringValor.replace("R$", "").trim());
+
+      if (produto.preco && !isNaN(valorNumerico)) {
+
+     
+        total += parseFloat(valorNumerico);
+      }
+    });
+  }
+  
+  const valorElement = document.querySelector('.valor');
+  if (valorElement) {
+    valorElement.textContent = 'R$ ' + total.toFixed(2);
+  } else {
+    console.log('O elemento .valor não foi encontrado no HTML.');
+  }
+}

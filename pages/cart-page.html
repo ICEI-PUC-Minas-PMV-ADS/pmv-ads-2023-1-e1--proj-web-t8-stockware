@@ -27,12 +27,11 @@
 
 <div class="header-cart">
 
-<span class="meu-carrinho">MEU CARRINHO</span>
-<button> Solicitar Reserva</button>
+<span class="meu-carrinho">Meu Carrinho</span>
 
 </div>
 
-<table id="tabela-materiais">
+<table id="tabela-carrinho">
   <thead>
     <tr>
       <th>Nome</th>
@@ -46,17 +45,38 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+    
   </tbody>
   </tbody>
 </table>
 
+
+<div class="total">
+
+<span class="text-total">Total</span>
+<span class="valor"> R$ 798.00</span>
+
+
+
+</div>
+
+<div class="btn">
+
+  <button class="button" type="button" id="cadastrar">Solicitar Reserva</button>
+
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Solicitação Concluída</h2>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>Sua solicitação de reserva foi concluída com sucesso!</p>
+    </div>
+  </div>
+</div>
 
 
 
@@ -68,5 +88,10 @@
 
 
   <script src="../script.js"></script>
+  <script>
+  
+    atualizarTotal();
+  </script>
+  
 </body>
 </html>
