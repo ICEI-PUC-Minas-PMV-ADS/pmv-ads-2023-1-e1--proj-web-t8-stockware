@@ -35,6 +35,29 @@ function navigateToDevolutionPage() {
 //menu.classList.toggle('active');
 //});
 
+
+const menuSize = '350px';
+let open = false;
+
+document.querySelector(".img-menu").addEventListener('click', () => {
+  open = !open;
+  toggleMenu();
+})
+
+document.querySelector("#btnClose").addEventListener('click', () => {
+  open = false;
+  toggleMenu();
+})
+
+function toggleMenu() {
+  if(open) {
+    document.querySelector(".main").style.marginLeft = 0;
+    return;
+  }
+  document.querySelector('.main').style.marginLeft = `-${menuSize}`;
+
+}
+
 function toggleModal(tableRow) {
   const dialog = document.getElementById('list-modal')
   const description = document.getElementById('description')

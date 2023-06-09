@@ -87,8 +87,9 @@ border-radius: 0px;
 
 .main-content {
   display: flex;
- margin-top:-16px;
+  margin-top:-16px;
   padding: 8px;
+  position: fixed;
   width: 22%;
 }
 
@@ -166,8 +167,6 @@ border-radius: 0px;
   display: flex;
   align-items: center;
   background-size: cover;
-  margin-top: -597px;
-
 }
 
 #banner{
