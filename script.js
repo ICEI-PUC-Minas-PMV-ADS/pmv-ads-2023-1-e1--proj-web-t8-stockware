@@ -46,62 +46,63 @@ function toggleModal(tableRow) {
 
 ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
-function toggleModaal(element) {
-  const description = element.getAttribute('data-description')
-  const imageSrc = element.getAttribute('data-imagem')
+function toggleModal(element) {
+  const description = element.getAttribute('data-description');
+  const imageSrc = element.getAttribute('data-imagem');
 
-  const descriptionElement = document.getElementById('description')
-  const imageElement = document.getElementById('product-img')
+  const descriptionElement = document.getElementById('description');
+  const imageElement = document.getElementById('product-img');
 
-  descriptionElement.textContent = description
-  imageElement.src = imageSrc
+  descriptionElement.textContent = description;
+  descriptionElement.style.wordWrap = "break-word"; // Adiciona a propriedade word-wrap
 
-  const modal = document.getElementById('list-modal')
-  modal.showModal()
+  imageElement.src = imageSrc;
+
+  const modal = document.getElementById('list-modal');
+  modal.showModal();
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
-  const tabelaMateriais = document.getElementById('tabela-materiais')
-  const inputPesquisa = document.getElementById('input-pesquisa')
+  const tabelaMateriais = document.getElementById('tabela-materiais');
+  const inputPesquisa = document.getElementById('input-pesquisa');
 
   inputPesquisa.addEventListener('input', function (event) {
-    const termoPesquisa = event.target.value.toLowerCase()
-    const linhasTabela = tabelaMateriais.getElementsByTagName('tr')
+    const termoPesquisa = event.target.value.toLowerCase();
+    const linhasTabela = tabelaMateriais.getElementsByTagName('tr');
 
-    for (let i = 0; i < linhasTabela.length; i++) {
-      const colunas = linhasTabela[i].getElementsByTagName('td')
-      let correspondenciaEncontrada = false
+    for (let i = 1; i < linhasTabela.length; i++) { // Inicia a partir do índice 1 para excluir o cabeçalho
+      const colunas = linhasTabela[i].getElementsByTagName('td');
+      let correspondenciaEncontrada = false;
 
       for (let j = 0; j < colunas.length; j++) {
-        const textoColuna = colunas[j].innerText.toLowerCase()
-        const palavrasPesquisa = termoPesquisa.split('*')
+        const textoColuna = colunas[j].innerText.toLowerCase();
+        const palavrasPesquisa = termoPesquisa.split('*');
 
-        let todasPalavrasEncontradas = true
+        let todasPalavrasEncontradas = true;
 
         for (let k = 0; k < palavrasPesquisa.length; k++) {
-          const palavra = palavrasPesquisa[k].trim()
+          const palavra = palavrasPesquisa[k].trim();
 
           if (palavra !== '' && !textoColuna.includes(palavra)) {
-            todasPalavrasEncontradas = false
-            break
+            todasPalavrasEncontradas = false;
+            break;
           }
         }
 
         if (todasPalavrasEncontradas) {
-          correspondenciaEncontrada = true
-          break
+          correspondenciaEncontrada = true;
+          break;
         }
       }
 
       if (correspondenciaEncontrada) {
-        linhasTabela[i].classList.remove('hide-row')
+        linhasTabela[i].classList.remove('hide-row');
       } else {
-        linhasTabela[i].classList.add('hide-row')
+        linhasTabela[i].classList.add('hide-row');
       }
     }
-  })
-
-///////////////////////////////// SELECIONAR LINHA PARA DESTACAR  ////////////////////////////////////
+  });
 
   tabelaMateriais.addEventListener('click', function (event) {
     const target = event.target
@@ -119,16 +120,34 @@ document.addEventListener('DOMContentLoaded', function () {
       // Adiciona a classe 'selected-row' na linha selecionada
       linhaSelecionada.classList.add('selected-row')
     }
-  })
-})
+  });
+
+  // Obtém o elemento do botão de fechar
+  var fecharDescricaoBtn = document.getElementById('fechar_descricao');
+
+  // Obtém o elemento do diálogo
+  var dialogModal = document.getElementById('list-modal');
+
+  // Verifica se os elementos foram encontrados corretamente
+  if (fecharDescricaoBtn && dialogModal) {
+    // Adiciona um evento de clique ao botão de fechar
+    fecharDescricaoBtn.addEventListener('click', function () {
+      // Fecha o diálogo
+      dialogModal.close();
+    });
+  }
+});
+
+
+///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
 
 function adicionarCarrinho() {
   alert('O item foi adicionado ao carrinho!')
   window.location.href = 'list.html'
 }
+///////////////////////////////////////
 
-///////////////////////////////// CADASTRAR PRODUTOS /////////////////////////////////////////////////////
-
+///////////////  CADASTRO DE PRODUTOS ////////////////////
 
 function cadastrarProduto() {
   console.log('tty')
@@ -202,9 +221,10 @@ function atualizarListaProdutos() {
     produtos = JSON.parse(produtosArmazenados)
   }
 
-  let tabelaBody = document.getElementById('produtos-lista')
+  let tabelaBody = document.getElementById('produtos-lista');
 
   // Limpa o conteúdo atual da tabela
+  tabelaBody.innerHTML = '';
 
   // Percorre o array de produtos e adiciona cada um na tabela
   produtos.forEach(function (produto) {
@@ -228,5 +248,28 @@ function atualizarListaProdutos() {
     tabelaBody.appendChild(novaLinha)
   })
 }
+
+// Chama a função para atualizar a lista de produtos ao carregar a página
+atualizarListaProdutos();
+
+/////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtém o elemento do botão de fechar
+  var fecharDescricaoBtn = document.getElementById('fechar_descricao');
+
+  // Obtém o elemento do diálogo
+  var dialogModal = document.getElementById('list-modal');
+
+  // Verifica se os elementos foram encontrados corretamente
+  if (fecharDescricaoBtn && dialogModal) {
+    // Adiciona um evento de clique ao botão de fechar
+    fecharDescricaoBtn.addEventListener('click', function () {
+      // Fecha o diálogo
+      dialogModal.close();
+    });
+  }
+});
+
 
 
