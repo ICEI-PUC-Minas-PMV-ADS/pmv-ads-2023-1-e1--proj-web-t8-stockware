@@ -63,14 +63,46 @@ body {
 }
 
 .main {
-  margin: 0px 24px;
-  width: 332px;
+  margin: 0px 34px;
   background: linear-gradient(180deg,
       #00a6cc 0%,
       rgba(30, 76, 165, 0.81) 89.72%);
-  height: 800px;
+  height: 400px;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  padding: 8px;
+  margin-left: -350px;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  transition: .5s;
+  margin-top: -75px;
+}
+
+#btnClose {
+  padding: 5px;
+  float: right;
+  font-weight: bold;
+  background-color:#1E4CA5;
+  color: white;
+}
+
+#btnClose:active {
+  background-color:crimson;
+}
+
+.effect {
+  transform: margin .4s;
+}
+
+@media (min-width: 368px) {
+  #btnClose {
+    display:none;
+  }
+  .main {
+    min-width: 261.75px;
+    width: 20%;
+  }
 }
 
 .menu {
@@ -85,6 +117,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: white;
+  list-style: none;
   font-size: 17px;
 }
 
@@ -107,15 +140,28 @@ body {
 }
 
 .img-menu {
-  scale: 0.8;
-
-  @media (width >=890px) {
+  /*define o estilo para a imagem do menu, incluindo largura.*/
+  /*abrir menu  lateral*/
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+  transition: all .5s;
+  margin-left: 350px;
+   @media (width >= 890px) {
     display: none;
-  }
+  };
 }
 
 .img-menu:hover {
+  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
   cursor: pointer;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #476CB4;
+}
+
+.img-menu:active {
+  background-color: #020202;
 }
 
 .logo-menu {
