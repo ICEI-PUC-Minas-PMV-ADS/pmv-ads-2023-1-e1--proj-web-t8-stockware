@@ -123,6 +123,19 @@
   <script>
   
     atualizarTotal();
+
+    
+var fecharModalBtn = document.querySelector('.close');
+
+
+var tabelaCarrinho = document.getElementById('tabela-carrinho');
+
+
+fecharModalBtn.addEventListener('click', function() {
+
+  tabelaCarrinho.getElementsByTagName('tbody')[0].innerHTML = '';
+});
+
   </script>
   
 </body>
