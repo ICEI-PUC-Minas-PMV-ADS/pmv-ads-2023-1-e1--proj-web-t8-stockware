@@ -71,26 +71,63 @@ body {
 
 .main {  /*define o estilo para o menu lateral, incluindo margens, largura, plano de fundo, altura, sombra e borda.*/
   margin: 0px 24px;
-  width: 332px;
   background: linear-gradient(180deg,
       #00a6cc 0%,
       rgba(30, 76, 165, 0.81) 89.72%);
   height: 400px;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  padding: 8px;
+  margin-left: -350px;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  transition: .5s;
+}
+
+.main ul li a:hover {
+  background-color: #fff;
 }
 
 .menu {  /*define o estilo para as opções do menu lateral, incluindo preenchimento.*/
   padding: 4rem 24px;
 }
 
-.list {  /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
+#btnClose {
+  padding: 5px;
+  float: right;
+  font-weight: bold;
+  background-color:#1E4CA5;
+  color: white;
+}
+
+#btnClose:active {
+  background-color:crimson;
+}
+
+.effect {
+  transform: margin .4s;
+}
+
+@media (min-width: 368px) {
+  #btnClose {
+    display:none;
+  }
+  .main {
+    min-width: 261.75px;
+    width: 20%;
+  }
+}
+
+.list {
+  /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 6rem;
   font-family: Arial;
   font-weight: 500;
+  list-style: none;
   color: white;
   font-size: 17px;
 }
@@ -113,23 +150,28 @@ body {
   gap: 40px;
 }
 
-.img-menu {  /*define o estilo para a imagem do ÍCONE DO menu lateral*/
-  width: 3%;
-  margin-top: 0px;
-  margin-left:-5px;
+.img-menu {
+  /*define o estilo para a imagem do menu, incluindo largura.*/
+  /*abrir menu  lateral*/
+  width: 20%;
+  text-align: center;
+  padding: 5px;
+  transition: all .5s;
+  margin-left: 75px;
+   @media (width >= 890px) {
+    display: none;
+  };
 }
 
 .img-menu:hover {  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
   cursor: pointer;
-  filter: drop-shadow(0px 0px 1px rgb(5, 141, 252));
-  transition: transform 0.3s ease; 
-  transform: scale(1.1);
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #476CB4;
 }
 
-.logo-menu {  /*define o estilo para o logotipo do menu, incluindo exibição flexível e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 7rem;
+.img-menu:active {
+  background-color: #020202;
 }
 
 .content {  /* define o estilo para o conteúdo principal, incluindo plano de fundo, sombra e borda.*/

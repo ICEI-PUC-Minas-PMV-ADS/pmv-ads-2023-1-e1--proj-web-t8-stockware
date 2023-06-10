@@ -1,4 +1,6 @@
-const sidebar = document.querySelector(".main-content");
+'use strict'
+
+document.querySelector(".btn-");
 const btnSideBar = document.querySelector(".btn-sidebar");
 
 btnSideBar.addEventListener('click', () => {

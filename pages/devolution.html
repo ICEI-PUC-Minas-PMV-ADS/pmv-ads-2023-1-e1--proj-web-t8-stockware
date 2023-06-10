@@ -28,7 +28,9 @@
           <img class="img-logo" src="../img/logos.png" alt="" />
           <span class="text-stock">tockEare</span>
         </div>
-
+        <div>
+          <img class="img-menu" src="/img/iconmenu.png" alt="" />
+        </div>
       </div>
       <div class="actions">
         <div class="favorite">
@@ -75,6 +77,33 @@
         <h2>Devolução</h2>
       </div>
   </header>
+  <section class="main">
+    <nav class="menu">
+      <div>
+        <button id="btnClose">X</button>
+      </div>
+      <ul class="list">
+        <li>
+          <span class="options" onclick="navigateToHome()">Home</span>
+        </li>
+        <li>
+          <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
+        </li>
+        <li>
+          <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+        </li>
+        <li>
+          <span class="options">Consulta de Reserva</span>
+        </li>
+        <li>
+          <div onclick="logout()" class="logout options">
+            <img class="img-logout" src="../img/logout.png" alt="logout.png" />
+            <span class="options">Sair</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </section>
 
   <div>
     <table class="table table table-hover">
@@ -123,6 +152,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
 
 <body onload="atualizarListaProdutos()">
 
-  <div class="header">
+  <header class="header">
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
@@ -30,9 +30,15 @@
       </div>
 
     </div>
+    <div>
+      <img class="img-menu" src="/img/iconmenu.png" alt="" />
+    </div>
     <div class="actions">
+
       <div class="favorite">
-        <img class="img" src="../img/favorite.png" alt="" />
+        <a onclick= navigateToFavsPage()>
+          <img class="img" src="../img/favorite.png" alt="" />
+        </a>
       </div>
       <div class="cart">
         <img onclick="navigateCartPage()" class="img" src="../img/cart.png" alt="" />
@@ -59,10 +65,36 @@
           </script>
       </div>
     </div>
-  </div>
+  </header>
+    <section class="main">
+      <nav class="menu">
+        <div>
+          <button id="btnClose">X</button>
+        </div>
+        <ul class="list">
+          <li>
+            <span class="options" onclick="navigateToHome()">Home</span>
+          </li>
+          <li>
+            <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
+          </li>
+          <li>
+            <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+          </li>
+          <li>
+            <span class="options">Consulta de Reserva</span>
+          </li>
+          <li>
+            <div onclick="logout()" class="logout options">
+              <img class="img-logout" src="../img/logout.png" alt="logout.png" />
+              <span class="options">Sair</span>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </section>
   <div class="main-content">
     <div class="title">
-      <img class="img-menu" src="/img/menuVisual.png" alt="" />
       <h2>Lista de materiais</h2>
     </div>
 
@@ -81,7 +113,7 @@
       <p id="description"></p>
       <img id="product-img" />
       <div class="cart-add">
-        <footer onclick=" adicionarCarrinho()">Adicionar ao Carrinho
+        <footer >Adicionar ao Carrinho
         </footer>
       </div>
     </dialog>
