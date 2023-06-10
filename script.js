@@ -29,103 +29,109 @@ function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
 
-const menuSize = '350px';
-let open = false;
+const menuSize = '350px'
+let open = false
 
-document.querySelector(".img-menu").addEventListener('click', () => {
-  open = !open;
-  toggleMenu();
-})
+if (document.querySelector('.img-menu')) {
+  document.querySelector('.img-menu').addEventListener('click', () => {
+    open = !open
+    toggleMenu()
+  })
+}
 
-document.querySelector("#btnClose").addEventListener('click', () => {
-  open = false;
-  toggleMenu();
-})
+if (document.querySelector('#btnClose')) {
+  document.querySelector('#btnClose').addEventListener('click', () => {
+    open = false
+    toggleMenu()
+  })
+}
 
 function toggleMenu() {
-  if(open) {
-    document.querySelector(".main").style.marginLeft = 0;
-    return;
+  if (open) {
+    document.querySelector('.main').style.marginLeft = 0
+    return
   }
-  document.querySelector('.main').style.marginLeft = `-${menuSize}`;
-
+  document.querySelector('.main').style.marginLeft = `-${menuSize}`
 }
 
 function navigateCartPage() {
   window.location.href = 'cart-page.html'
 }
 
-function toggleModal(tableRow) {
-  const dialog = document.getElementById('list-modal');
-  const description = document.getElementById('description');
-  const img = document.getElementById('product-img');
-  const cartAddDiv = document.querySelector('.cart-add');
+function toggleModal2(tableRow) {
+  const dialog = document.getElementById('list-modal')
+  const description = document.getElementById('description')
+  const img = document.getElementById('product-img')
+  const cartAddDiv = document.querySelector('.cart-add')
 
-  description.innerText = tableRow.getAttribute('data-description');
-  img.src = tableRow.getAttribute('data-imagem');
-  dialog.showModal();
+  description.innerText = tableRow.getAttribute('data-description')
+  img.src = tableRow.getAttribute('data-imagem')
+  dialog.showModal()
 
-  cartAddDiv.addEventListener('click', adicionarCarrinho);
+  cartAddDiv.addEventListener('click', adicionarCarrinho)
 }
 
 ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
 function toggleModal(element) {
-  const description = element.getAttribute('data-description');
-  const imageSrc = element.getAttribute('data-imagem');
+  const description = element.getAttribute('data-description')
+  const imageSrc = element.getAttribute('data-imagem')
 
-  const descriptionElement = document.getElementById('description');
-  const imageElement = document.getElementById('product-img');
+  const descriptionElement = document.getElementById('description')
+  const imageElement = document.getElementById('product-img')
 
-  descriptionElement.textContent = description;
-  descriptionElement.style.wordWrap = "break-word"; // Adiciona a propriedade word-wrap
+  descriptionElement.textContent = description
+  descriptionElement.style.wordWrap = 'break-word' // Adiciona a propriedade word-wrap
 
-  imageElement.src = imageSrc;
+  imageElement.src = imageSrc
 
-  const modal = document.getElementById('list-modal');
-  modal.showModal();
+  const modal = document.getElementById('list-modal')
+  modal.showModal()
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const tabelaMateriais = document.getElementById('tabela-materiais');
-  const inputPesquisa = document.getElementById('input-pesquisa');
+  const tabelaMateriais = document.getElementById('tabela-materiais')
+  const inputPesquisa = document.getElementById('input-pesquisa')
+
+  if (!inputPesquisa) return
 
   inputPesquisa.addEventListener('input', function (event) {
-    const termoPesquisa = event.target.value.toLowerCase();
-    const linhasTabela = tabelaMateriais.getElementsByTagName('tr');
+    const termoPesquisa = event.target.value.toLowerCase()
+    const linhasTabela = tabelaMateriais.getElementsByTagName('tr')
 
-    for (let i = 1; i < linhasTabela.length; i++) { // Inicia a partir do índice 1 para excluir o cabeçalho
-      const colunas = linhasTabela[i].getElementsByTagName('td');
-      let correspondenciaEncontrada = false;
+    for (let i = 1; i < linhasTabela.length; i++) {
+      // Inicia a partir do índice 1 para excluir o cabeçalho
+      const colunas = linhasTabela[i].getElementsByTagName('td')
+      let correspondenciaEncontrada = false
 
       for (let j = 0; j < colunas.length; j++) {
-        const textoColuna = colunas[j].innerText.toLowerCase();
-        const palavrasPesquisa = termoPesquisa.split('*');
+        const textoColuna = colunas[j].innerText.toLowerCase()
+        const palavrasPesquisa = termoPesquisa.split('*')
 
-        let todasPalavrasEncontradas = true;
+        let todasPalavrasEncontradas = true
 
         for (let k = 0; k < palavrasPesquisa.length; k++) {
-          const palavra = palavrasPesquisa[k].trim();
+          const palavra = palavrasPesquisa[k].trim()
 
           if (palavra !== '' && !textoColuna.includes(palavra)) {
-            todasPalavrasEncontradas = false;
-            break;
+            todasPalavrasEncontradas = false
+            break
           }
         }
 
         if (todasPalavrasEncontradas) {
-          correspondenciaEncontrada = true;
-          break;
+          correspondenciaEncontrada = true
+          break
         }
       }
 
       if (correspondenciaEncontrada) {
-        linhasTabela[i].classList.remove('hide-row');
+        linhasTabela[i].classList.remove('hide-row')
       } else {
-        linhasTabela[i].classList.add('hide-row');
+        linhasTabela[i].classList.add('hide-row')
       }
     }
-  });
+  })
 
   ////////////////////////// DESTACAR LINHA AO CLICAR /////////////////////////////
 
@@ -145,24 +151,23 @@ document.addEventListener('DOMContentLoaded', function () {
       // Adiciona a classe 'selected-row' na linha selecionada
       linhaSelecionada.classList.add('selected-row')
     }
-  });
+  })
 
   // Obtém o elemento do botão de fechar
-  var fecharDescricaoBtn = document.getElementById('fechar_descricao');
+  var fecharDescricaoBtn = document.getElementById('fechar_descricao')
 
   // Obtém o elemento do diálogo
-  var dialogModal = document.getElementById('list-modal');
+  var dialogModal = document.getElementById('list-modal')
 
   // Verifica se os elementos foram encontrados corretamente
   if (fecharDescricaoBtn && dialogModal) {
     // Adiciona um evento de clique ao botão de fechar
     fecharDescricaoBtn.addEventListener('click', function () {
       // Fecha o diálogo
-      dialogModal.close();
-    });
+      dialogModal.close()
+    })
   }
-});
-
+})
 
 ///////////////  CADASTRO DE PRODUTOS ////////////////////
 
@@ -176,7 +181,7 @@ function cadastrarProduto() {
   let preco = document.getElementById('preco').value
   let descricao = document.getElementById('descricao').value
   let imagem = document.getElementById('imagem').value
-  let local =  document.getElementById('local').value
+  let local = document.getElementById('local').value
 
   // Validando os campos
   if (
@@ -187,10 +192,8 @@ function cadastrarProduto() {
     preco === '' ||
     descricao === '' ||
     imagem === '' ||
-    local === '' 
-  )
-  
-  {
+    local === ''
+  ) {
     alert('Por favor, preencha todos os campos.')
     return
   }
@@ -204,7 +207,7 @@ function cadastrarProduto() {
     preco: preco,
     descricao: descricao,
     imagem: imagem,
-    local: local,
+    local: local
   }
 
   // Verificando se já existem produtos armazenados em local storage
@@ -243,18 +246,20 @@ function atualizarListaProdutos() {
     produtos = JSON.parse(produtosArmazenados)
   }
 
-  let tabelaBody = document.getElementById('produtos-lista');
+  let tabelaBody = document.getElementById('produtos-lista')
+
+  if (!tabelaBody) return
 
   // Limpa o conteúdo atual da tabela
-  tabelaBody.innerHTML = '';
+  tabelaBody.innerHTML = ''
 
   // Percorre o array de produtos e adiciona cada um na tabela
   produtos.forEach(function (produto) {
-    let novaLinha = document.createElement('tr');
+    let novaLinha = document.createElement('tr')
 
-    novaLinha.onclick = () => toggleModal(novaLinha);
-    novaLinha.setAttribute('data-imagem', produto.imagem);
-    novaLinha.setAttribute('data-description', produto.descricao);
+    novaLinha.onclick = () => toggleModal2(novaLinha)
+    novaLinha.setAttribute('data-imagem', produto.imagem)
+    novaLinha.setAttribute('data-description', produto.descricao)
 
     novaLinha.innerHTML = `
       <td>${produto.nome}</td>
@@ -272,26 +277,26 @@ function atualizarListaProdutos() {
 }
 
 // Chama a função para atualizar a lista de produtos ao carregar a página
-atualizarListaProdutos();
+atualizarListaProdutos()
 
 /////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
 
 document.addEventListener('DOMContentLoaded', function () {
   // Obtém o elemento do botão de fechar
-  var fecharDescricaoBtn = document.getElementById('fechar_descricao');
+  var fecharDescricaoBtn = document.getElementById('fechar_descricao')
 
   // Obtém o elemento do diálogo
-  var dialogModal = document.getElementById('list-modal');
+  var dialogModal = document.getElementById('list-modal')
 
   // Verifica se os elementos foram encontrados corretamente
   if (fecharDescricaoBtn && dialogModal) {
     // Adiciona um evento de clique ao botão de fechar
     fecharDescricaoBtn.addEventListener('click', function () {
       // Fecha o diálogo
-      dialogModal.close();
-    });
+      dialogModal.close()
+    })
   }
-});
+})
 
 ///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
 
@@ -333,22 +338,22 @@ function adicionarCarrinho() {
   window.location.href = 'cart-page.html' // Redireciona para a página do carrinho
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const tabelaCarrinho = document.getElementById('tabela-carrinho')
-  const tbodyCarrinho = tabelaCarrinho.getElementsByTagName('tbody')[0]
+  if (tabelaCarrinho) {
+    const tbodyCarrinho = tabelaCarrinho.getElementsByTagName('tbody')[0]
 
-  // Verifica se existem produtos no carrinho
-  let carrinho = localStorage.getItem('carrinho')
-  if (carrinho) {
-    // Converte o carrinho de JSON para um array de objetos
-    carrinho = JSON.parse(carrinho)
+    // Verifica se existem produtos no carrinho
+    let carrinho = localStorage.getItem('carrinho')
+    if (carrinho) {
+      // Converte o carrinho de JSON para um array de objetos
+      carrinho = JSON.parse(carrinho)
 
-    // Percorre o array de produtos do carrinho e adiciona-os à tabela
-    carrinho.forEach(function (produto) {
-      const novaLinha = document.createElement('tr')
+      // Percorre o array de produtos do carrinho e adiciona-os à tabela
+      carrinho.forEach(function (produto) {
+        const novaLinha = document.createElement('tr')
 
-      novaLinha.innerHTML = `
+        novaLinha.innerHTML = `
         <td>${produto.nome}</td>
         <td>${produto.codigo}</td>
         <td>${produto.quantidade}</td>
@@ -356,61 +361,59 @@ document.addEventListener('DOMContentLoaded', function () {
         <td>${produto.preco}</td>
       `
 
-      tbodyCarrinho.appendChild(novaLinha)
-    })
+        tbodyCarrinho.appendChild(novaLinha)
+      })
+    }
   }
 })
 
 ///////////////////////////////////////////////////////////////////////////////
 
 // Solicitação de reserva
-  
-const botaoReserva = document.getElementById('cadastrar');
-const modal = document.getElementById('modal');
-const closeButton = modal.querySelector('.close');
-function exibirModal() {
-  modal.style.display = 'block';
+
+const botaoReserva = document.getElementById('cadastrar')
+const modal = document.getElementById('modal')
+if (modal) {
+  const closeButton = modal.querySelector('.close')
+  function exibirModal() {
+    modal.style.display = 'block'
+  }
+  function fecharModal() {
+    modal.style.display = 'none'
+  }
+  botaoReserva.addEventListener('click', exibirModal)
+
+  closeButton.addEventListener('click', fecharModal)
 }
+
 function fecharModal() {
-  modal.style.display = 'none';
+  modal.style.display = 'none'
+  window.location.href = 'home.html'
 }
-botaoReserva.addEventListener('click', exibirModal);
-
-closeButton.addEventListener('click', fecharModal);
-
-function fecharModal() {
-  modal.style.display = 'none';
-  window.location.href = 'home.html'; 
-}
-
-
 
 function atualizarTotal() {
   console.log('valor')
-  let total = 0;
-  let carrinho = localStorage.getItem('carrinho');
+  let total = 0
+  let carrinho = localStorage.getItem('carrinho')
   console.log(carrinho)
   if (carrinho) {
-    carrinho = JSON.parse(carrinho);
-    
+    carrinho = JSON.parse(carrinho)
+
     console.log(carrinho)
     carrinho.forEach(function (produto) {
-
-      const stringValor = produto.preco;
-const valorNumerico = parseFloat(stringValor.replace("R$", "").trim());
+      const stringValor = produto.preco
+      const valorNumerico = parseFloat(stringValor.replace('R$', '').trim())
 
       if (produto.preco && !isNaN(valorNumerico)) {
-
-     
-        total += parseFloat(valorNumerico);
+        total += parseFloat(valorNumerico)
       }
-    });
+    })
   }
-  
-  const valorElement = document.querySelector('.valor');
+
+  const valorElement = document.querySelector('.valor')
   if (valorElement) {
-    valorElement.textContent = 'R$ ' + total.toFixed(2);
+    valorElement.textContent = 'R$ ' + total.toFixed(2)
   } else {
-    console.log('O elemento .valor não foi encontrado no HTML.');
+    console.log('O elemento .valor não foi encontrado no HTML.')
   }
 }
