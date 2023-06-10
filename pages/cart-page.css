@@ -12,6 +12,8 @@ body {
   margin-right: 30px;
 }
 
+
+
 .header {  /*cabeçalho*/
   margin: 0px;
   padding: 24px;
@@ -36,11 +38,14 @@ body {
   gap: 12px;
 }
 
-.favorite:hover, .cart:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
+.favorite:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
   transition: transform 0.3s ease; 
   transform: scale(1.2);
 }
-
+.cart:hover{  /* define animação ao passar o mouse em carrinho no cabeçalho*/
+  transition: transform 0.3s ease; 
+  transform: scale(1.2);
+}
 .profile:hover{  /* define animação ao passar o mouse em perfil no cabeçalho*/
   transition: transform 0.3s ease; 
   transform: scale(1.1);
@@ -55,8 +60,8 @@ body {
   cursor: pointer;
 }
 
-.text-header {  /*define o estilo para o texto do cabeçalho, incluindo a cor do texto.*/
-  font-family: arial;
+.text-header {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -69,54 +74,10 @@ body {
  margin:-35px;
 }
 
-.main {  /*define o estilo para o menu lateral, incluindo margens, largura, plano de fundo, altura, sombra e borda.*/
-  margin: 0px 24px;
-  width: 332px;
-  background: linear-gradient(180deg,
-      #00a6cc 0%,
-      rgba(30, 76, 165, 0.81) 89.72%);
-  height: 400px;
-  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-}
-
-.menu {  /*define o estilo para as opções do menu lateral, incluindo preenchimento.*/
-  padding: 4rem 24px;
-}
-
-.list {  /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 6rem;
-  font-family: Arial;
-  font-weight: 500;
-  color: white;
-  font-size: 17px;
-}
-
-.options:hover {  /*opções da lista do  menu ao passar mouse*/
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.logout {  /*define o estilo para o texto de logout, incluindo exibição flexível, alinhamento vertical e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  color: white;
-}
-
-.logo {  /*define o estilo para o logotipo, incluindo exibição flexível e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
 .img-menu {  /*define o estilo para a imagem do ÍCONE DO menu lateral*/
-  width: 3%;
-  margin-top: 0px;
-  margin-left:-5px;
+  width: 2.5%;
+  margin-top: 5px;
+  margin-left:5px;
 }
 
 .img-menu:hover {  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
@@ -126,46 +87,46 @@ body {
   transform: scale(1.1);
 }
 
-.logo-menu {  /*define o estilo para o logotipo do menu, incluindo exibição flexível e espaçamento entre itens.*/
+.logo {  /*define o estilo para o logotipo, incluindo exibição flexível e espaçamento entre itens.*/
   display: flex;
   align-items: center;
-  gap: 7rem;
+  gap: 40px;
 }
 
-.content {  /* define o estilo para o conteúdo principal, incluindo plano de fundo, sombra e borda.*/
-  background: red;
-  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+.backgroud{
+box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+margin: 1% 10px;
+height:100vh;
+}
+
+.header-cart{
+width:100%;
+height:60px;
+background: linear-gradient( 180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72% );
+display:flex;
+align-items: center;
+    justify-content: space-around;
+
+    
+
+}
+
+.meu-carrinho{
+  color:white;
+  font-weight:500;
+  
+}
+
+button{
+  width:auto;
+  height: 30px;
+  background: transparent;
+  border: 2px solid white;
   border-radius: 6px;
-}
+  font-size: 12px;
+  font-weight: 600;
+  color:white;
 
-.main-content {  /*define o estilo para o conteúdo principal, incluindo margens e exibição em grade.*/
-  margin: 10px 0px 0px 10px;
-  display: grid;
-}
-
-.title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
-  color: #1E4CA5;
-  margin-top: auto;
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.full-width {  /*define o estilo para elementos com largura total, incluindo exibição flexível.*/
-  display: flex;
-  margin-right:10px;
-}
-
-#input-pesquisa {  /*define o estilo para a área de pesquisa por materiais */
-  border-radius: 6px;
-  border: none;
-  height: 43px;
-  flex: 1;
-  margin-bottom: 27px;
-  background: url("../img/search.png") no-repeat right;
-  padding-right: 50px;
-  background-size: 16px;
-  background-position: right 20px top 15px;
-  background-color: #FFF;
 }
 
 table {  /*define o estilo para uma tabela, incluindo flexibilidade, sombra e borda arredondada.*/
@@ -217,96 +178,31 @@ td img:hover { /* Imagem favoritos da coluna ação*/
  transform: scale(1.3);
 }
 
-h3 {  /* define o estilo para os títulos de nível 3, incluindo margem, cor do texto e exibição flexível centralizada.*/
-  margin: 8px auto;
+
+.title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
   color: #1E4CA5;
-  display: flex;
-  justify-content: center;
+  margin-top: auto;
+  display: inline-block;
+  margin-left: 20px;
 }
-
-.full-width th,
-.full-width td {/*define o estilo para as células de cabeçalho e células da tabela em largura total, incluindo um cursor de ponteiro ao passar o mouse.*/
-  cursor:default;
+button:hover{
+  transition: transform 0.3s ease; 
+  transform: scale(1.1);
+  background-color: #3679f7;
 }
-
-
-tr.selected-row td {
-  background-color: rgba(5, 133, 238, 0.308); /* cor para a linha destacada */
-}
-
-.hide-row {  /*define o estilo para ocultar uma linha, definindo a propriedade "visibility" como "collapse".*/
-  visibility: collapse;
-}
-
-
-dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  width: 60%;
-  height: 90%;
-  background-color: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #b5b4b6;
-  align-items: center;
-  justify-content: center;
-}
-
-#closed_dialog { /* Define a posição do botão de fechar diálogo*/
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#fechar_descricao{
-  color: #020202;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#fechar_descricao:hover{
-  background-color: red;
-
-
-}
-#product-img { /*interface da imagem do material*/
-  width: 40%;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin: auto;
-}
-
-.cart-add { /*botão de adicionar ao carrinho*/
-  margin-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: #466CB4;
-  cursor: pointer;
-  background-color: #F5F5F5;
-  width: 15%;
-  height: 6%;
-  border: 2px solid #476CB4;
-  border-radius: 30px;
-}
-
-.cart-add:hover{ /* REAÇÃO DO BOTÃO DO CARRINHO */
-  background-color: rgb(1, 26, 248);
-  color:antiquewhite;
-}
-
 
 /*///////////////////// RESPONSIVIDADE PARA MOBILE ////////////////////////////////*/
 
 
 @media only screen and (max-width: 768px) {
   body {
-    width: auto;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
 
   .header {
-    padding: 12px;
+    padding: 0px;
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -328,7 +224,6 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
     justify-content: center;
     gap: 6px;
     margin-left: 33%;
-  
   }
 
   .img {
@@ -354,8 +249,7 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
 
   .img-menu {
     width: 5%;
-    margin-top: -4px;
-    margin-left: -2px;
+margin-right: 10px;
   }
 
   .content {
@@ -373,13 +267,15 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
 
   .title h2 {
     margin-top: auto;
-    display: block;
     margin-left: 0;
-    text-align: center;
+  flex-direction: row;
+  font-size: 90%;
   }
 
   table {
-    width: 100%;
+ width: 15%;
+ height: 10%;
+
   }
 
   #input-pesquisa {
@@ -397,6 +293,10 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
   dialog {
     width: 90%;
     height: 80%;
+  }
+
+  button{
+    width: 20%;
   }
 }
 

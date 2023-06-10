@@ -37,11 +37,7 @@ body {
   gap: 12px;
 }
 
-.favorite:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
-  transition: transform 0.3s ease; 
-  transform: scale(1.2);
-}
-.cart:hover{  /* define animação ao passar o mouse em carrinho no cabeçalho*/
+.favorite:hover, .cart:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
   transition: transform 0.3s ease; 
   transform: scale(1.2);
 }
@@ -99,8 +95,19 @@ body {
   padding-top: 20px;
   padding-bottom:20px;
   background-color: white;
+  height: 500px;
+  padding-left: 33px;
   border-radius: 9px;
   box-shadow: 0px 2px 10px rgba(76, 78, 100, 0.22);
+  margin-bottom: 11rem;
+
+}
+
+.label-tipos {
+  display: inline-block;
+  width: 100px; /* Ajuste a largura conforme necessário */
+  vertical-align: middle;
+  margin-right: 10px; /* Ajuste a margem conforme necessário */
 }
 
 .register {
@@ -132,8 +139,7 @@ border-radius: 4px;
 }
 
 .button {
-  margin-left: 224px !important; /* Ajuste o valor conforme necessário */
-  margin-top:25px;
+  margin-left: 224px !important; 
   border: 2px solid #4271B5;
 border-radius: 25px;
 background:transparent;
@@ -163,10 +169,9 @@ color:antiquewhite;
 .title h2 {
   /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
   color: #1E4CA5;
-  display: flex;
-  flex-direction: row;
-  margin-left: 60px;
-  margin-top: -20px;
+margin-top: -30px;
+ display: flex;
+  margin-left: 85px;
 
 
 }

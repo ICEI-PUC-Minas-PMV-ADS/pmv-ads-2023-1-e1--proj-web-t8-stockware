@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,15 +11,18 @@
   <style>
     /* Estilos para o nome de usuário */
     .username {
-      font-family: Calibri, 'Trebuchet MS', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: white;
+      font-size:14px;
+      
     }
   </style>
-
 
 </head>
 
 <body>
+
+
   <div class="header">
     <div class="logo-menu">
       <div class="logo">
@@ -27,7 +30,6 @@
         <span onclick="navigateToHome()" class="text-stock">tockWare</span>
       </div>
 
-      <img class="img-menu" src="../img/menu.png" alt="" />
     </div>
     <div class="actions">
       <div class="favorite">
@@ -45,7 +47,10 @@
           var username = urlParams.get('username');
   
           // Exibe o nome de usuário no perfil
-          document.write("<span class='username'>" + username + "</span>");
+          let nome = localStorage.getItem('username', username)
+          document.write("<span class='username'>" + nome + "</span>");
+
+         // carrega a biblioteca Bootstrap em sua versão//
         </script>
   
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -54,20 +59,37 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
           </script>
-      </div>
     </div>
   </div>
+</div>
   <div class="main-content">
     <div class="main">
       <div class="menu">
         <div class="list">
-          <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
-          <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+
+          <div class="icon_list options" onclick="navigateToListPage()">
+            <img src="../img/icon_list.png" alt="">
+          <span>Lista de Materiais</span>
+          </div>
+
+          <div class="icon_list options" onclick="navigateToDevolutionPage()">
+            <img src="../img/icon_devolution.png" alt="">
+          <span> Devolução</span>
+        </div>
+
+          <div class="icon_list options">
+            <img src="../img/icon_reserva.png" alt="">
           <span class="options">Gerenciamento de Reserva</span>
-          <span onclick="navigateToProductRegistration()" class="options">Cadastro de Produtos</span>
+        </div>
+
+          <div class="icon_list options" onclick="navigateToProductRegistration()">
+            <img src="../img/icon_registration.png" alt="">
+          <span>Cadastro de Produtos</span>
+        </div>
+
 
         </div>
-        <div onclick="logout()" class="logout options">
+        <div onclick="logout()" class="logout options options">
           <img class="img-logout" src="../img/logout.png" alt="logout.png" />
           <span class="options">Sair</span>
         </div>

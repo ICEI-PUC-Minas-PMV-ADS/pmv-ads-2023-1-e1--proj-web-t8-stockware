@@ -26,7 +26,7 @@ body {
   border-radius: 0px;
 }
 
-.user {
+.profile {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -100,14 +100,15 @@ body {
   font-size: 17px;
   list-style-type: none;
   padding: 0px;
+
 }
 
-.icon_list img { /* Adiciona uma transição suave aos icones da lista */
+.options img { /* Adiciona uma transição suave aos icones da lista */
   transition: transform 0.3s ease; 
   margin-right: 10px;
 }
 
-.icon_list:hover img { /* Aplica o zoom na imagem da lista ao passar o mouse */
+.options:hover img { /* Aplica o zoom na imagem da lista ao passar o mouse */
   transform: scale(1.1); 
 }
 
