@@ -2,7 +2,7 @@
 
  O design do layout a ser utilizado no sistema, segue  a disposição proposta pela figura 4, como apresentado anteriormente no projeto de interface.
 
-<img src="../img/templatesw.png"/>
+ (img/templatesw.png)
 
 Tela de login, permite ao usuário acessar o sistema ao preencher os campos solicitados. Requisitos funcionais atendidos: RF-01
 
