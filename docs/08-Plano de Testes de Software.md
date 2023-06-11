@@ -36,3 +36,9 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho. 5) Finalize uma requisição de materiais|
 |Critérios de Êxito|O site deve responder rapidamente após realizar solicitação de um material, informando se o pedido ja foi criado|
 
+|Caso de teste | CT-05 – Adicionar item aos Favoritos |
+|-------|-------------------------|
+|Requisitos Associados| RF-10 – O Site deve fornecer um mecanismo que permita que o usuário favorite um item em específico, podendo ter acesso a uma lista dos favoritos salvos. | 
+|Objetivo do Teste|Verificar se é possível adicionar o item à lista de favoritos| 
+|Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse a lista de materiais. 5) Escolha um item e clique no ícone de adicionar aos favoritos. 6) Vá até a página de favoritos e certifique que o item favoritado está constando.  |
+|Critérios de Êxito|O site deve favoritar o item rapidamente após realizar a requisição, informando se o item foi adionado aos favoritos|
