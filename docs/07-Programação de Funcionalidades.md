@@ -11,21 +11,21 @@ A tela de cadastro de materiais permite ao administrador cadastrar um determinad
 
 ![Exemplo de Wireframe](img/tela_cadastro_materiais.png)
 
-**Requisitos atendidos:**
+## Requisitos atendidos:
 
 RF-02 
 
 
-**Artefatos da funcionalidade:**
+## Artefatos da funcionalidade:
 
 ●	Produtc-registration.html
 ●	script.js
 ●	Produtc-registration.css
 
 
-**Estrutura de Dados:**
+## Estrutura de Dados:
 
-**Instruções de acesso:**
+## Instruções de acesso:
 
 1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub através do link: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware;
 
