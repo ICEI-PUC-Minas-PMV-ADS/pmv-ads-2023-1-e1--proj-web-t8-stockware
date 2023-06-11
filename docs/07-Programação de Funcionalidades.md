@@ -5,25 +5,25 @@
 
 Serão apresentadas a seguir as telas referentes aos requisitos funcionais atendidos, suas respectivas URLs e outras orientações de acesso.
 
-**Cadastro de materiais (RF-02)**:
+# Cadastro de materiais (RF-02):
 
 A tela de cadastro de materiais permite ao administrador cadastrar um determinado material no sistema.
 
 ![Exemplo de Wireframe](img/tela_cadastro_materiais.png)
 
-Requisitos atendidos:
+**Requisitos atendidos:**
 ●	RF-02 
 
 
-Artefatos da funcionalidade
+**Artefatos da funcionalidade:**
 ●	Produtc-registration.html
 ●	script.js
 ●	Produtc-registration.css
 
 
-Estrutura de Dados
+**Estrutura de Dados**
 
-Instruções de acesso
+**Instruções de acesso**
 
 1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub através do link: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware;
 
@@ -46,17 +46,17 @@ Instruções de acesso
 
 
 
-**Lista de materiais (RF-07)**
+# Lista de materiais (RF-07)
 
 A tela lista de materiais apresenta todos os materiais cadastrados e suas respectivas informações.
 
 ![Exemplo de Wireframe](img/tela_lista_materiais.png)
 
-Requisitos atendidos
+**Requisitos atendidos**
 ●	RF-07
 
 
-Artefatos da funcionalidade
+**Artefatos da funcionalidade**
 ●	list.html
 ●	script.js
 ●	list.css
@@ -73,26 +73,26 @@ Instruções de acesso
 
 
 
-**Carrinho (RF-08)**
+# Carrinho (RF-08)
 Na tela carrinho serão apresentados todos os materiais que o usuário deseja requisitar, após conferir os materiais desejados, o mesmo poderá finalizar o pedido.
 
 ![Exemplo de Wireframe](img/tela_carrinho.png)
 
 
-Requisitos atendidos
+**Requisitos atendidos**
 ●	RF-08
 
 
-Artefatos da funcionalidade
+**Artefatos da funcionalidade**
 ●	Cart-page.html
 ●	script.js
 ●	Cart-page.css
 
 
-Estrutura de Dados
+**Estrutura de Dados**
 
 
-Instruções de acesso
+**Instruções de acesso**
 
 1.	Através de qualquer tela, acesse o cabeçalho e clique no ícone de “carrinho”;
 
@@ -101,25 +101,25 @@ Instruções de acesso
 
 
 
-**Mensagem de status (requisição de material) (RF-09)**
+# Mensagem de status (requisição de material) (RF-09)
 
 Após finalizar um pedido de requisição através do “carrinho”, será apresentado um código referente ao número de pedido. 
 
 ![Exemplo de Wireframe](img/tela_msg_status.png)
 
-Requisitos atendidos
+**Requisitos atendidos**
 ●	RF-08
 
 
-Artefatos da funcionalidade
+**Artefatos da funcionalidade**
 ●	Cart-page.html
 ●	script.js
 ●	Cart-page.css
 
 
-Estrutura de Dados
+**Estrutura de Dados**
 
-Instruções de acesso
+**Instruções de acesso**
 
 1.	A mensagem de status será apresentada sempre que finalizar um pedido de requisição.
 
