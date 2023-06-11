@@ -5,12 +5,13 @@
 
 Serão apresentadas a seguir as telas referentes aos requisitos funcionais atendidos, suas respectivas URLs e outras orientações de acesso.
 
-**Cadastro de materiais (RF-02)**
+**Cadastro de materiais (RF-02)**:
+
 A tela de cadastro de materiais permite ao administrador cadastrar um determinado material no sistema.
 
 ![Exemplo de Wireframe](img/tela_cadastro_materiais.png)
 
-Requisitos atendidos
+Requisitos atendidos:
 ●	RF-02 
 
 
