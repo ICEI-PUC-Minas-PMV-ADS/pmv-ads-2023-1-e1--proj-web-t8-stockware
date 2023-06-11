@@ -103,18 +103,24 @@
     </div>
 
     <dialog id="list-modal">
-      
-      <h3>Descrição Do Material</h3>
-
+      <header class="modal-header">
+        <h3 class="text-modal">Descrição Do Material</h3>
+      </header>                          
       <div id="closed_dialog">
         <button id="fechar_descricao">X</button>
       </div>
- 
-      <p id="description"></p>
-      <img id="product-img" />
+      <body class="product-info">
+        <h5>
+        <p id="description"></p></h5>
+        <div class="img-description">
+        <img id="product-img" />
+      </div>
+      </body>
+      <footer>
       <div class="cart-add">
-        <footer >Adicionar ao Carrinho
-        </footer>
+        <p>Adicionar ao Carrinho</p>
+      </footer>
+        
       </div>
     </dialog>
 
