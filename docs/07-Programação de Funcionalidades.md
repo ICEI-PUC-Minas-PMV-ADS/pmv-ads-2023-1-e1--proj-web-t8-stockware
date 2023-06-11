@@ -52,7 +52,7 @@ RF-02
 
 A tela lista de materiais apresenta todos os materiais cadastrados e suas respectivas informações.
 
-![Exemplo de Wireframe](img/tela_lista_materiais.png)
+![Exemplo de Wireframe](img/telalista.PNG)
 
 ## Requisitos atendidos:
 ●	RF-07
