@@ -8,7 +8,7 @@ Nesta seção, encontram-se as visualizações criadas para cada uma das funcion
 
 Requisitos funcionais atendidos: RF-01
 
-<img src="../img/telaloginsw.png"/>
+![Exemplo de Wireframe](img/telaloginsw.PNG)
 
 Disponível através da seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/index.html
 
@@ -18,7 +18,7 @@ Disponível através da seguinte URL: https://icei-puc-minas-pmv-ads.github.io/p
 
 Requisitos funcionais atendidos: RF-10
 
-<img src="../img/telahome.png"/>
+![Exemplo de Wireframe](img/telahome.PNG)
 
 Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/home.html
 
@@ -28,7 +28,7 @@ Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pm
 
 Requisitos funcionais atendidos: RF-06
 
-<img src="../img/telalista.png"/>
+![Exemplo de Wireframe](img/telalista.PNG)
 
 Disponível através da seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/pages/list.html
 
