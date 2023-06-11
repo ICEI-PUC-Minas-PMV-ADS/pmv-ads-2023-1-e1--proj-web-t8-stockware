@@ -43,6 +43,12 @@ Funcionalidade de pesquisar por um determinado produto utilizando palavras chave
 
 Funcionalidade de adicionar material ao carrinho dentro do campo de descrição do material.
 
+**Falhas encontradas:**
+Botão de adicionar ao carrinho fora de posição dependendo do tamanho da imagem.
+
+**Solução:**
+Corrigir a responsividade da tela de descrição de materiais.
+
 ![Exemplo de Wireframe](img/rts06.png)
 
 
@@ -57,6 +63,16 @@ Notificação ao adicionar material ao carrinho.
 
 Material sendo transferido para tela de carrinho.
 
+**Falhas encontradas:**
+1 - Somatório total dos produtos não corresponde ao total de produtos selecionados no carrinho.
+
+2 - Não permite ao usuário escolher a quantidade de materiais desejados.
+
+**Solução:**
+1 - Corrigir lógica de cálculo referente a quantidade de produtos adicionados ao carrinho.
+
+2 - Implementar opção de escolha da quantidade de podutos desejados pelo usuário.
+
 ![Exemplo de Wireframe](img/rts08.png)
 
 
@@ -64,6 +80,11 @@ Material sendo transferido para tela de carrinho.
 
 Notificação após o usuário finalizar pedido de requisição de materiais.
 
+**Pontos fracos:**
+Não está sendo apresentado um número aleatório para que o admin possa aprovar a reserva solicitada.
+
+**Solução:**
+ Implementar gerador de números aleatórios contendo 6 números usando javascript.
 ![Exemplo de Wireframe](img/rts09.png)
 
 
