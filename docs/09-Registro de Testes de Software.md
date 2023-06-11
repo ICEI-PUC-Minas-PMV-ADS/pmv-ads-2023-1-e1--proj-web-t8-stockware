@@ -93,6 +93,11 @@ Não está sendo apresentado um número aleatório para que o admin possa aprova
 
 ## Avaliação
 
-Durantes os testes, identificamos funcionalidades bem sucedidas, porém também identificamos falhas, equipe se apresenta comprometida a a atacar esses pontos fracos identificados, e após a implementação dessas melhorias, apresentar um sistema estável e confiavel, com uma experiência de usuário aprimorada. 
+Durante os testes, identificamos funcionalidades bem-sucedidas. No entanto, também foram identificadas falhas. A equipe se apresenta comprometida em atacar esses pontos fracos identificados e, após a implementação dessas melhorias, visamos apresentar um sistema estável e confiável, proporcionando uma experiência de usuário aprimorada.
+
+
+
+
+
 
 
