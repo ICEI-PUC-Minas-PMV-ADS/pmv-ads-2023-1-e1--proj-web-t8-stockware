@@ -14,8 +14,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Passos| 1) Acessar o Navegador
 2) Informar o endereço do Site
 3) Realizar login como administrador
-4) Acessar a página de “cadastro de materiais”.
- |
+4) Acessar a página de “cadastro de materiais”.|
 |Critérios de Êxito|Se um campo obrigatório não for preenchido, deve exibir uma mensagem de erro. |
 
  
