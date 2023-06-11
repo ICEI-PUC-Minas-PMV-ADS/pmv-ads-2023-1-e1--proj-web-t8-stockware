@@ -3,7 +3,7 @@
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
 
 
-PJ CONSULTORIA. Como fazer o controle de estoque da sua empresa ?. Belo Horizonte/MG: Caktus. 2023. Disponível em:  (https://pjufmg.com.br/como-fazer-o- controle-de-estoque-da-sua- empresa/?utm_source=Google+Grants&utm_medium=Search&utm_campaign=%5B 001%5D+Controle+de+Estoque&utm_id=045&gclid=CjwKCAjw_YShBhAiEiwAMoms EK6Aek9if9X7u9MnQviotHbyg8pUENOigAM51JTPqjKknpaIMGNuRhoCuMwQAvD_B wE). 
+PJ CONSULTORIA. Como fazer o controle de estoque da sua empresa ?. Belo Horizonte/MG: Caktus. 2023. Disponível em:  (https://pjufmg.com.br/como-fazer-o-controle-de-estoque-da-sua-empresa/?utm_source=Google+Grants&utm_medium=Search&utm_campaign=%5B001%5D+Controle+de+Estoque&utm_id=045&gclid=CjwKCAjw_YShBhAiEiwAMomsEK6Aek9if9X7u9MnQviotHbyg8pUENOigAM51JTPqjKknpaIMGNuRhoCuMwQAvD_B wE). 
 Acesso em 17 de março de 2023.
 
 
