@@ -22,6 +22,22 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Critérios de Êxito|Critérios de Êxito	Após adicionar um material aos favoritos, o site deve exibir uma confirmação visual de que o material foi adicionado com sucesso à lista de favoritos. Ao adicionar um material ao carrinho, o ícone do carrinho no cabeçalho deve apresentar a quantidade de produtos selecionados. Essa quantidade deve ser atualizada dinamicamente conforme novos produtos são adicionados ou removidos do carrinho.|
 
 
+|Caso de teste  | CT-03 – Carrinho  |
+|-------|-------------------------|
+|Requisitos Associados| RF-08 O site deve fornecer uma interface na tela de carrinho que permita ao usuário selecionar os materiais desejados para requisição, oferecendo opções de marcação para cada material | 
+|Objetivo do Teste|1) Verificar se a opção de remover material da lista do carrinho está funcionando corretamente; 2) Verificar se após requisição os materiais vão sair do carrinho;| 
+|Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho|
+|Critérios de Êxito|Após selecionar a opção de remoção correspondente a um material na tela de carrinho, o material deve ser removido imediatamente da lista de requisição. Ao remover um material da lista de requisição na tela de carrinho, o site deve exibir uma confirmação visual ou uma mensagem de sucesso, indicando que o material foi removido com êxito da lista. |
+
+|Caso de teste  | CT-04 – Mensagem de status (requisição de material)  |
+|-------|-------------------------|
+|Requisitos Associados| RF-09 – O código gerado poderá ser aprovado ou não por um administrador. | 
+|Objetivo do Teste|Verificar se o código apresentado está sendo gerado de forma aleatória e com pelo menos 6 dígitos| 
+|Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho. 5) Finalize uma requisição de materiais
+|
+|Critérios de Êxito|Após um administrador aprovar o código gerado para um material, o sistema deve permitir a retirada do material correspondente do estoque. Ao aprovar o código gerado para um material, o sistema deve registrar a aprovação de forma adequada, indicando que o material está pronto para ser retirado do estoque.|
+
+
 ## Ferramentas de Testes (Opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
