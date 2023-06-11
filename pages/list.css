@@ -281,16 +281,61 @@ tr.selected-row td {
 }
 
 
-dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
+dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/  
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px;
   width: 60%;
-  height: 90%;
-  background-color: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #b5b4b6;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(184, 184, 184, 0.81) 89.72%);
+  
+  }
+.modal-header {
+  margin-top: -26px;
+  margin-left: -50px;
+  margin-right: -20px;
+  background: linear-gradient(180deg,
+      #00a6cc 0%,
+      rgba(15, 32, 65, 0.81) 89.72%);
+  height: 50px;
+  box-shadow: 0px 100px 50px 50px rgba(0, 0, 0, 0.25);
+  
 }
+.text-modal{
+  padding-top: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  background-color: #020202;
+}
+.product-info {
+  font-family: serif red;
+  font-size: 20px;
+}
+.img-description { /*interface da imagem do material*/
+  text-align: center;
+  position: relative;
+  width: auto;
+  padding-top: 50px;  
+  width: 40%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+#product-img { 
+  position: absolute;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+
 
 #closed_dialog { /* Define a posição do botão de fechar diálogo*/
   position: absolute;
@@ -309,30 +354,33 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
 
 
 }
-#product-img { /*interface da imagem do material*/
-  width: 40%;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin: auto;
-}
+
 
 .cart-add { /*botão de adicionar ao carrinho*/
-  margin-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  left: 40%;
+  top: 550px;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 5px;
+  text-align: left;
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
   text-align: center;
-  color: #466CB4;
+  color: #ffffff;
   cursor: pointer;
-  background-color: #F5F5F5;
+  background-color: #000000;
   width: 15%;
-  height: 6%;
-  border: 2px solid #476CB4;
-  border-radius: 30px;
+  height: 8%;
+  border: 1px solid #476CB4;
+  border-radius: 10px;
+  
 }
 
 .cart-add:hover{ /* REAÇÃO DO BOTÃO DO CARRINHO */
-  background-color: rgb(1, 26, 248);
+  background-color: rgb(0, 255, 34);
   color:antiquewhite;
 }
 
