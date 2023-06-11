@@ -20,9 +20,9 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Objetivo do Teste| 1- Verificar se o campo de pesquisar por materiais está filtrando corretamente todos os materiais associados as palavras chaves digitadas; 2- Verificar se os materiais que foram definidos como favoritos foram registrados na tela favoritos; 3-	Verificar se os materiais que foram adicionados ao carrinho estão sendo apresentado correntemente no carrinho.| 
 |Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Visualizar a página principal. 4) Clicar no menu lateral esquerdo. 5) Acessar a opção de “lista de materiais”
 |
-|Critérios de Êxito|Critérios de Êxito	Após adicionar um material aos favoritos, o site deve exibir uma confirmação visual de que o material foi adicionado com sucesso à lista de favoritos.
-Ao adicionar um material ao carrinho, o ícone do carrinho no cabeçalho deve apresentar a quantidade de produtos selecionados. Essa quantidade deve ser atualizada dinamicamente conforme novos produtos são adicionados ou removidos do carrinho.
- |
+|Critérios de Êxito|Critérios de Êxito	Após adicionar um material aos favoritos, o site deve exibir uma confirmação visual de que o material foi adicionado com sucesso à lista de favoritos. Ao adicionar um material ao carrinho, o ícone do carrinho no cabeçalho deve apresentar a quantidade de produtos selecionados. Essa quantidade deve ser atualizada dinamicamente conforme novos produtos são adicionados ou removidos do carrinho.|
+
+
 ## Ferramentas de Testes (Opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
