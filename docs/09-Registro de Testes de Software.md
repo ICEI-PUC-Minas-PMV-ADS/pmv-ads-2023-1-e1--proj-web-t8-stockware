@@ -93,5 +93,6 @@ Não está sendo apresentado um número aleatório para que o admin possa aprova
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Durantes os testes, identificamos funcionalidades bem sucedidas, porém também identificamos falhas, equipe se apresenta comprometida a a atacar esses pontos fracos identificados, e após a implementação dessas melhorias, apresentar um sistema estável e confiavel, com uma experiência de usuário aprimorada. 
+
 
