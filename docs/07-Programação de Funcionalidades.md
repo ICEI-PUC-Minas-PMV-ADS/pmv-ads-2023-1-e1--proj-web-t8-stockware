@@ -54,19 +54,19 @@ A tela lista de materiais apresenta todos os materiais cadastrados e suas respec
 
 ![Exemplo de Wireframe](img/tela_lista_materiais.png)
 
-**Requisitos atendidos:**
+## Requisitos atendidos:
 ●	RF-07
 
 
-**Artefatos da funcionalidade:**
+## Artefatos da funcionalidade:
 ●	list.html
 ●	script.js
 ●	list.css
 
 
-Estrutura de Dados:
+## Estrutura de Dados:
 
-Instruções de acesso:
+## Instruções de acesso:
 
 1.	Após realizar o login com a conta de usuário ou administrador, acesse o menu lateral esquerdo;
 
@@ -81,20 +81,20 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 ![Exemplo de Wireframe](img/tela_carrinho.png)
 
 
-**Requisitos atendidos:**
+## Requisitos atendidos:
 ●	RF-08
 
 
-**Artefatos da funcionalidade:**
+## Artefatos da funcionalidade:
 ●	Cart-page.html
 ●	script.js
 ●	Cart-page.css
 
 
-**Estrutura de Dados:**
+## Estrutura de Dados:
 
 
-**Instruções de acesso:**
+## Instruções de acesso:
 
 1.	Através de qualquer tela, acesse o cabeçalho e clique no ícone de “carrinho”;
 
@@ -109,19 +109,19 @@ Após finalizar um pedido de requisição através do “carrinho”, será apre
 
 ![Exemplo de Wireframe](img/tela_msg_status.png)
 
-**Requisitos atendidos:**
+## Requisitos atendidos:
 ●	RF-08
 
 
-**Artefatos da funcionalidade:**
+## Artefatos da funcionalidade:
 ●	Cart-page.html
 ●	script.js
 ●	Cart-page.css
 
 
-**Estrutura de Dados:**
+## Estrutura de Dados:
 
-**Instruções de acesso:**
+## Instruções de acesso:
 
 1.	A mensagem de status será apresentada sempre que finalizar um pedido de requisição.
 
