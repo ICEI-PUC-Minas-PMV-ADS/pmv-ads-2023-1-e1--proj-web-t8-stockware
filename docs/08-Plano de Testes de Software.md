@@ -27,7 +27,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Requisitos Associados| RF-08 O site deve fornecer uma interface na tela de carrinho que permita ao usuário selecionar os materiais desejados para requisição | 
 |Objetivo do Teste|1) Verificar se após requisição os materiais vão sair do carrinho;| 
 |Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho|
-|Critérios de Êxito| O site deve informar o somatório em R$ dos produtos no carrinho |
+|Critérios de Êxito| O site deve informar o somatório em R$ (reais) dos produtos no carrinho |
 
 |Caso de teste  | CT-04 – Mensagem de status (requisição de material) |
 |-------|-------------------------|
