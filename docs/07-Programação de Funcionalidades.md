@@ -107,7 +107,7 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 
 Após finalizar um pedido de requisição através do “carrinho”, será apresentado um código referente ao número de pedido. 
 
-![Exemplo de Wireframe](img/status_req.png)
+![Exemplo de Wireframe](img/status_req.PNG)
 
 ## Requisitos atendidos:
 ●	RF-08
