@@ -23,7 +23,6 @@ RF-02
 ●	Produtc-registration.css
 
 
-## Estrutura de Dados:
 
 ## Instruções de acesso:
 
@@ -64,7 +63,6 @@ A tela lista de materiais apresenta todos os materiais cadastrados e suas respec
 ●	list.css
 
 
-## Estrutura de Dados:
 
 ## Instruções de acesso:
 
@@ -91,8 +89,6 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 ●	Cart-page.css
 
 
-## Estrutura de Dados:
-
 
 ## Instruções de acesso:
 
@@ -118,8 +114,6 @@ Após finalizar um pedido de requisição através do “carrinho”, será apre
 ●	script.js
 ●	Cart-page.css
 
-
-## Estrutura de Dados:
 
 ## Instruções de acesso:
 
