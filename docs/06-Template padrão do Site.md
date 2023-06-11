@@ -9,9 +9,9 @@ Tela de login, permite ao usuário acessar o sistema ao preencher os campos soli
 ![Exemplo de Wireframe](img/telaloginsw.PNG)
 
 Tela de home, permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10
-![Exemplo de Wireframe](img/telahome.png)
+![Exemplo de Wireframe](img/telahome.PNG)
 
 Tela lista de materiais, permite ao usuário localizar o material desejado, bem como outras funcionalidades descritas na seção lista de materiais descritas anteriormente no projeto de interface. Requisitos funcionais atendidos: RF-06
 
-![Exemplo de Wireframe](img/telalista.png)
+![Exemplo de Wireframe](img/telalista.PNG)
 
