@@ -12,13 +12,13 @@ A tela de cadastro de materiais permite ao administrador cadastrar um determinad
 ![Exemplo de Wireframe](img/tela_cadastro_materiais.png)
 
 **Requisitos atendidos:**
-●	RF-02 
+RF-02 
 
 
 **Artefatos da funcionalidade:**
-●	Produtc-registration.html
-●	script.js
-●	Produtc-registration.css
+Produtc-registration.html
+script.js
+Produtc-registration.css
 
 
 **Estrutura de Dados:**
