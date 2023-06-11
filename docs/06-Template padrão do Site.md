@@ -6,7 +6,7 @@
 
 Tela de login, permite ao usuário acessar o sistema ao preencher os campos solicitados. Requisitos funcionais atendidos: RF-01
 
-![Exemplo de Wireframe](img/telaloginsw.png)
+![Exemplo de Wireframe](img/telaloginsw.PNG)
 
 Tela de home, permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10
 ![Exemplo de Wireframe](img/telahome.png)
