@@ -33,7 +33,6 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |-------|-------------------------|
 |Requisitos Associados| RF-09 – O Site deve apresentar uma mesnagm de status após finalizar pedido. | 
 |Objetivo do Teste|Verificar se a mensagem está sendo apresentado corretamente| 
-|Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho. 5) Finalize uma requisição de materiais
-|
+|Passos|1) Acessar o Navegador. 2) Informar o endereço do Site. 3) Através de qualquer tela. 4) Acesse o ícone de carrinho disponível no cabeçalho. 5) Finalize uma requisição de materiais|
 |Critérios de Êxito|O site deve responder rapidamente após realizar solicitação de um material, informando se o pedido ja foi criado|
 
