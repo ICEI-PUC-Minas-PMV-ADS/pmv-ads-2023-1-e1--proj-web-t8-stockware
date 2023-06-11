@@ -417,3 +417,31 @@ function atualizarTotal() {
     console.log('O elemento .valor não foi encontrado no HTML.')
   }
 }
+
+
+function atualizarCarrinho() {
+  const carrinho = localStorage.getItem('carrinho');
+  const tbody = document.querySelector('#tabela-carrinho tbody');
+  
+  // Limpar a tabela do carrinho
+  tbody.innerHTML = '';
+  
+  if (carrinho) {
+    const produtos = JSON.parse(carrinho);
+    
+    produtos.forEach((produto) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${produto.nome}</td>
+        <td>${produto.codigo}</td>
+        <td>${produto.qtd}</td>
+        <td>${produto.tipo}</td>
+        <td>${produto.preco}</td>
+        <td>
+          <button class="remover" data-codigo="${produto.codigo}">Remover</button>
+        </td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+}
