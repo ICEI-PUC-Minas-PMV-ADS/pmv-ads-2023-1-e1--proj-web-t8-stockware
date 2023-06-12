@@ -121,6 +121,7 @@ body {
   .main {
     min-width: 261.75px;
     width: 20%;
+    margin-top:0%;
   }
 }
 
