@@ -514,7 +514,7 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
     width: 20%;
     height: 100%;
     transition: .5s;
-    margin-top: -75px;
+    //margin-top: -75px;
   }
 
   .content {
