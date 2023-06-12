@@ -222,6 +222,7 @@ tr {  /*define o estilo para as linhas da tabela, incluindo alinhamento central,
   text-align: center;
   border-bottom: 1px solid #E1CFFF;
   background-color: #fff;
+  
 }
 
 th {  /*define o estilo para as células de cabeçalho da tabela, incluindo alinhamento central e plano de fundo.*/
@@ -237,7 +238,7 @@ th {  /*define o estilo para as células de cabeçalho da tabela, incluindo alin
 td {  /*define o estilo para as células da tabela, incluindo alinhamento central, espaçamento interno superior e inferior, e borda.*/
   text-align: center;
   align-items: center;
-  padding: 2px;
+  padding: 8px;
   border: 1px solid rgba(117, 115, 115, 0.26);
   font-size: 16px;
 }
@@ -246,7 +247,7 @@ tr:nth-child(even) td { /* cor para as linhas pares */
 }
 
 td img { /* Imagem favoritos da coluna ação*/
-  width: 15%;
+  width: 25%;
   display: inline-flex;
   margin-right: 10px;
 }
