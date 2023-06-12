@@ -186,7 +186,7 @@ td img:hover { /* Imagem favoritos da coluna ação*/
 
 .title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
   color: #1E4CA5;
-  margin-top: auto;
+  margin-top: 18px;
   display: inline-block;
   margin-left: 20px;
 }
