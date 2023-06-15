@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cart-page</title>
+  <title>Meu carrinho</title>
     <link rel="stylesheet" href="cart-page.css" />
 
     <style>
@@ -23,11 +23,12 @@
         <img class="img-logo" src="../img/logos.png" alt="" />
         <span class="text-stock">tockWare</span>
       </div>
-
     </div>
+    <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
+    
     <div class="actions">
       <div class="favorite">
-        <img class="img" src="../img/favorite.png" alt="" />
+        <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho" src="../img/favorite.png" alt="" />
       </div>
       <div class="cart">
         <img onclick="navigateCartPage()" class="img" src="../img/cart.png" alt="" />
@@ -57,8 +58,10 @@
     </div>
   </div>
 
+
+
+  
     <div class="title">
-      <img class="img-menu" src="/img/menuVisual.png" alt="" />
       <h2>Meu carrinho</h2>
     </div>
 

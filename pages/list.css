@@ -1,423 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap');
 /*importar fonte*/
 
-
 body {
-  background-color: #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid #b5b4b6;
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  width: 98.7%;
-  margin-left: 8px;
-  margin-right: 30px;
-}
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #b5b4b6;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    width: 98.7%;
+    margin-left: 8px;
+    margin-right: 30px;
+ }
 
-.header {  /*cabeçalho*/
-  margin: 0px;
-  padding: 24px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
-}
+/*/////////////////////////////////////////// CABELHALHO //////////////////////////////////////////////////////*/
 
+.header {
+    margin: 0px;
+    padding: 24px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
 
-.user {  /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+.logo-menu {
+    /*conteiner da logo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px
+  }
 
-.actions {  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
-  display: flex;
-  gap: 12px;
-}
-
-.favorite:hover, .cart:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
-  transition: transform 0.3s ease; 
-  transform: scale(1.2);
-}
-
-.profile:hover{  /* define animação ao passar o mouse em perfil no cabeçalho*/
-  transition: transform 0.3s ease; 
-  transform: scale(1.1);
-}
-
-.img {  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
-  width: 20px;
-  height: 20px;
-}
-
-.img:hover {  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
-  cursor: pointer;
-}
-
-.text-header {  /*define o estilo para o texto do cabeçalho, incluindo a cor do texto.*/
-  font-family: arial;
-  color: white;
-}
+.logo {
+    /*define o estilo para o logotipo*/
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
 .text-stock,
-.text-header {  /*definem o estilo para o texto do cabeçalho, incluindo a cor, o tamanho da fonte e o peso da fonte.*/
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 40px;
-  font-weight: 500;
- margin-left:-35px;
+.text-header {
+    /*definem o estilo para o texto do cabeçalho.*/
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: -35px;
 
- @media (width <= 780px) {
-  width: 40vw;
-}
-}
-
-.main {
-  margin: 0px 34px;
-  background: linear-gradient(180deg,
-      #00a6cc 0%,
-      rgba(30, 76, 165, 0.81) 89.72%);
-  height: 400px;
-  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  padding: 8px;
-  margin-left: -350px;
-  position: fixed;
-  width: 20%;
-  height: 100%;
-  transition: .5s;
-  margin-top: -75px;
-}
-
-.main ul li a:hover {
-  background-color: #fff;
-}
-
-.menu {  /*define o estilo para as opções do menu lateral, incluindo preenchimento.*/
-  padding: 4rem 24px;
-}
-
-#btnClose {
-  padding: 5px;
-  float: right;
-  font-weight: bold;
-  background-color:#1E4CA5;
-  color: white;
-}
-
-#btnClose:active {
-  background-color:crimson;
-}
-
-.effect {
-  transform: margin .4s;
-}
-
-@media (min-width: 368px) {
-  #btnClose {
-    display:none;
+    @media (width <=780px) {
+      width: 40vw;
+    }
   }
-  .main {
-    min-width: 261.75px;
-    width: 20%;
-    margin-top:0%;
+
+.actions {
+    /*define o container (favoritos, carrinho, perfil)*/
+    display: flex;
+    gap: 12px;
+   }
+
+.favorite:hover,
+.cart:hover {
+    /* define animação ao passar o mouse em favoritos no cabeçalho*/
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+   }
+
+.profile:hover {
+    /* define animação ao passar o mouse em perfil no cabeçalho*/
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
   }
-}
 
-.list {
-  /*define o estilo para a lista, incluindo exibição flexível, espaçamento entre itens, margem inferior, família de fontes, peso da fonte, cor do texto e tamanho da fonte.*/
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 6rem;
-  font-family: Arial;
-  font-weight: 500;
-  list-style: none;
-  color: white;
-  font-size: 17px;
-}
+.img-action-cabecalho {
+    /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil)*/
+    width: 20px;
+    height: 20px;
+  }
 
-.options:hover {  /*opções da lista do  menu ao passar mouse*/
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.logout {  /*define o estilo para o texto de logout, incluindo exibição flexível, alinhamento vertical e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  color: white;
-}
-
-.logo {  /*define o estilo para o logotipo, incluindo exibição flexível e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+.img-action-cabecalho:hover {
+    /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
+    cursor: pointer;
+  }
 
 .img-menu {
-  /*define o estilo para a imagem do menu, incluindo largura.*/
-  /*abrir menu  lateral*/
-  width: 42px;
-  text-align: center;
-  padding: 5px;
-  transition: all .5s;
-  margin-left: auto;
-   //@media (width >= 890px) {
-    //display: none;
-  //};
-}
+    /* ícone de abrir menu  lateral*/
+    width: 25px;
+    text-align: center;
+    padding: 5px;
+    transition: all .5s;
+    margin-left: auto;
+  }
 
-.img-menu:hover {  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
-  cursor: pointer;
-  border-radius: 100%;
-  padding: 5px;
-  background-color: #476CB4;
-}
+.img-menu:hover {
+    /*define um estilo quando o mouse passa por cima da imagem do menu.*/
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    transform: scale(1.1);
+  }
 
 .img-menu:active {
-  background-color: #020202;
-}
-
-.content {  /* define o estilo para o conteúdo principal, incluindo plano de fundo, sombra e borda.*/
-  background: red;
-  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-}
-
-.main-content {  /*define o estilo para o conteúdo principal, incluindo margens e exibição em grade.*/
-  margin: 10px 0px 0px 10px;
-  display: grid;
-}
-
-.title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
-  color: #1E4CA5;
-  margin-top: auto;
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.full-width {  /*define o estilo para elementos com largura total, incluindo exibição flexível.*/
-  display: flex;
-  margin-right:10px;
-}
-
-#input-pesquisa {  /*define o estilo para a área de pesquisa por materiais */
-  border-radius: 6px;
-  border: none;
-  height: 43px;
-  flex: 1;
-  margin-bottom: 27px;
-  background: url("../img/search.png") no-repeat right;
-  padding-right: 50px;
-  background-size: 16px;
-  background-position: right 20px top 15px;
-  background-color: #FFF;
-}
-
-table {  /*define o estilo para uma tabela, incluindo flexibilidade, sombra e borda arredondada.*/
-  flex: 1;
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  border-collapse: collapse;
-  margin-bottom: 10px;
-}
-
-tr {  /*define o estilo para as linhas da tabela, incluindo alinhamento central, borda inferior e cor de fundo.*/
-  text-align: center;
-  border-bottom: 1px solid #E1CFFF;
-  background-color: #fff;
-  
-}
-
-th {  /*define o estilo para as células de cabeçalho da tabela, incluindo alinhamento central e plano de fundo.*/
-  text-align: center;
-  color: #F5F5F5;
-  border: 1px solid;
-  background-color: #020202;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  width: auto;
-}
-
-td {  /*define o estilo para as células da tabela, incluindo alinhamento central, espaçamento interno superior e inferior, e borda.*/
-  text-align: center;
-  align-items: center;
-  padding: 8px;
-  border: 1px solid rgba(117, 115, 115, 0.26);
-  font-size: 16px;
-}
-tr:nth-child(even) td { /* cor para as linhas pares */
-  background-color: #f2f2f2a6; 
-}
-
-td img { /* Imagem favoritos da coluna ação*/
-  width: 25%;
-  display: inline-flex;
-  margin-right: 10px;
-}
-
-td img:hover { /* Imagem favoritos da coluna ação*/
- outline-offset: 2px;
- border-radius:50% ;
- transition-duration: 0,25s;
- transition: transform 0.3s ease; 
- transform: scale(1.3);
-}
-
-h3 {  /* define o estilo para os títulos de nível 3, incluindo margem, cor do texto e exibição flexível centralizada.*/
-  margin: 8px auto;
-  color: #1E4CA5;
-  display: flex;
-  justify-content: center;
-}
-
-.full-width th,
-.full-width td {/*define o estilo para as células de cabeçalho e células da tabela em largura total, incluindo um cursor de ponteiro ao passar o mouse.*/
-  cursor:default;
-}
-
-
-tr.selected-row td {
-  background-color: rgba(5, 133, 238, 0.308); /* cor para a linha destacada */
-}
-
-.hide-row {  /*define o estilo para ocultar uma linha, definindo a propriedade "visibility" como "collapse".*/
-  visibility: collapse;
-}
-
-
-dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/  
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border: 1px;
-  width: 60%;
-  height: auto;
-  background: linear-gradient(180deg, #f8f8f8 0%, rgba(184, 184, 184, 0.81) 89.72%);
-  
-  }
-.modal-header {
-  margin-top: -26px;
-  margin-left: -50px;
-  margin-right: -20px;
-  background: linear-gradient(180deg,
-      #00a6cc 0%,
-      rgba(15, 32, 65, 0.81) 89.72%);
-  height: 50px;
-  box-shadow: 0px 100px 50px 50px rgba(0, 0, 0, 0.25);
-  
-}
-
-.logo-menu{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:  48px
-}
-.text-modal{
-  padding-top: 10px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  letter-spacing: 0.07em;
-  color: #FFFFFF;
-  background-color: #020202;
-}
-.product-info {
-  font-family: serif red;
-  font-size: 20px;
-}
-.img-description { /*interface da imagem do material*/
-  text-align: center;
-  position: relative;
-  width: auto;
-  padding-top: 50px;  
-  width: 40%;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin: auto;
-}
-#product-img { 
-  position: absolute;
-  width: 100%;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin: auto;
-}
-
-
-
-#closed_dialog { /* Define a posição do botão de fechar diálogo*/
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#fechar_descricao{
-  color: #020202;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#fechar_descricao:hover{
-  background-color: red;
-
-
-}
-
-
-.cart-add { /*botão de adicionar ao carrinho*/
-  position: fixed;
-  left: 40%;
-  top: 550px;
-  bottom: 0;
-  width: 100%;
-  background-color: #f8f8f8;
-  padding: 5px;
-  text-align: left;
-  position: absolute;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #000000;
-  width: 15%;
-  height: 8%;
-  border: 1px solid #476CB4;
-  border-radius: 10px;
-  
-}
-
-.cart-add:hover{ /* REAÇÃO DO BOTÃO DO CARRINHO */
-  background-color: rgb(0, 255, 34);
-  color:antiquewhite;
-}
-
-
-/*///////////////////// RESPONSIVIDADE PARA MOBILE ////////////////////////////////*/
-
-
- /*@media only screen and (max-width: 768px) {
-  
-  
-
-  
-
-  
-
-  
-
-  .img {
-    width: 16px;
-    height: 16px;
+    background-color: #020202;
   }
 
-  .main {
+
+/*////////////////////////////////////////// CONTEUDO MAIN //////////////////////////////////////////////*/
+
+.full-width {
+    /*define o container para aba de pesquisa e tabela*/
+    display: flex;
+    margin-right: 10px;
+  }
+
+.main-content {
+    /* define o conteiner do título conteudo principal*/
+    margin: 10px 0px 0px 10px;
+    display: grid;
+  }
+
+.title h2 {
+    /*define o estilo para o título do conteúdo principal*/
+    color: #1E4CA5;
+    margin-top: auto;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+#input-pesquisa {
+    /*define o estilo para a área de pesquisa por materiais */
+    border-radius: 6px;
+    border: none;
+    height: 43px;
+    flex: 1;
+    margin-bottom: 27px;
+    background: url("../img/search.png") no-repeat right;
+    padding-right: 50px;
+    background-size: 16px;
+    background-position: right 20px top 15px;
+    background-color: #FFF;
+  }
+
+/*////////////////////////////////////////// MENU LATERAL /////////////////////////////////////////////*/
+
+.main-menu-list {
+    /*container do menu lateral*/
     margin: 0px 34px;
     background: linear-gradient(180deg,
         #00a6cc 0%,
@@ -434,96 +162,328 @@ dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/
     margin-top: -75px;
   }
 
-  .menu {
-    padding: 2rem 12px;
+.main-menu-list ul li a:hover {
+    background-color: #fff;
   }
 
-  .list {
-    gap: 1rem;
-    margin-bottom: 3rem;
-    font-size: 14px;
+.menu {
+    /*define o estilo para as opções do menu lateral*/
+    padding: 4rem 24px;
   }
 
-  .img-menu {
-    width: 5%;
-    margin-top: -4px;
-    margin-left: -2px;
+.effect {
+    transform: margin .4s;
   }
 
-  .content {
-    margin: 10px;
+@media (min-width: 368px) {
+    #btnClose {
+      display: none;
+    }
+
+.main-menu-list {
+      min-width: 261.75px;
+      width: 20%;
+      margin-top: 0%;
+    }
   }
 
-  .full-width th,
-  .full-width td {
+.list {
+    /*define o estilo para a lista.*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    font-family: Arial;
+    font-weight: 500;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+  }
+
+.options:hover {
+    /*opções da lista do  menu ao passar mouse*/
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.options img {
+    /* Adiciona uma transição suave aos icones da lista */
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+  }
+
+.options:hover img {
+    /* Aplica o zoom na imagem da lista ao passar o mouse */
+    transform: scale(1.1);
+  }
+
+.logout {
+    /*define o estilo para o texto de logout menu lateral.*/
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+  }
+
+/*///////////////////////////////////////// TABELA LISTA DE MATERIAIS ////////////////////////////////////////////////////*/
+
+table {
+    /*define o estilo para uma tabela*/
+    flex: 1;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+tr {
+    /*define o estilo para as linhas da tabela*/
+    text-align: center;
+    border-bottom: 1px solid #E1CFFF;
+    background-color: #fff;
+  }
+
+th {
+    /*define o estilo para as células de cabeçalho da tabela*/
+    text-align: center;
+    color: #F5F5F5;
+    border: 1px solid;
+    background-color: #020202;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    width: auto;
+  }
+
+td {
+    /*define o estilo para as células da tabela*/
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid rgba(117, 115, 115, 0.26);
+    font-size: 16px;
+  }
+
+tr:nth-child(even) td {
+    /* cor para as linhas pares */
+    background-color: #f2f2f2a6;
+  }
+
+td img {
+    /* Imagem favoritos da coluna ação*/
+    width: 25%;
+    display: inline-flex;
+    margin-right: 10px;
+  }
+
+td img:hover {
+    /* Imagem favoritos da coluna ação*/
+    outline-offset: 2px;
+    border-radius: 50%;
+    transition-duration: 0, 25s;
+    transition: transform 0.3s ease;
+    transform: scale(1.3);
+  }
+
+h3 {
+    /* define o estilo para os títulos de nível 3*/
+    margin: 8px auto;
+    color: #1E4CA5;
+    display: flex;
+    justify-content: center;
+  }
+
+.full-width th,
+.full-width td {
+    /*define o container para tabela*/
+    cursor: default;
+  }
+
+tr.selected-row td {
+    background-color: rgba(5, 133, 238, 0.308);
+    /* cor para a linha destacada */
+  }
+
+.hide-row {
+    /*define o estilo para ocultar uma linha*/
+    visibility: collapse;
+  }
+
+  /*////////////////////////////////////// TABELA - DESCRIÇÃO DO MATERIAL //////////////////////////////////////////*/
+
+.btn_fechar_descricao {
+    color: #020202;
+    font-weight: bold;
     cursor: pointer;
   }
 
-  .main-content {
-    display: block;
+.btn_fechar_descricao:hover {
+    background-color: red;
   }
 
-  .title h2 {
-    margin-top: auto;
-    display: block;
-    margin-left: 0;
-    text-align: center;
+dialog {
+    /* Abre uma tela pop-up com a descrição e imagem do material*/
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px;
+    width: 60%;
+    height: auto;
+    background-color: #fffcfc;
+
   }
 
-  table {
-    width: 100%;
-  }
-
-  #input-pesquisa {
-    width: 100%;
-  }
-
-  .cart-add {
-    width: 100%;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  dialog {
-    width: 90%;
-    height: 80%;
-  }
-}*/
-
-/*/////////////////////////// RESPONSIVIDADE PARA DESKTOP ///////////////////////////////////*/
-
-@media only screen and (min-width: 1024px) {
-  body {
-    width: 98.7%;
-    margin-left: 8px;
-    margin-right: 30px;
-  }
-
-  .main {
-    margin: 0px 34px;
+.modal-header {
+    /*cabeçalho da descrição do material*/
+    margin-top: -26px;
+    margin-left: -50px;
+    margin-right: -20px;
     background: linear-gradient(180deg,
         #00a6cc 0%,
-        rgba(30, 76, 165, 0.81) 89.72%);
-    height: 400px;
-    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    padding: 8px;
-    margin-left: -350px;
+        rgba(15, 32, 65, 0.81) 89.72%);
+    height: 50px;
+    box-shadow: 0px 100px 50px 50px rgba(0, 0, 0, 0.25);
+  }
+
+.text-modal {
+    /*texto cabeçalho do menu de descrição*/
+    padding-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    background-color: #020202;
+  }
+
+.product-info {
+    /*container informações do produto*/
+    font-family: serif red;
+    font-size: 20px;
+  }
+
+.img-description {
+    /*container - imagem do material */
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+#product-img {
+    /*imagem do material*/
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+#closed_dialog {
+    /* Define a posição do botão de fechar diálogo*/
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+  }
+
+.closed_dialog_ok {
     position: fixed;
-    width: 20%;
-    height: 100%;
-    transition: .5s;
-    //margin-top: -75px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
   }
 
-  .content {
-    margin: 10px 0px 0px 10px;
-    display: grid;
+.btn_fechar_descricao_ok {
+    background-color: #00ff4c;
+    padding: 5px 8px;
   }
 
-  .full-width {
-    margin-right: 0;
+  /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
+
+.cart-fav-add {
+    display: flex;
+    align-items: center;
+    position: relative;
   }
-}
+
+.btn-cart-add,
+.btn-favorite-add {
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    align-items: center;
+  }
+
+.btn-cart-add img {
+    margin-left: 8px;
+  }
+
+.btn-favorite-add img {
+    margin-left: 8px;
+  }
+
+.favorite-add {
+    margin-left: 15px;
+  }
+
+.btn-cart-add {
+    background-color: #77757291;
+    box-sizing: border-box;
+  }
+
+.btn-cart-add:hover {
+
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #1E4CA5;
+  }
+
+.btn-favorite-add {
+    margin-left: 15px;
+    background-color: #77757291;
+    box-sizing: border-box;
+  }
+
+.btn-favorite-add:hover {
+    background-color: #f14747;
+    font-weight: bold;
+    color: #f5f5f5;
+  }
+
+.btn_fechar_descricao_ok:hover {
+    background-color: rgb(55, 247, 61);
+    font-weight: bold;
+    color: #F5F5F5;
+  }
+
+  /*//////////////////////////////////////////// RESPONSIVIDADE PARA DESKTOP /////////////////////////////////////////*/
+
+@media only screen and (min-width: 1024px) {
+    body {
+      width: 98.7%;
+      margin-left: 8px;
+      margin-right: 30px;
+    }
+
+.main-menu-list {
+      margin: 0px 34px;
+      background: linear-gradient(180deg,
+          #00a6cc 0%,
+          rgba(30, 76, 165, 0.81) 89.72%);
+      height: 400px;
+      box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      padding: 8px;
+      margin-left: -350px;
+      position: fixed;
+      width: 20%;
+      height: 100%;
+      transition: .5s;
+      /*margin-top: -75px;*/
+    }
+
+.full-width {
+      /*define o container para aba de pesquisa e tabela*/
+      margin-right: 0;
+    }
+  }

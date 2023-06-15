@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de materiais</title>
-  <link rel="stylesheet" href="list.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="favoritos.css" />
 
   <style>
     /* Estilos para o nome de usuário */
@@ -16,60 +15,51 @@
       font-size: 14px;
     }
   </style>
-
 </head>
-
-<body onload="atualizarListaProdutos()">
-
-  <header class="header">
+<body>
+  <div class="header">
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
-
+        
         <span class="text-stock">tockWare</span>
       </div>
-
-      <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
-
     </div>
-    <div>
 
-    </div>
+    <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
     <div class="actions">
-
       <div class="favorite">
-          <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho" src="../img/favorite.png" alt="" />
-        </a>
+        <img class="img-menu-cabecalho" src="../img/favorite.png" alt="" title="Meus favoritos"/>
       </div>
       <div class="cart">
-        <img title="Meu carrinho" onclick="navigateCartPage()" class="img-action-cabecalho" src="../img/cart.png" alt="" />
+        <img onclick="navigateCartPage()" class="img-menu-cabecalho" src="../img/cart.png" alt="" title="Meu carrinho" />
       </div>
       <div class="profile">
-        <img title="Meu perfil" class="img-action-cabecalho" src="../img/profile.png" alt="" />
-        <script> // referências para as bibliotecas jQuery e Bootstrap.
-
+        <img class="img-menu-cabecalho" src="../img/profile.png" alt="" title="Meu perfil" />
+        <script>
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
 
           // Exibe o nome de usuário no perfil
-          let nome = localStorage.getItem('username', username)
+          let nome = localStorage.getItem('username', username);
           document.write("<span class='username'>" + nome + "</span>");
-           // carrega a biblioteca Bootstrap em sua versão//
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
           crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-          </script>
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+          crossorigin="anonymous"></script>
+          
       </div>
     </div>
-  </header>
+  </div>
+
   <section class="main-menu-list">
     <nav class="menu">
-    
+
       <ul class="list">
         <li>
           <div class="icon_list options" onclick="navigateToHome()">
@@ -93,6 +83,7 @@
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_reserva.png" alt="">
             <span class="options">Consulta de Reserva</span>
+          </div>
         </li>
         <li>
           <div onclick="logout()" class="logout options">
@@ -104,49 +95,44 @@
     </nav>
   </section>
 
-  <div class="main-content">
-    <div class="title">
-      <h2>Lista de materiais</h2>
-    </div>
-
-    <div class="full-width">
-      <input type="text" id="input-pesquisa" placeholder="Pesquisar:" title="Você pode usar o caractere * para procurar por palavras chaves" />
-    </div>
-
-    <dialog id="list-modal">
-      <header class="modal-header">
-        <h3 class="text-modal">Descrição Do Material</h3>
-        <div id="closed_dialog">
-          <button class="btn_fechar_descricao">X</button>
-        </div>
-      </header>
-
-      <main>
-        <div class="product-info">
-          <p id="description"></p>
-          <div class="img-description">
-            <img id="product-img" />
-          </div>
-        </div>
-      </main>
-
-      <footer class="cart-fav-add">
-        <div class="cart-add">
-          <button class="btn-cart-add">Adicionar ao Carrinho <img src="../img/cart.png" alt=""></button>
-        </div>
-        <div>
-          <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img src="../img/favorite.png" alt=""></button>
-        </div>
-
-        <div class="closed_dialog_ok">
-          <button class="btn_fechar_descricao_ok">OK</button>
-        </div>
+  <div class="title">
+    <h2>Favoritos</h2>
   </div>
-  </footer>
-  </dialog>
 
   <div class="full-width">
-    <table id="tabela-materiais">
+    <input type="text" id="input-pesquisa" placeholder="Pesquisar:" title="Você pode usar o caractere * para procurar por palavras chaves" />
+  </div>
+
+  <dialog id="list-modal">
+    <header class="modal-header">
+      <h3 class="text-modal">Descrição Do Material</h3>
+      <div id="closed_dialog">
+        <button class="btn_fechar_descricao">X</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="product-info">
+        <p id="description"></p>
+        <div class="img-description">
+          <img id="product-img" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="cart-fav-add">
+      <div class="cart-add">
+        <button class="btn-cart-add">Adicionar ao Carrinho <img src="../img/cart.png" alt="" /></button>
+      </div>
+
+      <div class="closed_dialog_ok">
+        <button class="btn_fechar_descricao_ok">OK</button>
+      </div>
+    </footer>
+  </dialog>
+
+  <div class="backgroud">
+    <table id="tabela-favoritos">
       <thead>
         <tr>
           <th>Nome</th>
@@ -155,13 +141,18 @@
           <th>Tipo</th>
           <th>Preço</th>
           <th>Local</th>
-
+          <th>Ação</th>
         </tr>
       </thead>
-      <tbody id="produtos-lista">
-      </tbody>
+        <tbody id="produtos-lista">
+        </tbody>
     </table>
-    <script src="../script.js"></script>
-    <script src="../favoritos.js"></script>
+  </div>
+  
+
+  <script src="../favoritos.js"></script>
+
 </body>
 </html>
+
+

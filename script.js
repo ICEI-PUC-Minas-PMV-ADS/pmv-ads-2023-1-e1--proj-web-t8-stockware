@@ -28,7 +28,14 @@ function navigateToListPage() {
 function navigateToDevolutionPage() {
   window.location.href = 'devolution.html'
 }
+function navigateFavoritePage() {
+  window.location.href = 'favoritos.html'
+}
+function navigateCartPage() {
+  window.location.href = 'cart-page.html'
+}
 
+///////////////////////// MENU LATERAL ///////////////////////////////////
 const menuSize = '350px'
 let open = false
 
@@ -48,15 +55,15 @@ if (document.querySelector('#btnClose')) {
 
 function toggleMenu() {
   if (open) {
-    document.querySelector('.main').style.marginLeft = 0
+    document.querySelector('.main-menu-list').style.marginLeft = 0
     return
   }
-  document.querySelector('.main').style.marginLeft = `-${menuSize}`
+  document.querySelector('.main-menu-list').style.marginLeft = `-${menuSize}`
 }
 
-function navigateCartPage() {
-  window.location.href = 'cart-page.html'
-}
+
+
+///////////////// DIALOGO - DESCRIÇÃO DOS MATERIAIS ///////////////////
 
 function toggleModal2(tableRow) {
   const dialog = document.getElementById('list-modal')
@@ -70,6 +77,49 @@ function toggleModal2(tableRow) {
 
   cartAddDiv.addEventListener('click', adicionarCarrinho)
 }
+
+/////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtém os elementos dos botões de fechar
+  var fecharDescricaoBtns = document.getElementsByClassName('btn_fechar_descricao');
+  var fecharDescricaoOkBtns = document.getElementsByClassName('btn_fechar_descricao_ok');
+
+  // Obtém o elemento do diálogo
+  var dialogModal = document.getElementById('list-modal');
+
+  // Verifica se os elementos foram encontrados corretamente
+  if (fecharDescricaoBtns.length > 0 && fecharDescricaoOkBtns.length > 0 && dialogModal) {
+    // Itera sobre os botões de fechar
+    for (var i = 0; i < fecharDescricaoBtns.length; i++) {
+      var fecharDescricaoBtn = fecharDescricaoBtns[i];
+      
+      // Adiciona um evento de clique a cada botão de fechar
+      fecharDescricaoBtn.addEventListener('click', function () {
+        // Fecha o diálogo
+        dialogModal.close();
+      });
+    }
+
+    for (var j = 0; j < fecharDescricaoOkBtns.length; j++) {
+      var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j];
+      
+      // Adiciona um evento de clique a cada botão de fechar "ok"
+      fecharDescricaoOkBtn.addEventListener('click', function () {
+        // Fecha o diálogo
+        dialogModal.close();
+      });
+    }
+
+    // Adiciona um evento de teclado para fechar o diálogo ao pressionar o botão Esc
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        dialogModal.close();
+      }
+    });
+  }
+});
 
 ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
@@ -268,9 +318,6 @@ function atualizarListaProdutos() {
       <td>${produto.tipo}</td>
       <td>R$ ${produto.preco}</td>
       <td>${produto.local}</td>
-      <td>
-        <span class="favoritos_list"><img src="../img/heart.png" alt=""></span>
-      </td>
     `
     tabelaBody.appendChild(novaLinha)
   })
@@ -279,24 +326,7 @@ function atualizarListaProdutos() {
 // Chama a função para atualizar a lista de produtos ao carregar a página
 atualizarListaProdutos()
 
-/////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Obtém o elemento do botão de fechar
-  var fecharDescricaoBtn = document.getElementById('fechar_descricao')
-
-  // Obtém o elemento do diálogo
-  var dialogModal = document.getElementById('list-modal')
-
-  // Verifica se os elementos foram encontrados corretamente
-  if (fecharDescricaoBtn && dialogModal) {
-    // Adiciona um evento de clique ao botão de fechar
-    fecharDescricaoBtn.addEventListener('click', function () {
-      // Fecha o diálogo
-      dialogModal.close()
-    })
-  }
-})
 
 ///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
 
@@ -367,7 +397,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-///////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// CARRINHO /////////////////////////////////////////////
 
 // Solicitação de reserva
 
