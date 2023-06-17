@@ -31,37 +31,39 @@
       </div>
 
     </div>
+    <div>
+    </div>
+    
     <div class="actions">
+
       <div class="favorite">
-        <img class="img" src="../img/favorite.png" alt="" />
+        <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho"
+          src="../img/favorite.png" alt="" />
+        </a>
       </div>
       <div class="cart">
-        <img onclick="navigateCartPage()" class="img" src="../img/cart.png" alt="" />
+        <img title="Meu carrinho" onclick="navigateCartPage()" class="img-action-cabecalho" src="../img/cart.png"
+          alt="" />
       </div>
       <div class="profile">
-        <img class="img" src="../img/profile.png" alt="" />
+        <img title="Meu perfil" class="img-action-cabecalho" src="../img/profile.png" alt="" />
         <script> // referências para as bibliotecas jQuery e Bootstrap.
 
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-  
+
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
-
-         // carrega a biblioteca Bootstrap em sua versão//
+           // carrega a biblioteca Bootstrap em sua versão//
         </script>
-  
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-          </script>
+
+      </div>
     </div>
   </div>
-</div>
+
+
   <div class="main-content">
     <div class="main">
       <div class="menu">
@@ -69,34 +71,53 @@
 
           <div class="icon_list options" onclick="navigateToListPage()">
             <img src="../img/icon_list.png" alt="">
-          <span>Lista de Materiais</span>
+          <span class="none">Lista de Materiais</span>
           </div>
 
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_devolution.png" alt="">
-          <span> Devolução</span>
+          <span class="none"> Devolução</span>
         </div>
 
           <div class="icon_list options">
-            <img src="../img/icon_reserva.png" alt="">
-          <span class="options">Gerenciamento de Reserva</span>
+            <img class="im" src="../img/lupa.png" alt="">
+          <span class="options none">Gerenciamento de Reserva</span>
         </div>
 
           <div class="icon_list options" onclick="navigateToProductRegistration()">
             <img src="../img/icon_registration.png" alt="">
-          <span>Cadastro de Produtos</span>
+          <span class="none">Cadastro de Produtos</span>
         </div>
 
 
         </div>
         <div onclick="logout()" class="logout options options">
-          <img class="img-logout" src="../img/logout.png" alt="logout.png" />
-          <span class="options">Sair</span>
+          <img class="im" class="img-logout" src="../img/logout1.png" alt="logout.png" />
+          <span class="options none">Sair</span>
         </div>
       </div>
     </div>
-    <div class="content"></div>
+    
+    <div class="banner">
+      
+      <div class="span">
+        <span class="estoque">Estoque Inteligente</span>
+        <span class="result"> RESULTADOS BRILHANTES</span>
+        <span class="nivel">Eleve o nível da sua Empresa</span>
+      </div>
+      <div class="banner-img">
+        <img class="ol" src="../img/img-stoq.png" alt="">
+      </div>
+    
+    </div>
+
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+  </script>
 
   <script src="../script.js"></script>
 </body>

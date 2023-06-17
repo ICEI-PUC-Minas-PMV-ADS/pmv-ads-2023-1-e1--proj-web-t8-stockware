@@ -89,17 +89,18 @@ body {
 .form-register{
   display:flex;
   flex-direction:column;
-  width:50%;
-  justify-content: left;
-  margin-top:7%;
-  padding-top: 20px;
-  padding-bottom:20px;
-  background-color: white;
-  height: 500px;
-  padding-left: 33px;
-  border-radius: 9px;
-  box-shadow: 0px 2px 10px rgba(76, 78, 100, 0.22);
-  margin-bottom: 11rem;
+  align-items: center;
+  
+  margin-top: 3rem;
+    width: 600px;
+    height: 514px;
+    background-color: white;
+    padding-top: 48px;
+    border-radius: 11px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+
+  
+  
 
 }
 
@@ -107,22 +108,30 @@ body {
   display: inline-block;
   width: 100px; /* Ajuste a largura conforme necessário */
   vertical-align: middle;
-  margin-right: 10px; /* Ajuste a margem conforme necessário */
+  /* Ajuste a margem conforme necessário */
 }
 
 .register {
   display: flex;
-  flex-direction:row;
+  
+  flex-direction: column; 
+  margin-top: 58px;
+  height: 100vh;
+  align-items: center; 
+  
+
  
 }
 
 label {
   display: inline-block;
   width: 100px;
-  text-align: right;
+ 
   margin-right: 10px;
   color:#313131;
   font-weight:500;
+  color: #373636;
+    font-weight: 600;
 }
 
 input[type="text"],
@@ -139,7 +148,7 @@ border-radius: 4px;
 }
 
 .button {
-  margin-left: 224px !important; 
+ 
   border: 2px solid #4271B5;
 border-radius: 25px;
 background:transparent;
@@ -166,13 +175,14 @@ color:antiquewhite;
   width: 406px;
 }
 
-.title h2 {
+.title {
   /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
   color: #1E4CA5;
-margin-top: -30px;
- display: flex;
-  margin-left: 85px;
-
+    /* margin-top: -20px; */
+    /* display: flex; */
+    /* margin-left: 85px; */
+    font-size: 27px;
+    font-weight: 600;
 
 }
 .img-menu {  /*define o estilo para a imagem do ÍCONE DO menu lateral*/

@@ -1,10 +1,11 @@
 ///////////////////////////////// FUNÇÃO DE MUDAR DE TELA (MENU LATERAL) ////////////////////////////////////
 
-function login() {
+/* function login() {
   window.location.href = 'pages/home.html'
-}
+} */
 
 function logout() {
+  localStorage.removeItem('admin');
   window.location.href = '../login.html'
 }
 
@@ -41,6 +42,7 @@ const menuSize = '350px'
 let open = false
 
 if (document.querySelector('.img-menu')) {
+  console.log('teste')
   document.querySelector('.img-menu').addEventListener('click', () => {
     open = !open
     toggleMenu()
@@ -62,8 +64,6 @@ function toggleMenu() {
   document.querySelector('.main-menu-list').style.marginLeft = `-${menuSize}`
 }
 
-
-
 ///////////////// DIALOGO - DESCRIÇÃO DOS MATERIAIS ///////////////////
 
 function toggleModal2(tableRow) {
@@ -81,46 +81,53 @@ function toggleModal2(tableRow) {
 
 /////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
 
-
 document.addEventListener('DOMContentLoaded', function () {
   // Obtém os elementos dos botões de fechar
-  var fecharDescricaoBtns = document.getElementsByClassName('btn_fechar_descricao');
-  var fecharDescricaoOkBtns = document.getElementsByClassName('btn_fechar_descricao_ok');
+  var fecharDescricaoBtns = document.getElementsByClassName(
+    'btn_fechar_descricao'
+  )
+  var fecharDescricaoOkBtns = document.getElementsByClassName(
+    'btn_fechar_descricao_ok'
+  )
 
   // Obtém o elemento do diálogo
-  var dialogModal = document.getElementById('list-modal');
+  var dialogModal = document.getElementById('list-modal')
 
   // Verifica se os elementos foram encontrados corretamente
-  if (fecharDescricaoBtns.length > 0 && fecharDescricaoOkBtns.length > 0 && dialogModal) {
+  if (
+    fecharDescricaoBtns.length > 0 &&
+    fecharDescricaoOkBtns.length > 0 &&
+    dialogModal
+  ) {
     // Itera sobre os botões de fechar
     for (var i = 0; i < fecharDescricaoBtns.length; i++) {
-      var fecharDescricaoBtn = fecharDescricaoBtns[i];
-      
+      var fecharDescricaoBtn = fecharDescricaoBtns[i]
+
       // Adiciona um evento de clique a cada botão de fechar
       fecharDescricaoBtn.addEventListener('click', function () {
         // Fecha o diálogo
-        dialogModal.close();
-      });
+        dialogModal.close()
+      })
     }
 
     for (var j = 0; j < fecharDescricaoOkBtns.length; j++) {
-      var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j];
-      
+      var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j]
+
       // Adiciona um evento de clique a cada botão de fechar "ok"
       fecharDescricaoOkBtn.addEventListener('click', function () {
         // Fecha o diálogo
-        dialogModal.close();
-      });
+        dialogModal.close()
+      })
     }
 
     // Adiciona um evento de teclado para fechar o diálogo ao pressionar o botão Esc
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
-        dialogModal.close();
+        dialogModal.close()
       }
-    });
+    })
   }
-});
+})
 
 ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
@@ -327,6 +334,3 @@ function atualizarListaProdutos() {
 
 // Chama a função para atualizar a lista de produtos ao carregar a página
 atualizarListaProdutos()
-
-
-

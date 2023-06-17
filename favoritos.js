@@ -36,6 +36,33 @@ function navigateCartPage() {
   window.location.href = 'cart-page.html'
 }
 
+//////////////////////// MENU LATERAL ///////////////////////////////////
+
+const menuSize = '350px'
+let open = false
+
+if (document.querySelector('.img-menu')) {
+  console.log('teste')
+  document.querySelector('.img-menu').addEventListener('click', () => {
+    open = !open
+    toggleMenu()
+  })
+}
+
+if (document.querySelector('#btnClose')) {
+  document.querySelector('#btnClose').addEventListener('click', () => {
+    open = false
+    toggleMenu()
+  })
+}
+
+function toggleMenu() {
+  if (open) {
+    document.querySelector('.main-menu-list').style.marginLeft = 0
+    return
+  }
+  document.querySelector('.main-menu-list').style.marginLeft = `-${menuSize}`
+}
 
 ///////////////////////////////  ADD AOS FAVORITOS /////////////////////
 
@@ -93,16 +120,23 @@ function adicionarFavoritos() {
 
 
 ///////////////////// EXIBIR DESCRIÇÃO DO MATERIAL /////////////////////////
-
-function exibirDescricao(descricao) {
-  // Exibir o diálogo com a descrição dentro do seu código
+function exibirDescricao(descricao, caminhoImagem) {
   const dialog = document.getElementById('list-modal');
   const description = document.getElementById('description');
   const img = document.getElementById('product-img');
   const cartAddDiv = document.querySelector('.cart-add');
 
   description.innerText = descricao;
-  img.src = ''; // Insira o caminho da imagem desejada
+  img.src = caminhoImagem;
+
+  // Obtém a célula clicada
+  const clickedCell = event.target;
+  
+  // Verifica se a célula pertence às colunas "QTD" ou "Ação"
+  if (clickedCell.cellIndex === 6) {
+    return; // Não exibe a descrição se clicar nessas células
+  }
+  
   dialog.showModal();
 
   cartAddDiv.addEventListener('click', adicionarCarrinho);
@@ -343,5 +377,54 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-///////////////////////// MENU LATERAL ///////////////////////////////////
+////////////////////////////////// ABRIL MODAL NA PAGINA DO CARRINHO /////////////////////////////////////////////
+
+function openProductModal(nome, imagem, descricao) {
+  var modal = document.getElementById('productModal');
+  var nameElement = document.getElementById('productDescription');
+  var imageElement = document.getElementById('productImage');
+  var desElement = document.getElementById('productDes');
+  imageElement.classList.add('nome-da-classe');
+  var closeModalButton = modal.querySelector('.close');
+
+  // Define a descrição e a imagem do produto no modal
+  nameElement.textContent = nome;
+  imageElement.src = imagem;
+  desElement.textContent = descricao;
+
+  // Exibe o modal
+  modal.style.display = 'block';
+
+  // Adiciona o evento de clique para fechar o modal
+  closeModalButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var tabelaCarrinho = document.getElementById('tabela-carrinho');
+  tabelaCarrinho.addEventListener('click', function(event) {
+    var target = event.target;
+
+    // Verifica se o elemento clicado é uma célula da tabela
+    if (target.tagName === 'TD') {
+      var nome = target.parentElement.cells[0].textContent; // Obtém a descrição do produto
+      var codigo = target.parentElement.cells[1].textContent;
+      var produtosDoLocalStorage = JSON.parse(localStorage.getItem('produtos'));
+      var produtoDesseCodigo = produtosDoLocalStorage.find(item => item.codigo === codigo);
+      var imagem = produtoDesseCodigo.imagem;
+      var descricao = produtoDesseCodigo.descricao;
+      
+
+      openProductModal(nome, imagem, descricao); // Chama a função openProductModal
+    }
+  });
+});
+
+var closeModalButton = document.querySelector('.close');
+closeModalButton.addEventListener('click', function() {
+  var modal = document.getElementById('productModal');
+  modal.style.display = 'none';
+});
+
 

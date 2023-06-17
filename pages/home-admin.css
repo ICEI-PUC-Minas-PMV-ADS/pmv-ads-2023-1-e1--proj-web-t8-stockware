@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
 /* Importar fonte */
 
@@ -14,14 +15,14 @@ body {
 .header {
   margin: 0px;
   padding: 24px;
-  height: 30px;
+  height: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
   box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .user {
@@ -29,11 +30,31 @@ body {
   align-items: center;
   gap: 12px;
 }
-
+.icon_list{
+  display:flex;
+  align-items: center;
+}
 .actions {
   display: flex;
   gap: 12px;
 }
+.favorite:hover,
+.cart:hover {
+  /* define animação ao passar o mouse em favoritos no cabeçalho*/
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
+ }
+ .img-action-cabecalho {
+  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil)*/
+  width: 20px;
+  height: 20px;
+}
+
+.img-action-cabecalho:hover {
+  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
+  cursor: pointer;
+}
+
 
 .favorite:hover, .cart:hover {
   transition: transform 0.3s ease;
@@ -77,21 +98,31 @@ body {
 .text-header {
   font-family: 'Lobster', cursive;
   color: white;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
 }
 
 .main {
   margin: 0px 2px;
-  width: 296px;
+ /*// width: 296px;*/
   background: linear-gradient(180deg, #00a6cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
-  height: 800px;
+  height: 100vh;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-}
+  width:416px;
 
+  @media (width <= 780px) {
+    width:100px
+  }
+}
+.none{
+  @media (width <= 780px) {
+  display:none
+  }
+}
 .menu {
   padding: 4rem 24px;
+  width:250px;
 }
 
 .list {
@@ -155,50 +186,123 @@ body {
 
 .main-content {
   display: flex;
-  margin-right: 24px;
+  height:100vh;
+  /*//margin-right: 24px;*/
 }
 
 /* Responsividade para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-  body {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .header {
-    padding: 20px;
-  }
-  
-  .text-stock,
-  .text-header {
-    font-size: 24px;
-  }
-  
-  .main {
-    width: 100%;
-  }
-  
-  .main-content {
-    width: 100%;
-  }
-  
-  .list {
-    margin-bottom: 3rem;
-  }
-  
-  #banner-img {
-    margin-top: -300px;
-    
-  }
-  
-  #banner {
-    max-width: 96%;
-margin-left: 2%;
-  }
-}
+
 
 .material-symbols-outlined{
   display: flex;
   align-items: center;
   text-align: center;
 }
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  
+  width: 100%;
+  margin-left:8px;
+  border-radius:6px;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  gap:  120px;
+  background: linear-gradient(to bottom right, #57DCFF, #2A6294);
+  padding-left: 7%;
+    padding-right: 10%;
+
+
+    @media (width <= 1480px) {
+      flex-direction: column-reverse;   
+      /*//padding-top:40px;*/
+    }
+
+
+}
+
+.im{
+  width: 24px;
+  height: 24px;
+}
+
+.content1{
+
+}
+
+.banner-img{
+  margin-top: -52px;
+  @media (width <= 1480px) {
+    margin-top: 40px;
+  }
+
+  
+
+
+}
+
+.ol {
+  @media (width <= 1500px) {
+    width: 28vw;
+  }
+
+  @media (width <= 780px) {
+    width: 40vw;
+  }
+}
+
+
+.span{
+  display:flex;
+  flex-direction: column;
+  gap:60px;
+  margin-top:-90px;
+  
+  }
+
+  .estoque{
+    font-family: poppins;
+      font-weight: 300;
+      font-size: 76px;
+    color: white;
+    line-height: 90px;
+
+    @media (width <= 1480px) {
+      font-size: 60px;
+    }
+
+    @media (width <= 940px) {
+      font-size:40px;
+      line-height: 60px;
+
+    }
+  }
+
+  .result{
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+
+    @media (width <= 440px) {
+      font-size:16px;
+      
+
+    }
+    
+  }
+
+  .nivel{
+    font-family: 'Poppins';
+      font-size: 17px;
+      color: #1a1a1a;
+      padding: 10px 24px;
+      background-color: #00C4CC;
+      border-radius: 18px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
