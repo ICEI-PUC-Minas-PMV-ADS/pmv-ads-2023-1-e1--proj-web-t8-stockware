@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 /*importar fonte*/
 
 body {
@@ -39,13 +40,16 @@ body {
     align-items: center;
     gap: 40px;
   }
-
+.ol{
+  width: 24px;
+    height: 27px;
+}
 .text-stock,
 .text-header {
     /*definem o estilo para o texto do cabeçalho.*/
     font-family: 'Lobster', cursive;
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 500;
     margin-left: -35px;
 
@@ -86,7 +90,7 @@ body {
 
 .img-menu {
     /* ícone de abrir menu  lateral*/
-    width: 25px;
+    width: 33px;
     text-align: center;
     padding: 5px;
     transition: all .5s;
@@ -105,6 +109,11 @@ body {
     background-color: #020202;
   }
 
+  .icon_list{
+    align-items: center;
+    display: flex;
+    gap:12px;
+  }
 
 /*////////////////////////////////////////// CONTEUDO MAIN //////////////////////////////////////////////*/
 
@@ -123,7 +132,7 @@ body {
 .title h2 {
     /*define o estilo para o título do conteúdo principal*/
     color: #1E4CA5;
-    margin-top: auto;
+    margin-top: 20px;
     display: inline-block;
     margin-left: 20px;
   }
@@ -168,7 +177,7 @@ body {
 
 .menu {
     /*define o estilo para as opções do menu lateral*/
-    padding: 4rem 24px;
+    padding: 4rem 0px;
   }
 
 .effect {
@@ -326,8 +335,9 @@ dialog {
     border-radius: 20px;
     border: 1px;
     width: 60%;
-    height: auto;
+    height: 70%;
     background-color: #fffcfc;
+    
 
   }
 
@@ -335,7 +345,7 @@ dialog {
     /*cabeçalho da descrição do material*/
     margin-top: -26px;
     margin-left: -50px;
-    margin-right: -20px;
+    margin-right: -16px;
     background: linear-gradient(180deg,
         #00a6cc 0%,
         rgba(15, 32, 65, 0.81) 89.72%);
@@ -349,7 +359,7 @@ dialog {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
     background-color: #020202;
@@ -359,6 +369,10 @@ dialog {
     /*container informações do produto*/
     font-family: serif red;
     font-size: 20px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    margin-top: 11px;
+    font-weight: 400;
   }
 
 .img-description {
@@ -372,7 +386,7 @@ dialog {
 
 #product-img {
     /*imagem do material*/
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
     margin-bottom: 50px;
   }
@@ -386,16 +400,18 @@ dialog {
   }
 
 .closed_dialog_ok {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 15px;
+    
+   margin-left:42px
+   
+    
   }
 
 .btn_fechar_descricao_ok {
-    background-color: #00ff4c;
-    padding: 5px 8px;
+  background-color: #88cddd;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   }
 
   /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
@@ -403,15 +419,17 @@ dialog {
 .cart-fav-add {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    
   }
 
 .btn-cart-add,
 .btn-favorite-add {
     display: flex;
     text-align: center;
-    padding: 3px;
+    padding: 6px;
     align-items: center;
+    border-radius: 11px;
   }
 
 .btn-cart-add img {
@@ -474,7 +492,7 @@ dialog {
       box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
       border-radius: 6px;
       padding: 8px;
-      margin-left: -350px;
+      margin-left: -450px;
       position: fixed;
       width: 20%;
       height: 100%;

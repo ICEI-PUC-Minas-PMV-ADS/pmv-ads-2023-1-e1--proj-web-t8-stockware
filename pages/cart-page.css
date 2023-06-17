@@ -12,6 +12,87 @@ body {
   margin-right: 30px;
 }
 
+.main-menu-list { /*container do menu lateral*/
+  margin: 0px 34px;
+  background: linear-gradient(180deg,
+      #00a6cc 0%,
+      rgba(30, 76, 165, 0.81) 89.72%);
+  height: 400px;
+  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 8px;
+  margin-left: -450px;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  transition: .5s;
+  margin-top: -75px;
+}
+.ol{
+  width: 24px;
+    height: 27px;
+}
+
+.nome-da-classe{
+  width: 212px;
+  height:212px;
+}
+
+
+
+
+.icon_list{
+  align-items: center;
+  display: flex;
+}
+.menu {
+    /*define o estilo para as opções do menu lateral*/
+    padding: 4rem 0px;
+  }
+
+  .main-menu-list {
+      min-width: 261.75px;
+      width: 20%;
+      margin-top: 0%;
+    }
+  
+.list {
+    /*define o estilo para a lista.*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    font-family: Arial;
+    font-weight: 500;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  .options:hover {
+    /*opções da lista do  menu ao passar mouse*/
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .options img {
+    /* Adiciona uma transição suave aos icones da lista */
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .options:hover img {
+    /* Aplica o zoom na imagem da lista ao passar o mouse */
+    transform: scale(1.1);
+  }
+
+  .logout {
+    /*define o estilo para o texto de logout menu lateral.*/
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+  }
 
 .header {  /*cabeçalho*/
   margin: 0px;
@@ -74,12 +155,12 @@ body {
 }
 
 .img-menu {
-  width: 2%;
-  margin-top: 5px;
-  margin-left: 0;
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
+  width: 34px;
+    margin-top: 5px;
+    margin-left: 243px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .img-menu:hover {  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
@@ -437,6 +518,8 @@ cursor: pointer;
 
 .modal-body {
   margin-top: 20px;
+  display: flex;
+    flex-direction: column;
 }
 
 .button {

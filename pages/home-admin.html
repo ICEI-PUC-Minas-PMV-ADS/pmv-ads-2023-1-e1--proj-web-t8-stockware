@@ -40,12 +40,13 @@
       </div>
       <div class="profile">
         <img class="img" src="../img/profile.png" alt="" />
-        <script> // referências para as bibliotecas jQuery e Bootstrap.
+
+         <script> // referências para as bibliotecas jQuery e Bootstrap.
 
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-  
+          
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
@@ -69,33 +70,46 @@
 
           <div class="icon_list options" onclick="navigateToListPage()">
             <img src="../img/icon_list.png" alt="">
-          <span>Lista de Materiais</span>
+          <span class="none">Lista de Materiais</span>
           </div>
 
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_devolution.png" alt="">
-          <span> Devolução</span>
+          <span class="none"> Devolução</span>
         </div>
 
           <div class="icon_list options">
-            <img src="../img/icon_reserva.png" alt="">
-          <span class="options">Gerenciamento de Reserva</span>
+            <img class="im" src="../img/lupa.png" alt="">
+          <span class="options none">Gerenciamento de Reserva</span>
         </div>
 
           <div class="icon_list options" onclick="navigateToProductRegistration()">
             <img src="../img/icon_registration.png" alt="">
-          <span>Cadastro de Produtos</span>
+          <span class="none">Cadastro de Produtos</span>
         </div>
 
 
         </div>
         <div onclick="logout()" class="logout options options">
-          <img class="img-logout" src="../img/logout.png" alt="logout.png" />
-          <span class="options">Sair</span>
+          <img class="im" class="img-logout" src="../img/logout1.png" alt="logout.png" />
+          <span class="options none">Sair</span>
         </div>
       </div>
     </div>
-    <div class="content"></div>
+    
+    <div class="banner">
+      
+      <div class="span">
+        <span class="estoque">Estoque Inteligente</span>
+        <span class="result"> RESULTADOS BRILHANTES</span>
+        <span class="nivel">Eleve o nível da sua Empresa</span>
+      </div>
+      <div class="banner-img">
+        <img class="ol" src="../img/img-stoq.png" alt="">
+      </div>
+    
+    </div>
+
   </div>
 
   <script src="../script.js"></script>

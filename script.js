@@ -1,10 +1,11 @@
 ///////////////////////////////// FUNÇÃO DE MUDAR DE TELA (MENU LATERAL) ////////////////////////////////////
 
-function login() {
+/* function login() {
   window.location.href = 'pages/home.html'
-}
+} */
 
 function logout() {
+  localStorage.removeItem('admin');
   window.location.href = '../login.html'
 }
 
@@ -40,6 +41,7 @@ const menuSize = '350px'
 let open = false
 
 if (document.querySelector('.img-menu')) {
+  console.log('teste')
   document.querySelector('.img-menu').addEventListener('click', () => {
     open = !open
     toggleMenu()
@@ -61,8 +63,6 @@ function toggleMenu() {
   document.querySelector('.main-menu-list').style.marginLeft = `-${menuSize}`
 }
 
-
-
 ///////////////// DIALOGO - DESCRIÇÃO DOS MATERIAIS ///////////////////
 
 function toggleModal2(tableRow) {
@@ -80,46 +80,53 @@ function toggleModal2(tableRow) {
 
 /////////////// FECHAR CAIXA DE DIALOGO DA LISTA DE MATERIAIS /////////////////
 
-
 document.addEventListener('DOMContentLoaded', function () {
   // Obtém os elementos dos botões de fechar
-  var fecharDescricaoBtns = document.getElementsByClassName('btn_fechar_descricao');
-  var fecharDescricaoOkBtns = document.getElementsByClassName('btn_fechar_descricao_ok');
+  var fecharDescricaoBtns = document.getElementsByClassName(
+    'btn_fechar_descricao'
+  )
+  var fecharDescricaoOkBtns = document.getElementsByClassName(
+    'btn_fechar_descricao_ok'
+  )
 
   // Obtém o elemento do diálogo
-  var dialogModal = document.getElementById('list-modal');
+  var dialogModal = document.getElementById('list-modal')
 
   // Verifica se os elementos foram encontrados corretamente
-  if (fecharDescricaoBtns.length > 0 && fecharDescricaoOkBtns.length > 0 && dialogModal) {
+  if (
+    fecharDescricaoBtns.length > 0 &&
+    fecharDescricaoOkBtns.length > 0 &&
+    dialogModal
+  ) {
     // Itera sobre os botões de fechar
     for (var i = 0; i < fecharDescricaoBtns.length; i++) {
-      var fecharDescricaoBtn = fecharDescricaoBtns[i];
-      
+      var fecharDescricaoBtn = fecharDescricaoBtns[i]
+
       // Adiciona um evento de clique a cada botão de fechar
       fecharDescricaoBtn.addEventListener('click', function () {
         // Fecha o diálogo
-        dialogModal.close();
-      });
+        dialogModal.close()
+      })
     }
 
     for (var j = 0; j < fecharDescricaoOkBtns.length; j++) {
-      var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j];
-      
+      var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j]
+
       // Adiciona um evento de clique a cada botão de fechar "ok"
       fecharDescricaoOkBtn.addEventListener('click', function () {
         // Fecha o diálogo
-        dialogModal.close();
-      });
+        dialogModal.close()
+      })
     }
 
     // Adiciona um evento de teclado para fechar o diálogo ao pressionar o botão Esc
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
-        dialogModal.close();
+        dialogModal.close()
       }
-    });
+    })
   }
-});
+})
 
 ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
 
@@ -326,8 +333,6 @@ function atualizarListaProdutos() {
 // Chama a função para atualizar a lista de produtos ao carregar a página
 atualizarListaProdutos()
 
-
-
 ///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
 
 function adicionarCarrinho() {
@@ -448,19 +453,18 @@ function atualizarTotal() {
   }
 }
 
-
 function atualizarCarrinho() {
-  const carrinho = localStorage.getItem('carrinho');
-  const tbody = document.querySelector('#tabela-carrinho tbody');
-  
+  const carrinho = localStorage.getItem('carrinho')
+  const tbody = document.querySelector('#tabela-carrinho tbody')
+
   // Limpar a tabela do carrinho
-  tbody.innerHTML = '';
-  
+  tbody.innerHTML = ''
+
   if (carrinho) {
-    const produtos = JSON.parse(carrinho);
-    
-    produtos.forEach((produto) => {
-      const row = document.createElement('tr');
+    const produtos = JSON.parse(carrinho)
+
+    produtos.forEach(produto => {
+      const row = document.createElement('tr')
       row.innerHTML = `
         <td>${produto.nome}</td>
         <td>${produto.codigo}</td>
@@ -470,8 +474,56 @@ function atualizarCarrinho() {
         <td>
           <button class="remover" data-codigo="${produto.codigo}">Remover</button>
         </td>
-      `;
-      tbody.appendChild(row);
-    });
+      `
+      tbody.appendChild(row)
+    })
   }
 }
+
+function openProductModal(nome, imagem, descricao) {
+  var modal = document.getElementById('productModal');
+  var nameElement = document.getElementById('productDescription');
+  var imageElement = document.getElementById('productImage');
+  var desElement = document.getElementById('productDes');
+  imageElement.classList.add('nome-da-classe');
+  var closeModalButton = modal.querySelector('.close');
+
+  // Define a descrição e a imagem do produto no modal
+  nameElement.textContent = nome;
+  imageElement.src = imagem;
+  desElement.textContent = descricao;
+
+  // Exibe o modal
+  modal.style.display = 'block';
+
+  // Adiciona o evento de clique para fechar o modal
+  closeModalButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var tabelaCarrinho = document.getElementById('tabela-carrinho');
+  tabelaCarrinho.addEventListener('click', function(event) {
+    var target = event.target;
+
+    // Verifica se o elemento clicado é uma célula da tabela
+    if (target.tagName === 'TD') {
+      var nome = target.parentElement.cells[0].textContent; // Obtém a descrição do produto
+      var codigo = target.parentElement.cells[1].textContent;
+      var produtosDoLocalStorage = JSON.parse(localStorage.getItem('produtos'));
+      var produtoDesseCodigo = produtosDoLocalStorage.find(item => item.codigo === codigo);
+      var imagem = produtoDesseCodigo.imagem;
+      var descricao = produtoDesseCodigo.descricao;
+      
+
+      openProductModal(nome, imagem, descricao); // Chama a função openProductModal
+    }
+  });
+});
+
+var closeModalButton = document.querySelector('.close');
+closeModalButton.addEventListener('click', function() {
+  var modal = document.getElementById('productModal');
+  modal.style.display = 'none';
+});

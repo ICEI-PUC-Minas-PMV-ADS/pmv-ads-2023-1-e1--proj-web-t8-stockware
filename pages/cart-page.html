@@ -58,7 +58,42 @@
     </div>
   </div>
 
-
+  <section class="main-menu-list">
+    <nav class="menu">
+    
+      <ul class="list">
+        <li>
+          <div class="icon_list options" onclick="navigateToHome()">
+            <img src="../img/icon_home.png" alt="">
+            <span class="options" onclick="navigateToHome()">Home</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon_list options" onclick="navigateToListPage()">
+            <img src="../img/icon_list.png" alt="">
+            <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon_list options" onclick="navigateToDevolutionPage()">
+            <img src="../img/icon_devolution.png" alt="">
+            <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon_list options" onclick="navigateToDevolutionPage()">
+            <img class="ol" src="../img/lupa.png" alt="">
+            <span class="options">Consulta de Reserva</span>
+        </li>
+        <li>
+          <div onclick="logout()" class="logout options">
+            <img class="img-logout ol" src="../img/logout1.png" alt="logout.png" />
+            <span class="options">Sair</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </section>
 
   
     <div class="title">
@@ -114,7 +149,7 @@
       <span class="close">&times;</span>
     </div>
     <div class="modal-body">
-      <p>Sua solicitação de reserva foi concluída com sucesso!<br/> <br/> Aguarde confirmação pelo setor responsável.</p>
+      <p>Sua solicitação de reserva foi concluída com sucesso!<br/> <br/> </p>
     </div>
   </div>
 </div>
@@ -122,10 +157,26 @@
 
 
   </div>
+
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Detalhes do Produto</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h3 id="productDescription"></h3>
+        <img id="productImage" src="" alt="">
+        <span class="des" id="productDes"> </span>
+      </div>
+    </div>
+  </div>
   <script src="../script.js"></script>
   <script>
   
     atualizarTotal();
+
+    
 
     
 var fecharModalBtn = document.querySelector('.close');
@@ -138,8 +189,12 @@ fecharModalBtn.addEventListener('click', function() {
 
   tabelaCarrinho.getElementsByTagName('tbody')[0].innerHTML = '';
   localStorage.removeItem('carrinho');
-  window.location.href = "home.html";
-
+  
+  if (localStorage.getItem('admin')) {
+    window.location.href = "home-admin.html";
+  } else {
+    window.location.href = "home.html";
+  }
 });
 
   </script>

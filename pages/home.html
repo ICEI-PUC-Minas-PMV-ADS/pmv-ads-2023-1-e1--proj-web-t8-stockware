@@ -39,6 +39,10 @@
       </div>
       <div class="profile">
         <img class="img" src="../img/profile.png" alt="" />
+
+<!--
+
+
         <script> // referências para as bibliotecas jQuery e Bootstrap.
 
           // Obtém o nome de usuário a partir da URL
@@ -51,6 +55,9 @@
 
            // carrega a biblioteca Bootstrap em sua versão//
         </script>
+
+-->
+
   
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -62,45 +69,63 @@
   </div>
 </div>
   <div class="main-content">
-    <area shape="fvc 
-    " coords="" href="" alt="">
+
+    <!-- <area shape="fvc 
+    " coords="" href="" alt=""> -->
+   
     <section class="main">
       <nav class="menu">
         <ul class="list">
           <li>
             <div class="icon_list options" onclick="navigateToListPage()">
-         <img src="../img/icon_list.png" alt="">
-            <span>Lista de Materiais</span>
+         <img src="../img/icon_list.png" title="Lista de Materiais" alt="">
+            <span class="none">Lista de Materiais</span>
           </div>
           </li>
           <li>
             <div class="icon_list options" onclick="navigateToDevolutionPage()">
-            <img src="../img/icon_devolution.png" alt="">
-            <span> Devolução</span>
+            <img src="../img/icon_devolution.png" title="Devolução" alt="">
+            <span class="none"> Devolução</span>
           </div>
           </li>
           <li>
             <div class="icon_list options">
-            <img src="../img/icon_reserva.png" alt="">
-            <span class="options">Consulta de Reserva</span>
+            <img class="im" src="../img/lupa.png" title="Consulta de Reserva"alt="">
+            <span class="options none">Consulta de Reserva</span>
           </div>
           </li>
           <li>
             <div class="icon_list options">
             <div onclick="logout()" class="logout options">
-              <img class="img-logout" src="../img/logout.png" alt="logout.png" />
-              <span class="options">Sair</span>
+              <img class="img-logout im " src="../img/logout1.png"  title="Logout"alt="logout.png" />
+              <span class="options none">Sair</span>
             </div>
             </div>
           </li>
         </ul>
       </nav>
     </section>
+
+    <div class="banner">
+
+    
+      <div class="span">
+        <span class="estoque">Estoque Inteligente</span>
+        <span class="result"> RESULTADOS BRILHANTES</span>
+        <span class="nivel">Eleve o nível da sua Empresa</span>
+      </div>
+      <div class="img-stoq">
+        <img class="img2" src="../img/img-stoq.png" alt="">
+      </div>
+    </div>
+    
     </div>
   
-      <section id="banner-img">
+
+    <!--  <section id="banner-img">
       <img id="banner" src="../img/img-stq.png" alt="banner">
-    </section>
+    </section> -->
+     
 
   <script src="../script.js"></script>
 
