@@ -36,6 +36,7 @@ function navigateCartPage() {
 }
 
 ///////////////////////// MENU LATERAL ///////////////////////////////////
+
 const menuSize = '350px'
 let open = false
 
@@ -185,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   ////////////////////////// DESTACAR LINHA AO CLICAR /////////////////////////////
 
+
   tabelaMateriais.addEventListener('click', function (event) {
     const target = event.target
 
@@ -328,150 +330,3 @@ atualizarListaProdutos()
 
 
 
-///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
-
-function adicionarCarrinho() {
-  console.log('teste')
-  // Recupera os dados do produto selecionado
-  const linhaSelecionada = document.querySelector('.selected-row')
-  const nome = linhaSelecionada.cells[0].textContent
-  const codigo = linhaSelecionada.cells[1].textContent
-  const quantidade = linhaSelecionada.cells[2].textContent
-  const tipo = linhaSelecionada.cells[3].textContent
-  const preco = linhaSelecionada.cells[4].textContent
-
-  // Cria um objeto com os dados do produto
-  const produto = {
-    nome: nome,
-    codigo: codigo,
-    quantidade: quantidade,
-    tipo: tipo,
-    preco: preco
-  }
-
-  // Verifica se já existem produtos no carrinho
-  let carrinho = localStorage.getItem('carrinho')
-  if (!carrinho) {
-    // Se não existir, cria um novo carrinho com o produto atual
-    carrinho = [produto]
-  } else {
-    // Se existir, converte o carrinho de JSON para um array de objetos
-    carrinho = JSON.parse(carrinho)
-    // Adiciona o produto atual ao carrinho
-    carrinho.push(produto)
-  }
-
-  // Armazena o carrinho atualizado no localStorage
-  localStorage.setItem('carrinho', JSON.stringify(carrinho))
-
-  alert('O item foi adicionado ao carrinho!')
-  window.location.href = 'cart-page.html' // Redireciona para a página do carrinho
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  const tabelaCarrinho = document.getElementById('tabela-carrinho')
-  if (tabelaCarrinho) {
-    const tbodyCarrinho = tabelaCarrinho.getElementsByTagName('tbody')[0]
-
-    // Verifica se existem produtos no carrinho
-    let carrinho = localStorage.getItem('carrinho')
-    if (carrinho) {
-      // Converte o carrinho de JSON para um array de objetos
-      carrinho = JSON.parse(carrinho)
-
-      // Percorre o array de produtos do carrinho e adiciona-os à tabela
-      carrinho.forEach(function (produto) {
-        const novaLinha = document.createElement('tr')
-
-        novaLinha.innerHTML = `
-        <td>${produto.nome}</td>
-        <td>${produto.codigo}</td>
-        <td>${produto.quantidade}</td>
-        <td>${produto.tipo}</td>
-        <td>${produto.preco}</td>
-      `
-
-        tbodyCarrinho.appendChild(novaLinha)
-      })
-    }
-  }
-})
-
-////////////////////////////////// CARRINHO /////////////////////////////////////////////
-
-// Solicitação de reserva
-
-const botaoReserva = document.getElementById('cadastrar')
-const modal = document.getElementById('modal')
-if (modal) {
-  const closeButton = modal.querySelector('.close')
-  function exibirModal() {
-    modal.style.display = 'block'
-  }
-  function fecharModal() {
-    modal.style.display = 'none'
-  }
-  botaoReserva.addEventListener('click', exibirModal)
-
-  closeButton.addEventListener('click', fecharModal)
-}
-
-function fecharModal() {
-  modal.style.display = 'none'
-  window.location.href = 'home.html'
-}
-
-function atualizarTotal() {
-  console.log('valor')
-  let total = 0
-  let carrinho = localStorage.getItem('carrinho')
-  console.log(carrinho)
-  if (carrinho) {
-    carrinho = JSON.parse(carrinho)
-
-    console.log(carrinho)
-    carrinho.forEach(function (produto) {
-      const stringValor = produto.preco
-      const valorNumerico = parseFloat(stringValor.replace('R$', '').trim())
-
-      if (produto.preco && !isNaN(valorNumerico)) {
-        total += parseFloat(valorNumerico)
-      }
-    })
-  }
-
-  const valorElement = document.querySelector('.valor')
-  if (valorElement) {
-    valorElement.textContent = 'R$ ' + total.toFixed(2)
-  } else {
-    console.log('O elemento .valor não foi encontrado no HTML.')
-  }
-}
-
-
-function atualizarCarrinho() {
-  const carrinho = localStorage.getItem('carrinho');
-  const tbody = document.querySelector('#tabela-carrinho tbody');
-  
-  // Limpar a tabela do carrinho
-  tbody.innerHTML = '';
-  
-  if (carrinho) {
-    const produtos = JSON.parse(carrinho);
-    
-    produtos.forEach((produto) => {
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${produto.nome}</td>
-        <td>${produto.codigo}</td>
-        <td>${produto.qtd}</td>
-        <td>${produto.tipo}</td>
-        <td>${produto.preco}</td>
-        <td>
-          <button class="remover" data-codigo="${produto.codigo}">Remover</button>
-        </td>
-      `;
-      tbody.appendChild(row);
-    });
-  }
-}

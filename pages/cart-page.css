@@ -145,6 +145,17 @@ table {  /*define o estilo para uma tabela, incluindo flexibilidade, sombra e bo
   width:100%;
 
 }
+.remover-button {
+  background-color: rgba(32, 131, 245, 0.377);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remover-button:hover {
+  background-color: red;
+}
 
 
 tr {  /*define o estilo para as linhas da tabela, incluindo alinhamento central, borda inferior e cor de fundo.*/
@@ -444,3 +455,180 @@ cursor: pointer;
 }
 
 
+/*////////////////////////////////////// TABELA - DESCRIÇÃO DO MATERIAL //////////////////////////////////////////*/
+
+dialog {  /* Abre uma tela pop-up com a descrição e imagem do material*/  
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 1px;
+  width: 60%;
+  height: auto;
+  background-color: #fffcfc;
+}
+  
+.remover-button {
+  background-color: rgba(32, 131, 245, 0.377);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remover-button:hover {
+  background-color: red;
+}
+
+.btn_fechar_descricao{
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_fechar_descricao:hover{
+  background-color: red;
+}
+
+.modal-header { /*cabeçalho da descrição do material*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -26px;
+  margin-left: -16px;
+  margin-right: -16px;
+  background-color: #020202;
+  height: 50px;
+  box-shadow: 0px 100px 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+#description{
+  font-size: 20px;
+  justify-content:left;
+}
+
+.text-modal{ /*texto cabeçalho do menu de descrição*/
+  padding-top: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+  margin-left: 25%;
+
+}
+
+.product-info { /*container informações do produto*/
+  font-family: serif red;
+  font-size: 20px;
+}
+
+.img-description { /*container - imagem do material */
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#product-img { /*imagem do material*/
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#closed_dialog { /* Define a posição do botão de fechar diálogo*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.closed_dialog_ok{
+  position:fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px;
+}
+
+.btn_fechar_descricao_ok{
+  background-color: #00ff4c;
+  padding: 5px 8px;
+}
+
+ /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
+
+.cart-fav-add{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.btn-cart-add, .btn-favorite-add{
+  display: flex;
+  text-align: center;
+  padding: 3px;
+  align-items: center;
+}
+
+.btn-cart-add img{
+  margin-left: 8px;
+}
+
+.btn-favorite-add img{ 
+  margin-left: 8px;
+}
+
+.favorite-add{
+  margin-left: 15px;
+}
+
+.btn-cart-add{ 
+  background-color: #77757291;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.btn-cart-add:hover{ 
+  transition: transform 0.7s ease; 
+  transform: scale(1.02);
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.btn-favorite-add{ 
+  margin-left: 15px;
+  background-color: #d12c2c;
+  box-sizing: border-box;
+}
+
+.btn-favorite-add:hover{ 
+  transition: transform 0.7s ease; 
+  transform: scale(1.02);
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.btn_fechar_descricao_ok:hover{
+  background-color: rgb(55, 247, 61);
+  font-weight: bold;
+  color: #F5F5F5;
+}
+
+#input-pesquisa {  /*define o estilo para a área de pesquisa por materiais */
+  border-radius: 6px;
+  border: none;
+  width: 98%;
+  height: 30px;
+  flex: 1;
+  background: url("../img/search.png") no-repeat right;
+  display: flex;
+  align-items: center;
+  background-size: 16px;
+  background-position: right 20px top 15px;
+  background-color: #FFF;
+  margin-left: 8px;
+}
+
+tr.selected-row td {
+  background-color: rgba(5, 133, 238, 0.308);
+  /* cor para a linha destacada */
+}

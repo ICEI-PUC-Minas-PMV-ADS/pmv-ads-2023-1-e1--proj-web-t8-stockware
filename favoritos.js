@@ -217,54 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
   
 
-  ///////////////////////////////// FUNÇÃO DE PESQUISAR POR MATERIAIS ////////////////////////////////////
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabelaFavoritos = document.getElementById('tabela-favoritos');
-    const inputPesquisa = document.getElementById('input-pesquisa');
-    let linhasTabela = tabelaFavoritos.getElementsByTagName('tr');
-  
-    if (!inputPesquisa) return;
-  
-    inputPesquisa.addEventListener('input', function (event) {
-      const termoPesquisa = event.target.value.toLowerCase();
-      const palavrasPesquisa = termoPesquisa.split('*').map(palavra => palavra.trim());
-  
-      for (let i = 1; i < linhasTabela.length; i++) {
-        const colunas = linhasTabela[i].getElementsByTagName('td');
-        let correspondenciaEncontrada = false;
-  
-        for (let j = 0; j < colunas.length; j++) {
-          const textoColuna = colunas[j].innerText.toLowerCase();
-  
-          let todasPalavrasEncontradas = true;
-  
-          for (let k = 0; k < palavrasPesquisa.length; k++) {
-            const palavra = palavrasPesquisa[k];
-  
-            if (palavra !== '' && !textoColuna.includes(palavra)) {
-              todasPalavrasEncontradas = false;
-              break;
-            }
-          }
-  
-          if (todasPalavrasEncontradas) {
-            correspondenciaEncontrada = true;
-            break;
-          }
-        }
-  
-        if (correspondenciaEncontrada) {
-          linhasTabela[i].style.display = '';
-        } else {
-          linhasTabela[i].style.display = 'none';
-        }
-      }
-    });
-  });
-  
-  
-  ////////////////////////// DESTACAR LINHA AO CLICAR /////////////////////////////
+  ////////////////////////// LOCALIZAR MATERIAIS /////////////////////////////
 
   document.addEventListener('DOMContentLoaded', function () {
     const tabelaFavoritos = document.getElementById('tabela-favoritos');
