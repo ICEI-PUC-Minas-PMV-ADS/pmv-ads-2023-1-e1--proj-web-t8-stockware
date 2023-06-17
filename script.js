@@ -480,6 +480,8 @@ function atualizarCarrinho() {
   }
 }
 
+////////////////////////////////// ABRIL MODAL NA PAGINA DO CARRINHO /////////////////////////////////////////////
+
 function openProductModal(nome, imagem, descricao) {
   var modal = document.getElementById('productModal');
   var nameElement = document.getElementById('productDescription');
