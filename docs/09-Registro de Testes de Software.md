@@ -81,7 +81,7 @@ Material sendo transferido para tela de carrinho.
 Notificação após o usuário finalizar pedido de requisição de materiais.
 
 **Pontos fracos:**
-Não está sendo apresentado um número aleatório para que o admin possa aprovar a reserva solicitada.
+Não apresenta número aleatório para aprovação de reserva solicitada.
 
 **Solução:**
  Implementar gerador de números aleatórios contendo 6 números usando javascript.
@@ -93,7 +93,7 @@ Não está sendo apresentado um número aleatório para que o admin possa aprova
 
 ## Avaliação
 
-Durante os testes, identificamos funcionalidades bem-sucedidas. No entanto, também foram identificadas falhas. A equipe se apresenta comprometida em atacar esses pontos fracos identificados e, após a implementação dessas melhorias, visamos apresentar um sistema estável e confiável, proporcionando uma experiência de usuário aprimorada.
+Durante os testes, foram indentificadas funcionalidades bem-sucedidas assim como também foram identificadas falhas, após a implementação de melhorias, o objetivo é apresentar um sistema estável e confiável. 
 
 
 
