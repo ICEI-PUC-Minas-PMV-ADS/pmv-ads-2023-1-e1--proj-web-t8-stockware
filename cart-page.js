@@ -91,6 +91,8 @@ function adicionarCarrinho() {
         var inputValue = event.target.textContent.trim();
   
         // Verifica se o valor digitado é vazio ou nulo
+
+
         if (inputValue === '' || inputValue === null) {
           // Define a quantidade como 0
           event.target.textContent = '';
@@ -135,13 +137,16 @@ function adicionarCarrinho() {
     var totalArea = document.getElementById('total');
     totalArea.textContent = 'Total: R$ ' + total.toFixed(2);
   });
+
   
 /////////////////////////////// SOLICITAR RESERVA ///////////////////////////
 
+/// JavaScript
 function solicitarMateriais() {
   // Verifica se há materiais no carrinho
   var tabelaCarrinho = document.getElementById('tabela-carrinho');
   var tbody = tabelaCarrinho.querySelector('tbody');
+
   if (tbody.children.length === 0) {
     alert('Não há materiais no carrinho para solicitar.');
     return;
@@ -150,8 +155,26 @@ function solicitarMateriais() {
   // Gera um número aleatório de 6 dígitos
   var numeroPedido = Math.floor(Math.random() * 900000) + 100000;
 
-  // Exibe o número do pedido
-  alert('Número do pedido: ' + numeroPedido);
+  // Exibe o número do pedido no modal
+  var modal = document.getElementById('myModal');
+  var modalMessage = document.getElementById('modalMessage');
+  modalMessage.textContent = 'Número do pedido: ' + numeroPedido;
+
+  // Exibe o modal
+  modal.style.display = 'block';
+
+  // Fecha o modal ao clicar no botão de fechar
+  var closeModalButton = document.querySelector('.close_reserva');
+  closeModalButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  // Fecha o modal ao clicar no botão "OK" e redireciona para a página inicial
+  var okButton = document.getElementById('okButton');
+  okButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+    window.location.href = 'home.html';
+  });
 
   // Remove todas as linhas da tabela
   while (tbody.firstChild) {
@@ -165,6 +188,8 @@ function solicitarMateriais() {
   // Limpa o armazenamento local (carrinho)
   localStorage.removeItem('carrinho');
 }
+
+
 
   
   
@@ -235,72 +260,72 @@ function solicitarMateriais() {
   
   ///////////////////// EXIBIR DESCRIÇÃO DO MATERIAL /////////////////////////
 
-  function exibirDescricao(descricao, caminhoImagem) {
-    const dialog = document.getElementById('list-modal');
-    const description = document.getElementById('description');
-    const img = document.getElementById('product-img');
-    const cartAddDiv = document.querySelector('.cart-add');
+  // function exibirDescricao(descricao, caminhoImagem) {
+  //   const dialog = document.getElementById('list-modal');
+  //   const description = document.getElementById('description');
+  //   const img = document.getElementById('product-img');
+  //   const cartAddDiv = document.querySelector('.cart-add');
   
-    description.innerText = descricao;
-    img.src = caminhoImagem;
+  //   description.innerText = descricao;
+  //   img.src = caminhoImagem;
   
-    // Obtém a célula clicada
-    const clickedCell = event.target;
+  //   // Obtém a célula clicada
+  //   const clickedCell = event.target;
     
-    // Verifica se a célula pertence às colunas "QTD" ou "Ação"
-    if (clickedCell.cellIndex === 2 || clickedCell.cellIndex === 6) {
-      return; // Não exibe a descrição se clicar nessas células
-    }
+  //   // Verifica se a célula pertence às colunas "QTD" ou "Ação"
+  //   if (clickedCell.cellIndex === 2 || clickedCell.cellIndex === 6) {
+  //     return; // Não exibe a descrição se clicar nessas células
+  //   }
     
-    dialog.showModal();
+  //   dialog.showModal();
   
-    cartAddDiv.addEventListener('click', adicionarCarrinho);
-  }
+  //   cartAddDiv.addEventListener('click', adicionarCarrinho);
+  // }
   
   
 
 //////////// FECHAR CAIXA DE DESCRIÇÃO DE MATERIAIS /////////////////
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Obtém os elementos dos botões de fechar
-    var fecharDescricaoBtns = document.getElementsByClassName('btn_fechar_descricao');
-    var fecharDescricaoOkBtns = document.getElementsByClassName('btn_fechar_descricao_ok');
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Obtém os elementos dos botões de fechar
+//     var fecharDescricaoBtns = document.getElementsByClassName('btn_fechar_descricao');
+//     var fecharDescricaoOkBtns = document.getElementsByClassName('btn_fechar_descricao_ok');
   
-    // Obtém o elemento do diálogo
-    var dialogModal = document.getElementById('list-modal');
+//     // Obtém o elemento do diálogo
+//     var dialogModal = document.getElementById('list-modal');
   
-    // Verifica se os elementos foram encontrados corretamente
-    if (fecharDescricaoBtns.length > 0 && fecharDescricaoOkBtns.length > 0 && dialogModal) {
-      // Itera sobre os botões de fechar
-      for (var i = 0; i < fecharDescricaoBtns.length; i++) {
-        var fecharDescricaoBtn = fecharDescricaoBtns[i];
+//     // Verifica se os elementos foram encontrados corretamente
+//     if (fecharDescricaoBtns.length > 0 && fecharDescricaoOkBtns.length > 0 && dialogModal) {
+//       // Itera sobre os botões de fechar
+//       for (var i = 0; i < fecharDescricaoBtns.length; i++) {
+//         var fecharDescricaoBtn = fecharDescricaoBtns[i];
         
-        // Adiciona um evento de clique a cada botão de fechar
-        fecharDescricaoBtn.addEventListener('click', function () {
-          // Fecha o diálogo
-          dialogModal.close();
-        });
-      }
+//         // Adiciona um evento de clique a cada botão de fechar
+//         fecharDescricaoBtn.addEventListener('click', function () {
+//           // Fecha o diálogo
+//           dialogModal.close();
+//         });
+//       }
   
-      for (var j = 0; j < fecharDescricaoOkBtns.length; j++) {
-        var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j];
+//       for (var j = 0; j < fecharDescricaoOkBtns.length; j++) {
+//         var fecharDescricaoOkBtn = fecharDescricaoOkBtns[j];
         
-        // Adiciona um evento de clique a cada botão de fechar "ok"
-        fecharDescricaoOkBtn.addEventListener('click', function () {
-          // Fecha o diálogo
-          dialogModal.close();
-        });
-      }
+//         // Adiciona um evento de clique a cada botão de fechar "ok"
+//         fecharDescricaoOkBtn.addEventListener('click', function () {
+//           // Fecha o diálogo
+//           dialogModal.close();
+//         });
+//       }
   
-      // Adiciona um evento de teclado para fechar o diálogo ao pressionar o botão Esc
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          dialogModal.close();
-        }
-      });
-    }
-  });
+//       // Adiciona um evento de teclado para fechar o diálogo ao pressionar o botão Esc
+//       document.addEventListener('keydown', function (event) {
+//         if (event.key === 'Escape') {
+//           dialogModal.close();
+//         }
+//       });
+//     }
+//   });
   
 
   ////////////////////////// LOCALIZAR MATERIAIS /////////////////////////////
@@ -415,3 +440,61 @@ function adicionarFavoritos() {
 
   alert('O item foi adicionado aos favoritos!');
 }
+
+////////////////////////////////// ABRIL MODAL NA PAGINA DO CARRINHO /////////////////////////////////////////////
+
+function openProductModal(nome, imagem, descricao) {
+  var modal = document.getElementById('productModal');
+  var nameElement = document.getElementById('productDescription');
+  var imageElement = document.getElementById('productImage');
+  var desElement = document.getElementById('productDes');
+  imageElement.classList.add('nome-da-classe');
+  var closeModalButton = modal.querySelector('.btn_fechar_descricao_ok');
+  
+  // Obtém a célula clicada
+  var clickedCell = event.target;
+  
+  // Verifica se o clique foi em alguma das células específicas
+  if (clickedCell.cellIndex === 2 || clickedCell.cellIndex === 6) {
+    return; // Não abre o modal
+  }
+
+  // Define a descrição e a imagem do produto no modal
+  nameElement.textContent = nome;
+  imageElement.src = imagem;
+  desElement.textContent = descricao;
+
+  // Exibe o modal
+  modal.style.display = 'block';
+
+  // Adiciona o evento de clique para fechar o modal
+  closeModalButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var tabelaCarrinho = document.getElementById('tabela-carrinho');
+  tabelaCarrinho.addEventListener('click', function(event) {
+    var target = event.target;
+
+    // Verifica se o elemento clicado é uma célula da tabela
+    if (target.tagName === 'TD') {
+      var nome = target.parentElement.cells[0].textContent; // Obtém a descrição do produto
+      var codigo = target.parentElement.cells[1].textContent;
+      var produtosDoLocalStorage = JSON.parse(localStorage.getItem('produtos'));
+      var produtoDesseCodigo = produtosDoLocalStorage.find(item => item.codigo === codigo);
+      var imagem = produtoDesseCodigo.imagem;
+      var descricao = produtoDesseCodigo.descricao;
+      
+      openProductModal(nome, imagem, descricao); // Chama a função openProductModal
+    }
+  });
+});
+
+var closeModalButton = document.querySelector('.close');
+closeModalButton.addEventListener('click', function() {
+  var modal = document.getElementById('productModal');
+  modal.style.display = 'none';
+});
+

@@ -63,6 +63,7 @@ body {
 .actions {  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
     display: flex;
     gap: 12px;
+    cursor: pointer;
    }
 
 .favorite:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
@@ -302,16 +303,27 @@ td img:hover { /* Imagem favoritos da coluna ação*/
 /* /////////////////////////////////////   DESCRIÇÃO DOS MATERIAIS  ////////////////////////////////////////////*/
 .modal-header {
     /*cabeçalho da descrição do material*/
-    margin-top: -26px;
-    margin-left: -20px;
-    margin-right: -16px;
+    margin-top: -22px;
+    margin-left: -21px;
+    margin-right: -21px;
     background-color: #020202;
-    height: 50px;
+    height: 35px;
     box-shadow: 0px 100px 50px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0px 0px;
   }
 
-.text-modal {
-  /*texto cabeçalho do menu de descrição*/
+  .modal-header h4{
+  
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-left: 35%;
+    font-size: 20PX;
+   
+  }
+
+  .text-modal {
+    /*texto cabeçalho do menu de descrição*/
     padding-top: 10px;
     font-family: 'Poppins';
     font-style: normal;
@@ -319,7 +331,7 @@ td img:hover { /* Imagem favoritos da coluna ação*/
     font-size: 28px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
-    margin-left: 30%;
+    background-color: #020202;
   }
 
 .btn_fechar_descricao {
@@ -382,6 +394,12 @@ dialog {
     margin-bottom: 50px;
   }
 
+  #productImage{
+    width: 50%;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 30px;
+  }
 .closed_dialog_ok {   
     margin-left:42px
    }
@@ -394,12 +412,72 @@ dialog {
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
   }
 
+ /* Modal solicitar reserva */
+.modal {
+  display: none; /* Esconder por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+}
+
+.header-reserva{
+  text-align: center;
+  background-color: #020202;
+  color: #fff;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -40px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+.modal-content-reserva {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  max-width: 500px;
+}
+
+.close_reserva {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -45px;
+  margin-right: 6px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#okButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #00a6cc;
+margin-left: 40%;
+}
+
 /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
 
 .cart-fav-add {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;  
+    margin-top: 28px; 
   }
 
 .btn-favorite-add {
@@ -606,8 +684,8 @@ body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 400px;
-    border-radius: 4px;
+    width: 50%;
+    border-radius: 20px;
   }
 
 .modal-header {
@@ -622,15 +700,20 @@ body {
   }
 
 .close {
-    color: #aaa;
-    font-size: 28px;
+    color: #fffafa;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+
+  margin-right: 10px;
+
+ 
+ 
   }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     cursor: pointer;
   }

@@ -427,4 +427,3 @@ closeModalButton.addEventListener('click', function() {
   modal.style.display = 'none';
 });
 
-

@@ -156,18 +156,43 @@
 <div class="solic-reserv-cart">
 <div id="total"></div> <!-- Adicionado elemento para exibir o total -->
 <button id="btn-solicitar" onclick="solicitarMateriais()">Solicitar Reserva</button>
+<!-- HTML -->
+<!-- HTML -->
+<div id="myModal" class="modal">
+  <div class="modal-content-reserva">
+    <div class="header-reserva">
+      <h3>Solicitação finalizada</h3>
+      <span class="close_reserva">&times;</span>
+    </div>
+  
+ 
+    <p id="modalMessage"></p>
+    <button id="okButton">OK</button>
+  </div>
+</div>
 </div>
 
   <div id="productModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h2>Detalhes do Produto</h2>
+        <h4>Detalhes do Produto</h4>
         <span class="close">&times;</span>
       </div>
       <div class="modal-body">
         <h3 id="productDescription"></h3>
-        <img id="productImage" src="" alt="">
         <span class="des" id="productDes"> </span>
+        <img id="productImage" src="" alt="">
+        <footer class="cart-fav-add">
+          <div>
+            <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
+                src="../img/favorite.png" alt=""></button>
+          </div>
+    
+          <div class="closed_dialog_ok">
+            <button class="btn_fechar_descricao_ok">OK</button>
+          </div>
+        </footer>
+      </dialog>
       </div>
     </div>
   </div>
@@ -180,6 +205,7 @@
   </script>
   <script src="../script.js"></script>
    <script src="../cart-page.js"></script>
+   <script src="../login.js"></script>
 
 </body>
 </html>
