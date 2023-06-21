@@ -474,7 +474,7 @@ dialog {
 
   /*//////////////////////////////////////////// RESPONSIVIDADE PARA DESKTOP /////////////////////////////////////////*/
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     body {
       width: 98.7%;
       margin-left: 8px;
@@ -496,10 +496,86 @@ dialog {
       height: 100%;
       transition: .5s;
       /*margin-top: -75px;*/
-    }
+    /*}
 
 .full-width {
       /*define o container para aba de pesquisa e tabela*/
-      margin-right: 0;
+      /*margin-right: 0;
     }
-  }
+  } */
+
+  @media screen and (max-width: 480px){
+
+    .full-width{
+       width: 700px;
+     }
+    
+    .header{
+       width: 651px;
+      }
+    
+    .title-main{
+        width: 523px;
+       }
+    
+       .container-pesquisa{
+        width: 680px;
+       }
+    
+    body{
+       width: 700px;
+      }
+       }
+    
+       @media screen and (min-width: 280px){
+        .img-menu{
+          position: absolute;
+                 
+           
+          left: calc(220px);
+          
+              width: 25px;
+        }
+
+        td{
+        font-size: 15px;
+        }
+       }
+    
+       @media screen and (min-width: 400px){
+        .img-menu{
+          position: absolute;
+          left: calc(220px);
+              width: 25px;
+        }
+
+        td{
+          font-size: 11px;
+          }
+       }
+    
+       @media screen and (min-width: 700px){
+        .img-menu{
+          position: absolute; 
+          left: calc(220px);
+              width: 25px;
+        }
+
+        td{
+          font-size: 14px;
+          }
+       }
+    
+       @media screen and (min-width: 1200px){
+        .img-menu{
+          position: absolute;
+          
+            
+           
+          left: calc(220px);
+          
+              width: 25px;
+        }
+       }
+    
+    

@@ -93,7 +93,7 @@ body {
     border-radius: 6px;
     padding: 8px;
     margin-left: -450px;
-    position: fixed;
+    position: absolute;
     width: 20%;
     height: 100%;
     transition: .5s;
@@ -515,7 +515,7 @@ margin-left: 40%;
     color: #F5F5F5;
   }
 
-/*///////////////////// RESPONSIVIDADE PARA MOBILE ////////////////////////////////*/
+/* ///////////////////// RESPONSIVIDADE PARA MOBILE ////////////////////////////////
 
 
 @media only screen and (max-width: 768px) {
@@ -622,10 +622,10 @@ dialog {
 button{
     width: 20%;
   }
-}
+}*/
 
 /*/////////////////////////// RESPONSIVIDADE PARA DESKTOP ///////////////////////////////////*/
-
+/*
 @media only screen and (min-width: 1024px) {
 body {
     width: 98.7%;
@@ -641,7 +641,7 @@ body {
 .full-width {
     margin-right: 0;
   }
-}
+} */
 
 .text-total, .valor{
 
@@ -723,3 +723,67 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  @media screen and (max-width: 480px){
+
+    .backgroud{
+       width: 600px;
+     }
+
+     .background-main{
+background-color: #00c4cc;
+width: 500px;
+     }
+
+     .title{
+      width: 612px;
+     }
+    
+    .header{
+       width: 563px;
+      }
+    #tabela-carrinho{
+    width: 100%;
+    }
+       
+    #input-pesquisa{
+        width: 590px;
+       }
+    
+    body{
+       width: 620px;
+       
+      }
+
+    }
+      @media screen and (min-width: 280px){
+        .img-menu{
+          position: absolute;
+              width: 36px;
+        }
+
+
+       }
+    
+       @media screen and (min-width: 400px){
+        .img-menu{
+          position: absolute;
+              width: 28px;
+        }
+  
+       }
+       
+   @media screen and (min-width: 700px){
+    .img-menu{
+      position: absolute;
+          width: 28px;
+    }
+
+   }
+
+   @media screen and (min-width: 1200px){
+    .img-menu{
+      position: absolute;
+          width: 28px;
+    }
+   }

@@ -152,7 +152,7 @@ button:hover{
     border-radius: 6px;
     padding: 8px;
     margin-left: -350px;
-    position: fixed;
+    position: absolute;
     width: 20%;
     height: 100%;
     transition: .5s;
@@ -183,11 +183,12 @@ button:hover{
     transform: margin .4s;
   }
   
-@media (min-width: 368px) {
+@media (min-width: 280px) {
     .main-menu-list {
-      min-width: 261.75px;
+      min-width: 260px;
       width: 20%;
       margin-top:0%;
+  
     }
   }
   
@@ -555,8 +556,8 @@ margin-right: 10px;
 }*/
 
 /*/////////////////////////// RESPONSIVIDADE PARA DESKTOP ///////////////////////////////////*/
-
-/*@media only screen and (min-width: 1024px) {
+/*
+@media only screen and (min-width: 1024px) {
   body {
     width: 98.7%;
     margin-left: 8px;
@@ -579,3 +580,74 @@ margin-right: 10px;
   }
 }
 */
+
+@media screen and (max-width: 480px){
+
+.backgroud{
+   width: 500px;
+ }
+
+.header{
+   width: 475px;
+  }
+
+.title-main{
+    width: 523px;
+   }
+
+#input-pesquisa{
+    width: 498px;
+   }
+
+body{
+   width: 532px;
+  }
+   }
+
+   @media screen and (min-width: 280px){
+    .img-menu{
+      position: absolute;
+             
+       
+      left: calc(180px);
+      
+          width: 28px;
+    }
+   }
+
+   @media screen and (min-width: 400px){
+    .img-menu{
+      position: absolute;
+
+        
+       
+      left: calc(150px);
+      
+          width: 28px;
+    }
+   }
+
+   @media screen and (min-width: 700px){
+    .img-menu{
+      position: absolute;
+      
+        
+       
+      left: calc(100px);
+      
+          width: 28px;
+    }
+   }
+
+   @media screen and (min-width: 1200px){
+    .img-menu{
+      position: absolute;
+      
+        
+       
+      left: calc(20px);
+      
+          width: 28px;
+    }
+   }
+
