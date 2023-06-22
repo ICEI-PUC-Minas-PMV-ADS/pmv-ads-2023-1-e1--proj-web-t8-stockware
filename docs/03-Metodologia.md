@@ -55,7 +55,7 @@ Marcos Teixeira Dias
 
 ### Processo
 
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello, link do repositório disponível em: [Link](https://trello.com/b/V8Prqx9N/stockware)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando quandro kanban feito com o Trello, link do repositório disponível em: [Link](https://trello.com/b/V8Prqx9N/stockware)
 
 Estruturado com as seguintes listas: 
  
