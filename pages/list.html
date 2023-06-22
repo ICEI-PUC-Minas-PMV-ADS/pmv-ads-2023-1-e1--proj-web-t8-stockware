@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,34 +7,29 @@
   <title>Lista de materiais</title>
   <link rel="stylesheet" href="list.css" />
 
-  <style>
-    /* Estilos para o nome de usuário */
-    .username {
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
-
+          <style>
+            /* Estilos para o nome de usuário */
+            .username {
+              font-family: Arial, Helvetica, sans-serif;
+              color: white;
+              font-size: 14px;
+            }
+          </style>
 </head>
-
 <body onload="atualizarListaProdutos()">
 
   <header class="header">
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
-
         <span class="text-stock">tockWare</span>
       </div>
-
       <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
     </div>
     <div>
     </div>
-    
-    <div class="actions">
 
+    <div class="actions">
       <div class="favorite">
         <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho"
           src="../img/favorite.png" alt="" />
@@ -47,24 +41,22 @@
       </div>
       <div class="profile">
         <img title="Meu perfil" class="img-action-cabecalho" src="../img/profile.png" alt="" />
-        <script> // referências para as bibliotecas jQuery e Bootstrap.
 
+        <script> // referências para as bibliotecas jQuery e Bootstrap.
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
            // carrega a biblioteca Bootstrap em sua versão//
         </script>
-
       </div>
     </div>
   </header>
+
   <section class="main-menu-list">
     <nav class="menu">
-
       <ul class="list">
         <li>
           <div class="icon_list options" onclick="navigateToHome()">
@@ -78,7 +70,7 @@
             <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_devolution.png" alt="">
             <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
@@ -88,7 +80,7 @@
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img class="ol" src="../img/lupa.png" alt="">
             <span class="options">Consulta de Reserva</span>
-        </li>
+        </li> -->
         <li>
           <div onclick="logout()" class="logout options">
             <img class="ol" class="img-logout" src="../img/logout1.png" alt="logout.png" />
@@ -103,12 +95,9 @@
     <div class="title">
       <h2>Lista de materiais</h2>
     </div>
-
     <div class="full-width container-pesquisa">
-     
       <input type="text" id="input-pesquisa" placeholder="Pesquisar:"
         title="Você pode usar o caractere * para procurar por palavras chaves" />
-
     </div>
 
     <dialog id="list-modal">
@@ -127,7 +116,7 @@
           </div>
         </div>
       </main>
- 
+
       <footer class="cart-fav-add">
         <div class="cart-add">
           <button class="btn-cart-add">Adicionar ao Carrinho <img src="../img/cart.png" alt=""></button>
@@ -136,12 +125,12 @@
           <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
               src="../img/favorite.png" alt=""></button>
         </div>
-
         <div class="closed_dialog_ok">
           <button class="btn_fechar_descricao_ok">OK</button>
         </div>
   </div>
   </footer>
+
   </dialog>
   <div class="full-width">
     <table id="tabela-materiais">
@@ -153,25 +142,26 @@
           <th>Tipo</th>
           <th>Preço</th>
           <th>Local</th>
-
         </tr>
       </thead>
       <tbody id="produtos-lista">
       </tbody>
     </table>
-
+    </div>
+    
+    <footer id="copyrightc">
+      <p> 2023 copyrightc - Direitos reservados a equipe StockWare ©</p>
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
       </script>
-
-
     <script src="../script.js"></script>
     <script src="../favoritos.js"></script>
     <script src="../cart-page.js"></script>
-    
-</body>
 
+</body>
 </html>

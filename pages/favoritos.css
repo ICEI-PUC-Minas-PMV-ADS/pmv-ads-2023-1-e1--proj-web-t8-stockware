@@ -98,7 +98,6 @@ body {
     margin: 1% 10px;
     height:100vh;
     border: 1px solid rgba(121, 119, 119, 0.301);
-
   }
 
 .title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
@@ -138,6 +137,13 @@ button:hover{
     transition: transform 0.3s ease; 
     transform: scale(1.1);
     background-color: #3679f7;
+  }
+
+#copyrightc{
+    background-color: #020202;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -16px;
   }
 
 /*////////////////////////////////////////// MENU LATERAL /////////////////////////////////////////////*/
@@ -291,14 +297,15 @@ tr.selected-row td {
 
   .btn_fechar_descricao {
     color: #ffffff;
-    font-weight: bold;
     cursor: pointer;
     margin-top: -3px;
-  
+    font-weight: 900;
+    font-size: 11px;
   }
 
 .btn_fechar_descricao:hover {
-    background-color: red;
+   color: red;
+   background-color: black;
   }
 
 dialog {
@@ -309,8 +316,6 @@ dialog {
     width: 60%;
     height: 70%;
     background-color: #fffcfc;
-    
-
   }
 
 .modal-header {
@@ -333,7 +338,7 @@ dialog {
     font-size: 28px;
     letter-spacing: 0.07em;
     color: #FFFFFF;
- text-align: center;
+    text-align: center;
   }
 
 .product-info {
@@ -367,14 +372,10 @@ dialog {
     position: absolute;
     top: 10px;
     right: 10px;
-
   }
 
-.closed_dialog_ok {
-    
+.closed_dialog_ok { 
    margin-left:42px
-   
-    
   }
 
 .btn_fechar_descricao_ok {
@@ -391,7 +392,6 @@ dialog {
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
 
 .btn-cart-add {
@@ -555,7 +555,7 @@ margin-right: 10px;
   }
 }*/
 
-/*/////////////////////////// RESPONSIVIDADE PARA DESKTOP ///////////////////////////////////*/
+/*/////////////////////////// RESPONSIVIDADE  ///////////////////////////////////*/
 /*
 @media only screen and (min-width: 1024px) {
   body {
@@ -583,71 +583,56 @@ margin-right: 10px;
 
 @media screen and (max-width: 480px){
 
-.backgroud{
-   width: 500px;
- }
+  .backgroud{
+      width: 500px;
+      }
 
-.header{
-   width: 475px;
+  .header{
+      width: 475px;
+        }
+
+  .title-main{
+      width: 523px;
+        }
+
+  #input-pesquisa{
+      width: 498px;
+        }
+
+  body{
+      width: 532px;
+        }
   }
 
-.title-main{
-    width: 523px;
-   }
-
-#input-pesquisa{
-    width: 498px;
-   }
-
-body{
-   width: 532px;
-  }
-   }
-
-   @media screen and (min-width: 280px){
-    .img-menu{
+@media screen and (min-width: 280px){
+  .img-menu{
       position: absolute;
-             
-       
       left: calc(180px);
-      
-          width: 28px;
+      width: 28px;
     }
-   }
+  }
 
-   @media screen and (min-width: 400px){
-    .img-menu{
-      position: absolute;
-
-        
-       
+@media screen and (min-width: 400px){
+  .img-menu{
+      position: absolute;     
       left: calc(150px);
-      
-          width: 28px;
+      width: 28px;
     }
-   }
+  }
 
-   @media screen and (min-width: 700px){
-    .img-menu{
+@media screen and (min-width: 700px){
+  .img-menu{
       position: absolute;
-      
-        
-       
       left: calc(100px);
-      
-          width: 28px;
+      width: 28px;
     }
-   }
+  }
 
-   @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
     .img-menu{
-      position: absolute;
-      
-        
-       
-      left: calc(20px);
-      
-          width: 28px;
+      position: absolute; 
+      left: calc(28px);
+      width: 28px;
     }
-   }
+  }
 
