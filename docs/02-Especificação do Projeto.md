@@ -1,6 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 Após observação direta de alguns componentes do grupo em seus próprios ambientes de trabalho, bem como pesquisa aprofundada de toda a equipe sobre o tema em questão, analisando o problema existente, os objetivos e o público-alvo ideal citados acima para o sistema, foi possível consolidar as Personas e Histórias de Usuários. 
 
