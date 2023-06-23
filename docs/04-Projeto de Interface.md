@@ -32,9 +32,8 @@ De acordo com o fluxo de interface do projeto exposto na seção anterior, os de
 •	O segundo é o conteúdo, que é exibido na tela conforme a navegação do usuário com o cabeçalho; 
 
 
-![Exemplo de Wireframe](img/Wireframe.png).
-
- Figura 03 - Wireframes
+![Exemplo de Wireframe](img/Wireframe.png). 
+ <sub>Figura 03 - Wireframes<sub>
 
 ## Tela – Login (perfil usuário e administrador)
 
