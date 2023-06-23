@@ -1,7 +1,5 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
 
 Serão apresentadas a seguir as telas referentes aos requisitos funcionais atendidos, suas respectivas URLs e outras orientações de acesso.
 
@@ -9,7 +7,7 @@ Serão apresentadas a seguir as telas referentes aos requisitos funcionais atend
 
 A tela de cadastro de materiais permite ao administrador cadastrar um determinado material no sistema.
 
-![Exemplo de Wireframe](img/tela_cadastro_materiais.png)
+![Exemplo de Wireframe](img/1-cadastro-produto-proj.png) <sub> Figura 01 - Cadastro de materiais<sub>
 
 ## Requisitos atendidos:
 
@@ -51,7 +49,7 @@ RF-02
 
 A tela lista de materiais apresenta todos os materiais cadastrados e suas respectivas informações.
 
-![Exemplo de Wireframe](img/telalista.PNG)
+![Exemplo de Wireframe](img/7-lista-materiais-proj.PNG) <sub> Figura 02 - Lista de materiais <sub>
 
 ## Requisitos atendidos:
 ●	RF-07
@@ -76,7 +74,7 @@ A tela lista de materiais apresenta todos os materiais cadastrados e suas respec
 # Carrinho (RF-08)
 Na tela carrinho serão apresentados todos os materiais que o usuário deseja requisitar, após conferir os materiais desejados, o mesmo poderá finalizar o pedido.
 
-![Exemplo de Wireframe](img/tela_carrinho.png)
+![Exemplo de Wireframe](img/2-carrinho-proj.png) <sub> Figura 03 - Carrinho<sub>
 
 
 ## Requisitos atendidos:
@@ -99,11 +97,11 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 
 
 
-# Mensagem de status (requisição de material) (RF-09)
+# Mensagem de status após requisição de produtos (requisição de material) (RF-09)
 
 Após finalizar um pedido de requisição através do “carrinho”, será apresentado um código referente ao número de pedido. 
 
-![Exemplo de Wireframe](img/status_req.PNG)
+![Exemplo de Wireframe](3-carrinho-requ-proj.PNG) <sub> Figura 04 - Mensagem de status <sub>
 
 ## Requisitos atendidos:
 ●	RF-08
