@@ -152,6 +152,7 @@ body {
     color: white;
   }
 
+
 /* /////////////////////////////////////   CONTEUDO MAIN  ////////////////////////////////////////////*/
 
 .title h2 {  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
@@ -210,6 +211,91 @@ button:hover{
     transform: scale(1.1);
     background-color: #3679f7;
   }
+
+  .text-total, .valor{
+
+    background: black;
+    color:white;
+    padding: 6px 59px;
+    border-radius: 4px 0px 0px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+.valor{
+    background:white;
+    border: 1px solid rgba(117, 115, 115, 0.26);
+    border-radius: 0px 4px 4px 0px;
+    color:black;
+  }
+
+.total{
+    display:flex;
+    justify-content: end;
+    margin-right: 12px;
+    margin-top: 24px;
+  }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 20px;
+  }
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1E4CA5;
+  }
+
+.modal-header h2 {
+    margin-top: 0;
+  }
+
+.close {
+    color: #fffafa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #copyrightc{
+    background-color: #020202;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -16px;
+  }
+  
   
 /* /////////////////////////////////////   LISTA DE MATERIAIS  ////////////////////////////////////////////*/
 
@@ -319,7 +405,6 @@ td img:hover { /* Imagem favoritos da coluna ação*/
     display: flex;
     margin-left: 35%;
     font-size: 20PX;
-   
   }
 
   .text-modal {
@@ -459,18 +544,11 @@ h3{
   margin-right: 6px;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 #okButton {
   margin-top: 10px;
   padding: 5px 10px;
   background-color: #00a6cc;
-margin-left: 40%;
+  margin-left: 40%;
 }
 
 /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
@@ -517,7 +595,7 @@ margin-left: 40%;
     color: #F5F5F5;
   }
 
-/* ///////////////////// RESPONSIVIDADE PARA MOBILE ////////////////////////////////
+/* ///////////////////// RESPONSIVIDADE ////////////////////////////////
 
 
 @media only screen and (max-width: 768px) {
@@ -626,7 +704,6 @@ button{
   }
 }*/
 
-/*/////////////////////////// RESPONSIVIDADE PARA DESKTOP ///////////////////////////////////*/
 /*
 @media only screen and (min-width: 1024px) {
 body {
@@ -645,147 +722,65 @@ body {
   }
 } */
 
-.text-total, .valor{
 
-    background: black;
-    color:white;
-    padding: 6px 59px;
-    border-radius: 4px 0px 0px 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-  }
 
-.valor{
-    background:white;
-    border: 1px solid rgba(117, 115, 115, 0.26);
-    border-radius: 0px 4px 4px 0px;
-    color:black;
-  }
+@media screen and (max-width: 480px){
 
-.total{
-    display:flex;
-    justify-content: end;
-    margin-right: 12px;
-    margin-top: 24px;
-  }
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-    border-radius: 20px;
-  }
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #1E4CA5;
-  }
-
-.modal-header h2 {
-    margin-top: 0;
-  }
-
-.close {
-    color: #fffafa;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-
-  margin-right: 10px;
-
- 
- 
-  }
-
-.close:hover,
-.close:focus {
-    color: rgb(255, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-.modal-body {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media screen and (max-width: 480px){
-
-    .backgroud{
-       width: 600px;
+  .backgroud{
+      width: 600px;
      }
 
-     .background-main{
-background-color: #00c4cc;
-width: 500px;
-     }
+  .background-main{
+      background-color: #00c4cc;
+      width: 500px;
+    }
 
-     .title{
+  .title{
       width: 612px;
      }
     
-    .header{
-       width: 563px;
-      }
-    #tabela-carrinho{
-    width: 100%;
+  .header{
+      width: 563px;
+    }
+
+  #tabela-carrinho{
+      width: 100%;
     }
        
-    #input-pesquisa{
-        width: 590px;
-       }
+   #input-pesquisa{
+      width: 590px;
+    }
     
-    body{
-       width: 620px;
-       
-      }
+  body{
+      width: 620px; 
+    }
 
     }
-      @media screen and (min-width: 280px){
-        .img-menu{
-          position: absolute;
-              width: 36px;
-        }
 
-
-       }
+@media screen and (min-width: 280px){
+  .img-menu{
+      position: absolute;
+      width: 36px;
+    }
+  }
     
-       @media screen and (min-width: 400px){
-        .img-menu{
-          position: absolute;
-              width: 28px;
-        }
-  
-       }
+@media screen and (min-width: 400px){
+  .img-menu{
+      position: absolute;
+      width: 28px;
+    }
+  }
        
-   @media screen and (min-width: 700px){
-    .img-menu{
+@media screen and (min-width: 700px){
+  .img-menu{
       position: absolute;
-          width: 28px;
+      width: 28px;
     }
+  }
 
-   }
-
-   @media screen and (min-width: 1200px){
-    .img-menu{
+@media screen and (min-width: 1200px){
+  .img-menu{
       position: absolute;
-          width: 28px;
-    }
+      width: 28px;
+     }
    }

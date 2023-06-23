@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>home</title>
+  <title>Cadastrar Produtos</title>
   <link rel="stylesheet" href="product-registration.css" />
 
   <style>
@@ -16,52 +16,92 @@
       font-size: 14px;
     }
   </style>
-
 </head>
 
 <body>
+  <header>
   <div class="header">
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
         <span class="text-stock">tockWare</span>
       </div>
+      <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
     </div>
+    <div>
+    </div>
+
     <div class="actions">
       <div class="favorite">
-        <img class="img" src="../img/favorite.png" alt="" />
+        <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho"
+          src="../img/favorite.png" alt="" />
+        </a>
       </div>
       <div class="cart">
-        <img class="img" src="../img/cart.png" alt="" />
+        <img title="Meu carrinho" onclick="navigateCartPage()" class="img-action-cabecalho" src="../img/cart.png"
+          alt="" />
       </div>
       <div class="profile">
-        <img class="img" src="../img/profile.png" alt="" />
-        <script> // referências para as bibliotecas jQuery e Bootstrap.
+        <img title="Meu perfil" class="img-action-cabecalho" src="../img/profile.png" alt="" />
 
+        <script> // referências para as bibliotecas jQuery e Bootstrap.
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-  
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
         </script>
-  
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-          </script>
       </div>
     </div>
   </div>
+</header>
+
+  <section class="main-menu-list">
+    <nav class="menu">
+      <ul class="list">
+        <li>
+          <div class="icon_list options" onclick="navigateToHome()">
+            <img src="../img/icon_home.png" alt="">
+            <span class="options" onclick="navigateToHome()">Home</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon_list options" onclick="navigateToListPage()">
+            <img src="../img/icon_list.png" alt="">
+            <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
+          </div>
+        </li>
+        <li>
+          <!-- <div class="icon_list options" onclick="navigateToDevolutionPage()">
+            <img src="../img/icon_devolution.png" alt="">
+            <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon_list options" onclick="navigateToDevolutionPage()">
+            <img class="ol" src="../img/lupa.png" alt="">
+            <span class="options">Consulta de Reserva</span>
+        </li> -->
+          <div class="icon_list options" onclick="navigateToProductRegistration()">
+            <img src="../img/icon_registration.png" alt="">
+            <span class="none">Cadastro de Produtos</span>
+          </div>
+        <li>
+          <div onclick="logout()" class="logout options">
+            <img class="ol" class="img-logout" src="../img/logout1.png" alt="logout.png" />
+            <span class="options">Sair</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <div class="title-main">
+    <span class="title">Cadastro de Materiais</span>
+  </div>
 
   <div class="register">
-    
-
-<span class="title">Cadastro de Materiais</span>
-
     <form id="product-form" class="form-register">
       <div class="form-row">
         <label for="nome">Nome:</label>
@@ -78,37 +118,36 @@
         <input type="number" id="quantidade" name="quantidade" required />
       </div>
 
-
-    <div class="data-list">
+      <div class="data-list">
         <label for="tipo">Tipos:</label>
         <input type="text" id="tipo" list="tipos-list" name="tipo">
-            <datalist id="tipos-list">
-                <option value="Eletrônico"></option>
-                <option value="Mecânico"></option>
-                <option value="Pneumático"></option>
-                <option value="Consumíveis"></option>
-            </datalist>
-    </div>
+        <datalist id="tipos-list">
+          <option value="Eletrônico"></option>
+          <option value="Mecânico"></option>
+          <option value="Pneumático"></option>
+          <option value="Consumíveis"></option>
+        </datalist>
+      </div>
 
       <div class="form-row">
         <label for="preco">Preço:</label>
         <input type="number" id="preco" name="preco" required />
       </div>
 
-    <div class="data-list">
+      <div class="data-list">
         <label for="local">Localização:</label>
         <input type="text" id="local" list="local-list" name="local">
-          <datalist id="local-list">
-                <option value="AA11"></option>
-                <option value="AB23"></option>
-                <option value="A12"></option>
-                <option value="AS21"></option>
-                <option value="AS21"></option>
-                <option value="AS41"></option>
-                <option value="AS31"></option>
-                <option value="AS37"></option>
-           </datalist>
-    </div>
+        <datalist id="local-list">
+          <option value="AA11"></option>
+          <option value="AB23"></option>
+          <option value="A12"></option>
+          <option value="AS21"></option>
+          <option value="AS21"></option>
+          <option value="AS41"></option>
+          <option value="AS31"></option>
+          <option value="AS37"></option>
+        </datalist>
+      </div>
 
       <div class="form-row description">
         <label for="descricao">Descrição:</label>
@@ -125,14 +164,20 @@
       </div>
     </form>
   </div>
+</body>
+</form>
+</div>
 
-  <script src="../script.js"></script>
+<footer id="copyrightc">
+  <p> 2023 copyrightc - Direitos reservados a equipe StockWare ©</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+  </script>
+<script src="../script.js"></script>
 </body>
 
-       
-      </form>
-    </div>
-
-    <script src="../script.js"></script>
-  </body>
 </html>

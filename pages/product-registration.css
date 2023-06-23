@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Wix+Madefor+Display:wght@700&display=swap");
 /*importar fonte*/
 
 body {
@@ -10,192 +10,339 @@ body {
   margin-left: 8px;
   margin-right: 30px;
 }
+
+/* ////////////////////////////////////// CABEÇALHO ///////////////////////////////////// */
+
 .header {
-  /*cabeçalho*/
-  margin: 0px;
-  padding: 24px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(180deg, #00c4cc 0%, rgba(30, 76, 165, 0.81) 89.72%);
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
-}
+    margin: 0px;
+    padding: 24px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      #00c4cc 0%,
+      rgba(30, 76, 165, 0.81) 89.72%
+    );
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
 
-.user {
-  /*define o estilo para a imagem do usuário, incluindo exibição flexível, alinhamento vertical e espaçamento interno.i*/
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+.logo-menu {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+  }
 
-.actions {
-  /*define o estilo para as ações (favoritos, carrinho, perfil), incluindo exibição flexível e espaçamento interno.*/
-  /*açoes, favoritos e carrinho, perfil */
-  display: flex;
-  gap: 12px;
-}
-
-.favorite:hover, .cart:hover{ /* define animação ao passar o mouse em favoritos no cabeçalho*/
-  transition: transform 0.3s ease; 
-  transform: scale(1.2);
-}
-.profile:hover{  /* define animação ao passar o mouse em perfil no cabeçalho*/
-  transition: transform 0.3s ease; 
-  transform: scale(1.1);
-}
-
-.img {
-  /*define o estilo para as imagens dos ícones (favoritos, carrinho, perfil), incluindo largura e altura.*/
-  width: 20px;
-  height: 20px;
-}
-
-.img:hover {
-  /*define um estilo quando o mouse passa por cima das imagens dos ícones.*/
-  cursor: pointer;
-}
-
-
-.text-header {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
+.logo {
+    display: inline-flex;
+    align-items: center;
+  }
 
 .text-stock,
 .text-header {
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 40px;
-  font-weight: 500;
-  text-align: center;
-}
+    font-family: "Lobster", cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+  }
 
+.img-menu {
+    /*define o estilo para a imagem do ÍCONE DO menu lateral*/
+    width: 13%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 
-.logo {
-  display:inline-flex;
-  align-items: center;
-}
+.img-menu:hover {
+    /*define um estilo quando o mouse passa por cima da imagem do menu.*/
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 1px rgb(5, 141, 252));
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
 
-.logo-menu {
-  /*define o estilo para o logotipo do menu, incluindo exibição flexível e espaçamento entre itens.*/
-  display: flex;
-  align-items: center;
-  gap: 7rem;
-}
+.actions {
+    /*define o estilo para as ações (favoritos, carrinho, perfil).*/
+    display: flex;
+    gap: 10px;
+  }
 
+.img-action-cabecalho {
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 
-.form-register{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  
-  margin-top: 3rem;
+.favorite {
+    margin-top: 5px;
+  }
+
+.favorite:hover,
+.cart:hover {
+    /* define animação ao passar o mouse em favoritos no cabeçalho*/
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+  }
+
+.profile:hover {
+    /* define animação ao passar o mouse em perfil no cabeçalho*/
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
+
+/* ////////////////////////////////////// CONTEUDO MAIN ///////////////////////////////////// */
+
+.title-main {
+    /*define o estilo para o título do conteúdo principal*/
+    color: #1e4ca5;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: flex-start;
+    margin: 25px 40px;
+  }
+
+  #copyrightc{
+    background-color: #020202;
+    color: #fff;
+    text-align: center;
+    margin-bottom: -16px;
+  }
+
+/* ////////////////////////////////////// MENU LATERAL ///////////////////////////////////// */
+
+.main-menu-list {
+    /*container do menu lateral*/
+    margin: 0px 34px;
+    background: linear-gradient(
+      180deg,
+      #00a6cc 0%,
+      rgba(30, 76, 165, 0.81) 89.72%
+    );
+    height: 400px;
+    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 8px;
+    margin-left: -350px;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    transition: 0.5s;
+    margin-top: -75px;
+  }
+
+.main-menu-list ul li a:hover {
+    background-color: #fff;
+  }
+
+.menu {
+    /*define o estilo para as opções do menu lateral*/
+    padding: 4rem 0px;
+  }
+
+.effect {
+    transform: margin 0.4s;
+  }
+
+/* @media (min-width: 368px) {
+  #btnClose {
+    display: none;
+  }
+
+.main-menu-list {
+    min-width: 261.75px;
+    width: 20%;
+    margin-top: 0%;
+  }
+} */
+
+.list {
+    /*define o estilo para a lista.*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    font-family: Arial;
+    font-weight: 500;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+  }
+
+.options:hover {
+    /*opções da lista do  menu ao passar mouse*/
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+.options img {
+    /* Adiciona uma transição suave aos icones da lista */
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+    width: 27px;
+  }
+
+.options:hover img {
+    /* Aplica o zoom na imagem da lista ao passar o mouse */
+    transform: scale(1.1);
+  }
+
+.logout {
+    /*define o estilo para o texto de logout menu lateral.*/
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+  }
+
+/* ////////////////////////////////////// FORMULÁRIO ///////////////////////////////////// */
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
     width: 600px;
     height: 514px;
     background-color: white;
     padding-top: 48px;
     border-radius: 11px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-
-  
-  
-
-}
+  }
 
 .label-tipos {
-  display: inline-block;
-  width: 100px; /* Ajuste a largura conforme necessário */
-  vertical-align: middle;
-  /* Ajuste a margem conforme necessário */
-}
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+  }
 
 .register {
-  display: flex;
-  
-  flex-direction: column; 
-  margin-top: 58px;
-  height: 100vh;
-  align-items: center; 
-  
-
- 
-}
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
 
 label {
-  display: inline-block;
-  width: 100px;
- 
-  margin-right: 10px;
-  color:#313131;
-  font-weight:500;
-  color: #373636;
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    color: #313131;
+    font-weight: 500;
+    color: #373636;
     font-weight: 600;
-}
+  }
 
 input[type="text"],
 input[type="number"],
 textarea {
-  width: 400px;
-  padding: 5px;
-  margin-bottom: 10px;
-  background: rgba(249, 249, 249, 0.8);
-/* Neutral/Almost White */
-
-border: 1px solid #cfcfcf;
-border-radius: 4px;
-}
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: rgba(249, 249, 249, 0.8);
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+  }
 
 .button {
- 
-  border: 2px solid #4271B5;
-border-radius: 25px;
-background:transparent;
-width: 168px;
-height: 34px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight:500;
-color:#4271B5
-}
+    border: 2px solid #4271b5;
+    border-radius: 25px;
+    background: transparent;
+    width: 168px;
+    height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #4271b5;
+  }
 
-.button:hover{
-background-color: rgb(1, 26, 248);
-color:antiquewhite;
-}
+.button:hover {
+    background-color: rgb(1, 26, 248);
+    color: antiquewhite;
+  }
 
 .description {
-  align-items: center;
-  display: flex;
-
-}
+    align-items: center;
+    display: flex;
+  }
 
 .height {
-  height: 130px;
-  width: 406px;
-}
+    height: 130px;
+    width: 406px;
+  }
 
-.title {
-  /*define o estilo para o título do conteúdo principal, incluindo a cor do texto.*/
-  color: #1E4CA5;
-    /* margin-top: -20px; */
-    /* display: flex; */
-    /* margin-left: 85px; */
-    font-size: 27px;
-    font-weight: 600;
+/* ////////////////////////////////////// RESPONSIVIDADE ///////////////////////////////////// */
 
-}
-.img-menu {  /*define o estilo para a imagem do ÍCONE DO menu lateral*/
-  width: 13%;
-  margin-top: 10px;
-  margin-left:10px;
+@media screen and (max-width: 480px) {
+      .main-menu-list {
+        width: fit-content;
+        margin-top: auto;
+      }
 
-}
+      .header {
+        width: 651px;
+      }
 
-.img-menu:hover {
-  /*define um estilo quando o mouse passa por cima da imagem do menu.*/
-  cursor: pointer;
-  filter: drop-shadow(0px 0px 1px rgb(5, 141, 252));
-  transition: transform 0.3s ease; 
-  transform: scale(1.1);
-}
+      body {
+        width: 700px;
+      }
+  }
+
+@media screen and (min-width: 280px) {
+      .img-menu {
+        position: absolute;
+        left: calc(260px);
+        width: 25px;
+      }
+
+      td {
+        font-size: 15px;
+      }
+
+      .main-menu-list {
+        width: fit-content;
+        margin-top: auto;
+        height: 623px;
+      }
+  }
+
+@media screen and (min-width: 400px) {
+      .img-menu {
+        position: absolute;
+        left: calc(260px);
+        width: 25px;
+      }
+
+      td {
+        font-size: 11px;
+      }
+  } 
+
+@media screen and (min-width: 700px) {
+      .img-menu {
+        position: absolute;
+        left: calc(260px);
+        width: 25px;
+      }
+
+      .main-menu-list {
+        width: fit-content;
+        margin-top: auto;
+        height: 623px;
+      }
+
+      td {
+        font-size: 14px;
+      }
+  }
+
+@media screen and (min-width: 1200px) {
+        .img-menu {
+          position: absolute;
+          left: calc(267px);
+          width: 25px;
+        }
+  }

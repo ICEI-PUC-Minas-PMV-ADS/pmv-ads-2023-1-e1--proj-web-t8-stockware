@@ -5,19 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>home</title>
+  <title>Home</title>
   <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <style>
-      /* Estilos para o nome de usuário */
-      .username {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 14px;
-      }
-    </style>
+      <style>
+        /* Estilos para o nome de usuário */
+        .username {
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+          font-size: 14px;
+        }
+  </style>
 </head>
 
 
@@ -28,13 +28,11 @@
         <img class="img-logo" src="../img/logos.png" alt="" />
         <span onclick="navigateToHome()" class="text-stock">tockWare</span>
       </div>
-
     </div>
     <div>
     </div>
-    
-    <div class="actions">
 
+    <div class="actions">
       <div class="favorite">
         <img title="Meus favoritos" onclick="navigateFavoritePage()" class="img-action-cabecalho"
           src="../img/favorite.png" alt="" />
@@ -47,50 +45,46 @@
       <div class="profile">
         <img title="Meu perfil" class="img-action-cabecalho" src="../img/profile.png" alt="" />
         <script> // referências para as bibliotecas jQuery e Bootstrap.
-
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
            // carrega a biblioteca Bootstrap em sua versão//
         </script>
-
       </div>
     </div>
   </div>
 
   <div class="main-content">
-   
     <section class="main">
       <nav class="menu">
         <ul class="list">
           <li>
             <div class="icon_list options" onclick="navigateToListPage()">
-         <img src="../img/icon_list.png" title="Lista de Materiais" alt="">
-            <span class="none">Lista de Materiais</span>
-          </div>
+              <img src="../img/icon_list.png" title="Lista de Materiais" alt="">
+              <span class="none">Lista de Materiais</span>
+            </div>
           </li>
           <li>
             <div class="icon_list options" onclick="navigateToDevolutionPage()">
-            <img src="../img/icon_devolution.png" title="Devolução" alt="">
-            <span class="none"> Devolução</span>
-          </div>
-          </li>
-          <li>
-            <div class="icon_list options">
-            <img class="im" src="../img/lupa.png" title="Consulta de Reserva"alt="">
-            <span class="options none">Consulta de Reserva</span>
-          </div>
-          </li>
-          <li>
-            <div class="icon_list options">
-            <div onclick="logout()" class="logout options">
-              <img class="img-logout im " src="../img/logout1.png"  title="Logout"alt="logout.png" />
-              <span class="options none">Sair</span>
+              <img src="../img/icon_devolution.png" title="Devolução" alt="">
+              <span class="none"> Devolução</span>
             </div>
+          </li>
+          <li>
+            <div class="icon_list options">
+              <img class="im" src="../img/lupa.png" title="Consulta de Reserva" alt="">
+              <span class="options none">Consulta de Reserva</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon_list options">
+              <div onclick="logout()" class="logout options">
+                <img class="img-logout im " src="../img/logout1.png" title="Logout" alt="logout.png" />
+                <span class="options none">Sair</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -98,8 +92,6 @@
     </section>
 
     <div class="banner">
-
-    
       <div class="span">
         <span class="estoque">Estoque Inteligente</span>
         <span class="result"> RESULTADOS BRILHANTES</span>
@@ -109,11 +101,9 @@
         <img class="img2" src="../img/img-stoq.png" alt="">
       </div>
     </div>
-    
-    </div>
+  </div>
 
-     
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
@@ -121,8 +111,5 @@
     </script>
   <script src="../script.js"></script>
 
-
-
 </body>
-
 </html>

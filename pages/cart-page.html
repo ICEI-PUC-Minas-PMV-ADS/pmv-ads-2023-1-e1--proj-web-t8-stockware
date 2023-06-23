@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu carrinho</title>
-    <link rel="stylesheet" href="cart-page.css" />
+  <link rel="stylesheet" href="cart-page.css" />
 
-    <style>
-      /* Estilos para o nome de usuário */
-      .username {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 14px;
-      }
-    </style>
+  <style>
+    /* Estilos para o nome de usuário */
+    .username {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
   <div class="header">
     <div class="logo-menu">
       <div class="logo">
@@ -27,35 +30,31 @@
     <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
     <div class="actions">
       <div class="favorite">
-        <img onclick="navigateFavoritePage()" class="img-menu-cabecalho" src="../img/favorite.png" alt="" title="Meus favoritos"/>
+        <img onclick="navigateFavoritePage()" class="img-menu-cabecalho" src="../img/favorite.png" alt=""
+          title="Meus favoritos" />
       </div>
       <div class="cart">
-        <img onclick="navigateCartPage()" class="img-menu-cabecalho" src="../img/cart.png" alt="" title="Meu carrinho" />
+        <img onclick="navigateCartPage()" class="img-menu-cabecalho" src="../img/cart.png" alt=""
+          title="Meu carrinho" />
       </div>
       <div class="profile">
         <img class="img-menu-cabecalho" src="../img/profile.png" alt="" title="Meu perfil" />
-
         <script> // referências para as bibliotecas jQuery e Bootstrap.
-
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-  
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username)
           document.write("<span class='username'>" + nome + "</span>");
-
           //carrega a biblioteca Bootstrap em sua versão //
         </script>
-  
-       
       </div>
     </div>
   </div>
- 
+</header>
+
   <section class="main-menu-list">
     <nav class="menu">
-    
       <ul class="list">
         <li>
           <div class="icon_list options" onclick="navigateToHome()">
@@ -69,7 +68,7 @@
             <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_devolution.png" alt="">
             <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
@@ -79,7 +78,7 @@
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img class="ol" src="../img/lupa.png" alt="">
             <span class="options">Consulta de Reserva</span>
-        </li>
+        </li> -->
         <li>
           <div onclick="logout()" class="logout options">
             <img class="img-logout ol" src="../img/logout1.png" alt="logout.png" />
@@ -89,43 +88,43 @@
       </ul>
     </nav>
   </section>
- 
-    <div class="title">
-      <h2>Meu carrinho</h2>
-    </div>
 
-    <div class="full-width">
-      <input type="text" id="input-pesquisa" placeholder="Pesquisar:" title="Você pode usar o caractere * para procurar por palavras chaves" />
-    </div>
-    
-    <dialog id="list-modal">
-      <header class="modal-header">
-        <h3 class="text-modal">Descrição Do Material</h3>
-        <div id="closed_dialog">
-          <button class="btn_fechar_descricao">X</button>
+  <div class="title">
+    <h2>Meu carrinho</h2>
+  </div>
+  <div class="full-width">
+    <input type="text" id="input-pesquisa" placeholder="Pesquisar:"
+      title="Você pode usar o caractere * para procurar por palavras chaves" />
+  </div>
+
+  <dialog id="list-modal">
+    <header class="modal-header">
+      <h3 class="text-modal">Descrição Do Material</h3>
+      <div id="closed_dialog">
+        <button class="btn_fechar_descricao">X</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="product-info">
+        <p id="description"></p>
+        <div class="img-description">
+          <img id="product-img" />
         </div>
-      </header>
-  
-      <main>
-        <div class="product-info">
-          <p id="description"></p>
-          <div class="img-description">
-            <img id="product-img" />
-          </div>
-        </div>
-      </main>
-  
-      <footer class="cart-fav-add">
-        <div>
-          <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
-              src="../img/favorite.png" alt=""></button>
-        </div>
-  
-        <div class="closed_dialog_ok">
-          <button class="btn_fechar_descricao_ok">OK</button>
-        </div>
-      </footer>
-    </dialog>
+      </div>
+    </main>
+
+    <footer class="cart-fav-add">
+      <div>
+        <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
+            src="../img/favorite.png" alt=""></button>
+      </div>
+      <div class="closed_dialog_ok">
+        <button class="btn_fechar_descricao_ok">OK</button>
+      </div>
+    </footer>
+  </dialog>
+
   <div class="backgroud">
 
 <div class="header-cart">
@@ -164,48 +163,76 @@
       <h3>Solicitação Finalizada</h3>
       <span class="close_reserva">&times;</span>
     </div>
-  
- 
-    <p id="modalMessage"></p>
-    <button id="okButton">OK</button>
-  </div>
-</div>
-</div>
+    <table id="tabela-carrinho">
+      <thead>
+        <tr>
+          <th class="nome-cell">Nome</th>
+          <th class="codigo-cell">Código</th>
+          <th>QTD</th>
+          <th>Tipo</th>
+          <th>Preço</th>
+          <th>Local</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
 
-  <div id="productModal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4>Detalhes do Produto</h4>
-        <span class="close">&times;</span>
+    </table>
+    <div class="solic-reserv-cart">
+      <div id="total"></div> <!-- Adicionado elemento para exibir o total -->
+      <button id="btn-solicitar" onclick="solicitarMateriais()">Solicitar Reserva</button>
+      <!-- HTML -->
+      <!-- HTML -->
+      <div id="myModal" class="modal">
+        <div class="modal-content-reserva">
+          <div class="header-reserva">
+            <h3>Solicitação finalizada</h3>
+            <span class="close_reserva">&times;</span>
+          </div>
+          <p id="modalMessage"></p>
+          <button id="okButton">OK</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <h3 id="productDescription"></h3>
-        <span class="des" id="productDes"> </span>
-        <img id="productImage" src="" alt="">
-        <footer class="cart-fav-add">
-          <div>
-            <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
-                src="../img/favorite.png" alt=""></button>
-          </div>
-    
-          <div class="closed_dialog_ok">
-            <button class="btn_fechar_descricao_ok">OK</button>
-          </div>
-        </footer>
-      </dialog>
+    </div>
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Detalhes do Produto</h4>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <h3 id="productDescription"></h3>
+          <span class="des" id="productDes"> </span>
+          <img id="productImage" src="" alt="">
+          <footer class="cart-fav-add">
+            <div>
+              <button class="btn-favorite-add" onclick="adicionarFavoritos()">Adicionar aos Favoritos <img
+                  src="../img/favorite.png" alt=""></button>
+            </div>
+            <div class="closed_dialog_ok">
+              <button class="btn_fechar_descricao_ok">OK</button>
+            </div>
+          </footer>
+          </dialog>
+        </div>
       </div>
     </div>
   </div>
+    <footer id="copyrightc">
+      <p> 2023 copyrightc - Direitos reservados a equipe StockWare ©</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-  </script>
-  <script src="../script.js"></script>
-   <script src="../cart-page.js"></script>
-   <script src="../login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+      </script>
+      
+    <script src="../script.js"></script>
+    <script src="../cart-page.js"></script>
+    <script src="../login.js"></script>
 
 </body>
 </html>

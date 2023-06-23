@@ -7,32 +7,33 @@
   <title>Favoritos</title>
   <link rel="stylesheet" href="favoritos.css" />
 
-  <style>
-    /* Estilos para o nome de usuário */
-    .username {
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-      font-size: 14px;
-    }
-  </style>
+        <style>
+          /* Estilos para o nome de usuário */
+          .username {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 14px;
+          }
+        </style>
 </head>
+
 <body>
+  <header>
   <div class="header">
     <div class="logo-menu">
       <div class="logo">
         <img class="img-logo" src="../img/logos.png" alt="" />
-        
         <span class="text-stock">tockWare</span>
       </div>
     </div>
-
     <img title="Abrir menu lateral" class="img-menu" src="../img/menuVisual.png" alt="" />
     <div class="actions">
       <div class="favorite">
-        <img class="img-menu-cabecalho" src="../img/favorite.png" alt="" title="Meus favoritos"/>
+        <img class="img-menu-cabecalho" src="../img/favorite.png" alt="" title="Meus favoritos" />
       </div>
       <div class="cart">
-        <img onclick="navigateCartPage()" class="img-menu-cabecalho" src="../img/cart.png" alt="" title="Meu carrinho" />
+        <img onclick="navigateCartPage()" class="img-menu-cabecalho" src="../img/cart.png" alt=""
+          title="Meu carrinho" />
       </div>
       <div class="profile">
         <img class="img-menu-cabecalho" src="../img/profile.png" alt="" title="Meu perfil" />
@@ -40,21 +41,17 @@
           // Obtém o nome de usuário a partir da URL
           var urlParams = new URLSearchParams(window.location.search);
           var username = urlParams.get('username');
-
           // Exibe o nome de usuário no perfil
           let nome = localStorage.getItem('username', username);
           document.write("<span class='username'>" + nome + "</span>");
         </script>
-
-     
-          
       </div>
     </div>
   </div>
+</header>
 
   <section class="main-menu-list">
     <nav class="menu">
-    
       <ul class="list">
         <li>
           <div class="icon_list options" onclick="navigateToHome()">
@@ -68,7 +65,7 @@
             <span class="options" onclick="navigateToListPage()">Lista de Materiais</span>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img src="../img/icon_devolution.png" alt="">
             <span class="options" onclick="navigateToDevolutionPage()"> Devolução</span>
@@ -78,7 +75,7 @@
           <div class="icon_list options" onclick="navigateToDevolutionPage()">
             <img class="ol" src="../img/lupa.png" alt="">
             <span class="options">Consulta de Reserva</span>
-        </li>
+        </li> -->
         <li>
           <div onclick="logout()" class="logout options">
             <img class="img-logout ol" src="../img/logout1.png" alt="logout.png" />
@@ -90,13 +87,13 @@
   </section>
 
   <div class="title">
-   <div class=" title-main">
-    <h2>Favoritos</h2>
+    <div class=" title-main">
+      <h2>Favoritos</h2>
+    </div>
   </div>
-  </div>
-
   <div class="full-width">
-    <input type="text" id="input-pesquisa" placeholder="Pesquisar:" title="Você pode usar o caractere * para procurar por palavras chaves" />
+    <input type="text" id="input-pesquisa" placeholder="Pesquisar:"
+      title="Você pode usar o caractere * para procurar por palavras chaves" />
   </div>
 
   <dialog id="list-modal">
@@ -120,13 +117,12 @@
       <div class="cart-add">
         <button class="btn-cart-add">Adicionar ao Carrinho <img src="../img/cart.png" alt="" /></button>
       </div>
-
       <div class="closed_dialog_ok">
         <button class="btn_fechar_descricao_ok">OK</button>
       </div>
     </footer>
-  </dialog>
 
+  </dialog>
   <div class="backgroud">
     <table id="tabela-favoritos">
       <thead>
@@ -140,25 +136,23 @@
           <th>Ação</th>
         </tr>
       </thead>
-        <tbody id="produtos-lista">
-        </tbody>
+      <tbody id="produtos-lista">
+      </tbody>
     </table>
   </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-  crossorigin="anonymous"></script>
-  
-  <script src="../favoritos.js"></script>
 
-  <script>
+  <footer id="copyrightc">
+    <p> 2023 copyrightc - Direitos reservados a equipe StockWare ©</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
     
-  </script>
+  <script src="../favoritos.js"></script>
 
 </body>
 </html>
-
-

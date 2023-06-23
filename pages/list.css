@@ -149,6 +149,13 @@ body {
     background-color: #FFF;
   }
 
+  #copyrightc{
+    background-color: #020202;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -20px;
+  }
 /*////////////////////////////////////////// MENU LATERAL /////////////////////////////////////////////*/
 
 .main-menu-list {
@@ -335,8 +342,6 @@ dialog {
     width: 60%;
     height: 70%;
     background-color: #fffcfc;
-    
-
   }
 
 .modal-header {
@@ -398,19 +403,16 @@ dialog {
   }
 
 .closed_dialog_ok {
-    
-   margin-left:42px
-   
-    
+    margin-left:42px
   }
 
 .btn_fechar_descricao_ok {
-  background-color: #88cddd;
-  padding: 7px 12px;
-  border: none;
-  border-radius: 6px;
-  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-  }
+    background-color: #88cddd;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    }
 
   /*-------------------------BOTÕES FAVORITOS E CARINHO TELA DESCRIÇÃO ----------------------------*/
 
@@ -472,7 +474,7 @@ dialog {
     color: #F5F5F5;
   }
 
-  /*//////////////////////////////////////////// RESPONSIVIDADE PARA DESKTOP /////////////////////////////////////////*/
+  /*//////////////////////////////////////////// RESPONSIVIDADE  /////////////////////////////////////////*/
 
 /* @media only screen and (min-width: 1024px) {
     body {
@@ -504,78 +506,70 @@ dialog {
     }
   } */
 
-  @media screen and (max-width: 480px){
-
+@media screen and (max-width: 480px){
     .full-width{
-       width: 700px;
-     }
-    
+        width: 700px;
+      }
+      
     .header{
-       width: 651px;
+        width: 651px;
       }
     
     .title-main{
         width: 523px;
-       }
-    
-       .container-pesquisa{
-        width: 680px;
-       }
-    
-    body{
-       width: 700px;
       }
-       }
+      
+    .container-pesquisa{
+        width: 680px;
+      }
+      
+    body{
+        width: 700px;
+      }
+    }
     
-       @media screen and (min-width: 280px){
-        .img-menu{
-          position: absolute;
-                 
-           
-          left: calc(220px);
-          
-              width: 25px;
-        }
+@media screen and (min-width: 280px){
+    .img-menu{
+        position: absolute;   
+        left: calc(270px);  
+        width: 25px;
+      }
 
-        td{
+    td{
         font-size: 15px;
+      }
+    }
+      
+@media screen and (min-width: 400px){
+  .img-menu{
+        position: absolute;
+        left: calc(220px);
+        width: 25px;
+      }
+
+    td{
+        font-size: 11px;
         }
-       }
-    
-       @media screen and (min-width: 400px){
-        .img-menu{
-          position: absolute;
-          left: calc(220px);
-              width: 25px;
+    }
+      
+@media screen and (min-width: 700px){
+    .img-menu{
+        position: absolute; 
+        left: calc(270px);
+        width: 25px;
         }
 
-        td{
-          font-size: 11px;
-          }
-       }
-    
-       @media screen and (min-width: 700px){
-        .img-menu{
-          position: absolute; 
-          left: calc(220px);
-              width: 25px;
-        }
-
-        td{
-          font-size: 14px;
-          }
-       }
-    
-       @media screen and (min-width: 1200px){
-        .img-menu{
-          position: absolute;
-          
-            
-           
-          left: calc(220px);
-          
-              width: 25px;
-        }
-       }
+    td{
+        font-size: 14px;
+      }
+    }
+      
+@media screen and (min-width: 1200px){
+    .img-menu{
+        position: absolute;
+        left: calc(273px);
+        width: 25px;
+      }
+    }
     
     
