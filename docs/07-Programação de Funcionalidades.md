@@ -7,7 +7,7 @@ Serão apresentadas a seguir as telas referentes aos requisitos funcionais atend
 
 A tela de cadastro de materiais permite ao administrador cadastrar um determinado material no sistema.
 
-![Exemplo de Wireframe](img/1-cadastro-produto-proj.png) <sub> Figura 01 - Cadastro de materiais<sub>
+![Exemplo de Wireframe](img/1-cadastro-produto-proj.PNG) <sub> Figura 01 - Cadastro de materiais<sub>
 
 ## Requisitos atendidos:
 
@@ -74,7 +74,7 @@ A tela lista de materiais apresenta todos os materiais cadastrados e suas respec
 # Carrinho (RF-08)
 Na tela carrinho serão apresentados todos os materiais que o usuário deseja requisitar, após conferir os materiais desejados, o mesmo poderá finalizar o pedido.
 
-![Exemplo de Wireframe](img/2-carrinho-proj.png) <sub> Figura 03 - Carrinho<sub>
+![Exemplo de Wireframe](img/2-carrinho-proj.PNG) <sub> Figura 03 - Carrinho<sub>
 
 
 ## Requisitos atendidos:
@@ -101,7 +101,7 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 
 Após finalizar um pedido de requisição através do “carrinho”, será apresentado um código referente ao número de pedido. 
 
-![Exemplo de Wireframe](3-carrinho-requ-proj.PNG) <sub> Figura 04 - Mensagem de status <sub>
+![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG) <sub> Figura 04 - Mensagem de status <sub>
 
 ## Requisitos atendidos:
 ●	RF-08
