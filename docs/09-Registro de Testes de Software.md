@@ -97,6 +97,11 @@ Não apresenta número aleatório para aprovação de reserva solicitada.
 
 
 
+## Registro de teste 10:
+
+Notificação ao adicionar material aos favoritos.
+
+![Exemplo de Wireframe](img/15-msg-add-fav.PNG)
 
 
 ## Avaliação
