@@ -27,7 +27,7 @@ Elaboração de um sistema de controle de estoque que seja personalizado e atend
 
 3 - Selecione a opção HTTPS e clique em baixar Zip;
 
-4 - Descompacte a pasta .zip e abra a mesma no seu editor VS code ou acesse o site cliando no arquivo login.html que se encontra dentro da pasta;
+4 - Descompacte a pasta .zip e abra a mesma no seu editor VS code ou acesse o site clicando no arquivo login.html que se encontra dentro da pasta;
 
 5 - Forneça um login válido. Usuários cadastrados ( usuário: admin - senha: admin PERFIL ADM) ou (usuário: usuario1 - senha: senha1 PERFIL USUÁRIO).
 
