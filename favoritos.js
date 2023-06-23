@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
 ///////////////////////// ADICIONAR AO CARRINHO ////////////////////////////////
 
 function adicionarCarrinho() {
-  console.log('teste')
+  
   // Recupera os dados do produto selecionado
   const linhaSelecionada = document.querySelector('.selected-row')
   const nome = linhaSelecionada.cells[0].textContent

@@ -12,6 +12,8 @@ function adicionarCarrinho() {
     const preco = linhaSelecionada.cells[4].textContent;
     const local = linhaSelecionada.cells[5].textContent;
     const descricao = linhaSelecionada.getAttribute('data-description');
+    var urlParams = new URLSearchParams(window.location.search);
+    var username = urlParams.get('username');
   
     // Cria um objeto com os dados do produto
     const produto = {
@@ -170,11 +172,19 @@ function solicitarMateriais() {
   });
 
   // Fecha o modal ao clicar no botão "OK" e redireciona para a página inicial
-  var okButton = document.getElementById('okButton');
-  okButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-    window.location.href = 'home.html';
-  });
+
+  var closeButton = document.querySelector('.close_reserva');
+closeButton.addEventListener('click', function() {
+  // Verificar o tipo de usuário (por exemplo, se é um administrador ou não)
+  var isAdmin = localStorage.getItem("admin"); // Defina aqui a lógica para verificar se o usuário é um administrador
+
+  if (isAdmin) {
+    window.location.href = 'home-admin.html'; // Redirecionar para a página home-admin
+  } else {
+    window.location.href = 'home.html'; // Redirecionar para a página home
+  }
+});
+
 
   // Remove todas as linhas da tabela
   while (tbody.firstChild) {
