@@ -17,7 +17,7 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
   
 
 
-![Exemplo de UserFlow](img/fluxo-usuario.png)
+![Exemplo de UserFlow](img/fluxo-usuario.png 200px 200px)
 
 ## Fluxo do Administrador 
 
@@ -109,7 +109,7 @@ Nesta tela, o usuário que já fez a sua solicitação de algum(ns) produto(s) p
 
 Pela tela principal o administrador ou usuário, pode fazer logout (sair da conta)
 
-![Exemplo de Wireframe](img/Sair-da-conta.png 200px 200px)
+![Exemplo de Wireframe](img/Sair-da-conta.png)
 
 Na tela principal, será apresentado ao administrador um alerta sempre que um determinado material atingir uma quantidade mínima ou zerar o estoque. 
 
