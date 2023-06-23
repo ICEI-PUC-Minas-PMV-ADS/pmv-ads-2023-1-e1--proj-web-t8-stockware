@@ -1,7 +1,6 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 A interface do sistema foi projetada com foco na usabilidade e experiência do usuário, utilizando design interativo, visando garantir a facilidade de navegação e compreensão das funcionalidades.  
 
@@ -17,7 +16,7 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
   
 
 
-![Exemplo de UserFlow](img/fluxo-usuario.png )
+![Exemplo de UserFlow](img/fluxo-usuario.png ) Figura 01 - Fluxo do Usuário 
 
 ## Fluxo do Administrador 
 
