@@ -17,7 +17,7 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
   
 
 
-![Exemplo de UserFlow](img/fluxo-usuario.png 200px 200px)
+![Exemplo de UserFlow](img/fluxo-usuario.png 50px 50px)
 
 ## Fluxo do Administrador 
 
