@@ -9,7 +9,7 @@
 
 ### Login:
 
- Permite ao usuário acessar o sistema ao preencher os campos solicitados. Requisitos funcionais atendidos: RF-01.
+ Permite ao usuário acessar o sistema ao preencher os campos solicitados, esse acesso pode ser tanto de usuário ou admin, sendo que admin contém recursos adicionais. Requisitos funcionais atendidos: RF-01.
 
 ![Exemplo de Wireframe](img/9-tela-login-proj.PNG) <sub> Figura 02 - Tela de login<sub>
 
@@ -17,7 +17,7 @@
 <br>
 
 ### Home:
- Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10.
+ Permite ao usuário navegar pelas funcionalidades existentes no sistema, sendo que ao acessar a conta pelo perfil de admin, recursos como "Cadastrar materiais" são incluidos no menu lateral do sistema.  Requisitos funcionais atendidos: RF-10.
 
 ![Exemplo de Wireframe](img/18-tela-home-admin.PNG) <sub> Figura 03 - Tela de home <sub>
 
@@ -35,7 +35,7 @@
 
 ### Carrinho:
 
-Permite ao usuário requisitar mais de um produto por operação, os produtos selecionados ficarão salvos no carrinho. Requisitos funcionais atendidos: RF-08.
+Permite ao usuário requisitar mais de um produto por operação, os produtos selecionados ficarão salvos no carrinho. Ao acessar o carrinho será apresentado as mesmas informações contidas em "Lista de materiais" Requisitos funcionais atendidos: RF-08.
 
 ![Exemplo de Wireframe](img/2-carrinho-proj.PNG) <sub> Figura 05 - Tela carrinho <sub>
 
@@ -44,6 +44,6 @@ Permite ao usuário requisitar mais de um produto por operação, os produtos se
 
 ### Mensagem de status - Carrinho:
 
-Apresentar uma mensagem de status de requisição ao usuário assim que ele finalizar o processo. Requisitos funcionais atendidos: RF-09.
+Apresenta uma mensagem de status de requisição ao usuário assim que finalizar o processo, esse códiogo de 6 dígitos será utilizado para que o admin do sistema possa realizar a aprovação e consulta dos materiais contidas na solicitação. Requisitos funcionais atendidos: RF-09.
 
 ![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG) <sub> Figura 06 - Mensagem de status - Carrinho <sub>
