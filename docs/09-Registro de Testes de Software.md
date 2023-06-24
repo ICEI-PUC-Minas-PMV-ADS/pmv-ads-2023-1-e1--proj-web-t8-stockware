@@ -8,7 +8,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 Notificação caso o usuário não preencha todos os campos obrigatórios.
 
-![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG).
+![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG)  <br>
  <sub> Figura 01 - Notificação <sub>
 
 
