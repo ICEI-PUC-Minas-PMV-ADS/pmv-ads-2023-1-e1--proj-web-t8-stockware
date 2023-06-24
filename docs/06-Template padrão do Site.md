@@ -1,6 +1,6 @@
 # Template padrão do site 
 
- O design do layout a ser utilizado no sistema, segue  a disposição proposta pela figura 1, como apresentado anteriormente no projeto de interface.
+ O design do layout a ser utilizado no sistema, segue  a disposição proposta pela Figura 01 - Wireframe.
 
  ![Exemplo de Wireframe](img/templatesw.png)<sub>  Figura 01 - Wireframe <sub>
 
