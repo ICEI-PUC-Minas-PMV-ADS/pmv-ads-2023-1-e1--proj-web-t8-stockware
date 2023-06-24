@@ -11,6 +11,7 @@
 ## Título do Projeto
 
 # StockWare
+Um sistema de gestão de estoque eficiente
 
 ## Identidade Visual (Marca, Design)
 
