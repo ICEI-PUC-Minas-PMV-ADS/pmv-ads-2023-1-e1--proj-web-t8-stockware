@@ -8,7 +8,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 Notificação caso o usuário não preencha todos os campos obrigatórios.
 
-![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG)
+![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG) <sub> Figura 01 - Notificação <sub>
 
 
 
@@ -16,7 +16,7 @@ Notificação caso o usuário não preencha todos os campos obrigatórios.
 
 Notificação após o usuário preencher todos os campos obrigatórios  e clicar em cadastrar.
 
-![Exemplo de Wireframe](img/11-msg-cadastrar-material-ok.PNG)
+![Exemplo de Wireframe](img/11-msg-cadastrar-material-ok.PNG)<sub> Figura 02 -  Notificação<sub>
 
 
 
@@ -24,7 +24,7 @@ Notificação após o usuário preencher todos os campos obrigatórios  e clicar
 
 Limpar formulário após finalizar cadastro.
 
-![Exemplo de Wireframe](img/1-cadastro-produto-proj.PNG)
+![Exemplo de Wireframe](img/1-cadastro-produto-proj.PNG)<sub> Figura 03 - Limpar formulário <sub>
 
 
 
@@ -32,7 +32,7 @@ Limpar formulário após finalizar cadastro.
 
 Material sendo registrado corretamente na tela de lista de materiais.
 
-![Exemplo de Wireframe](img/12-material-add-list.PNG)
+![Exemplo de Wireframe](img/12-material-add-list.PNG)<sub> Figura 04 -  Material sendo registrado<sub>
 
 
 
@@ -40,7 +40,7 @@ Material sendo registrado corretamente na tela de lista de materiais.
 
 Funcionalidade de pesquisar por um determinado produto utilizando palavras chaves através do caractere (*) 
 
-![Exemplo de Wireframe](img/13-pesquisar.PNG)
+![Exemplo de Wireframe](img/13-pesquisar.PNG)<sub> Figura 05 - Pesquisar por produto <sub>
 
 
 
@@ -54,7 +54,7 @@ Botão de adicionar ao carrinho fora de posição dependendo do tamanho da image
 **Solução:**
 Corrigir a responsividade da tela de descrição de materiais.
 
-![Exemplo de Wireframe](img/4-descricao-lista-materiais-cart-fav-proj.PNG)
+![Exemplo de Wireframe](img/4-descricao-lista-materiais-cart-fav-proj.PNG)<sub> Figura 06 - Adicionar material ao carrinho <sub>
 
 
 
@@ -62,7 +62,7 @@ Corrigir a responsividade da tela de descrição de materiais.
 
 Notificação ao adicionar material ao carrinho.
 
-![Exemplo de Wireframe](img/14-msg-add-cart.PNG)
+![Exemplo de Wireframe](img/14-msg-add-cart.PNG)<sub> Figura 07 -  Notificação<sub>
 
 
 
@@ -80,7 +80,7 @@ Material sendo transferido para tela de carrinho.
 
 2 - Implementar opção de escolha da quantidade de podutos desejados pelo usuário.
 
-![Exemplo de Wireframe](img/17-material-no-cart.PNG)
+![Exemplo de Wireframe](img/17-material-no-cart.PNG)<sub> Figura 08 - Material transferido <sub>
 
 
 
@@ -93,7 +93,7 @@ Não apresenta número aleatório para aprovação de reserva solicitada.
 
 **Solução:**
  Implementar gerador de números aleatórios contendo 6 números usando javascript.
-![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG)
+![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG)<sub> Figura 09 -  Notificação<sub>
 
 
 
@@ -101,7 +101,7 @@ Não apresenta número aleatório para aprovação de reserva solicitada.
 
 Notificação ao adicionar material aos favoritos.
 
-![Exemplo de Wireframe](img/15-msg-add-fav.PNG)
+![Exemplo de Wireframe](img/15-msg-add-fav.PNG)<sub> Figura 10 -  Notificação<sub>
 
 
 ## Avaliação
