@@ -16,14 +16,12 @@
 
 <br>
 
-
 ### Home:
  Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-010.
 
 ![Exemplo de Wireframe](img/18-tela-home-admin.PNG) <sub> Figura 03 - Tela de home <sub>
 
 
-<br>
 <br>
 
 ### Lista de materiais:
@@ -34,7 +32,6 @@
 
 
 <br>
-<br>
 
 ### Carrinho:
 
@@ -43,7 +40,6 @@ Permite ao usuário requisitar mais de um produto por operação, os produtos se
 ![Exemplo de Wireframe](img/2-carrinho-proj.PNG) <sub> Figura 05 - Tela carrinho <sub>
 
 
-<br>
 <br>
 
 ### Mensagem de status - Carrinho:
