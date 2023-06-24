@@ -334,3 +334,16 @@ function atualizarListaProdutos() {
 
 // Chama a função para atualizar a lista de produtos ao carregar a página
 atualizarListaProdutos()
+
+
+var closeButton = document.querySelector('.logo');
+closeButton.addEventListener('click', function() {
+  // Verificar o tipo de usuário (por exemplo, se é um administrador ou não)
+  var isAdmin = localStorage.getItem("admin"); // Defina aqui a lógica para verificar se o usuário é um administrador
+
+  if (isAdmin) {
+    window.location.href = 'home-admin.html'; // Redirecionar para a página home-admin
+  } else {
+    window.location.href = 'home.html'; // Redirecionar para a página home
+  }
+});

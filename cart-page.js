@@ -173,8 +173,10 @@ function solicitarMateriais() {
 
   // Fecha o modal ao clicar no botão "OK" e redireciona para a página inicial
 
-  var closeButton = document.querySelector('.close_reserva');
-closeButton.addEventListener('click', function() {
+ var closeButton = document.querySelector('.close_reserva');
+var okButton = document.querySelector('#okButton');
+
+function redirectUser() {
   // Verificar o tipo de usuário (por exemplo, se é um administrador ou não)
   var isAdmin = localStorage.getItem("admin"); // Defina aqui a lógica para verificar se o usuário é um administrador
 
@@ -183,7 +185,10 @@ closeButton.addEventListener('click', function() {
   } else {
     window.location.href = 'home.html'; // Redirecionar para a página home
   }
-});
+}
+
+closeButton.addEventListener('click', redirectUser);
+okButton.addEventListener('click', redirectUser);
 
 
   // Remove todas as linhas da tabela
