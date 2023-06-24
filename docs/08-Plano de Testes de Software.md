@@ -11,7 +11,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |-------|-------------------------|
 |Requisitos Associados| **RF-02** - O site deve apresentar um formulário para preenchimento dos dados do material. Deve permitir que o administrador informe dados relevantes do material, tais como: nome, código, quantidade, tipo, preço, descrição e imagens. | 
 |Objetivo do Teste| Verificar se os materiais cadastrados estão sendo apresentados na tela de “Lista de materiais”. | 
-|Passos|**1)** Acessar o Navegador. **2)** <br> Informar o endereço do Site. <br> **3)** Realizar login como administrador.<br> **4)** Acessar a página de “Cadastro de materiais”.|
+|Passos|**1.** Acessar o Navegador. <br> **2.** Informar o endereço do Site. <br> **3.** Realizar login como administrador.<br> **4.** Acessar a página de “Cadastro de materiais”.|
 |Critérios de Êxito|Se um campo obrigatório não for preenchido, deve exibir uma mensagem de erro. |
 
  |Caso de teste  | CT-02 – Lista de materiais |
