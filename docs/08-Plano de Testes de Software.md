@@ -11,7 +11,8 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |-------|-------------------------|
 |Requisitos Associados| RF-02 - O site deve apresentar um formulário para preenchimento dos dados do material. Deve permitir que o administrador informe dados relevantes do material, tais como: nome, código, quantidade, tipo, preço, descrição e imagens. | 
 |Objetivo do Teste| Verificar se os materiais cadastrados estão sendo apresentados na tela de “Lista de materiais”. | 
-|Passos|
+|Passos
+|
  1. Acessar o Navegador.
  2. Informar o endereço do Site. 
  3. Realizar login como administrador.
