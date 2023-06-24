@@ -12,6 +12,8 @@ Nome e marca do projeto
 
 ## Identidade Visual (Marca, Design)
 
+![Exemplo de Wireframe](img/logo.png)<br>
+
 O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
 
 > **Links Úteis**:
