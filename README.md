@@ -51,7 +51,7 @@ Elaboração de um sistema de controle de estoque que seja personalizado e atend
 
 # Hospedagem
 
-* https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware/login.html
+* https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-stockware/login.html
 
 # Armazenamento do Código-Fonte
 
