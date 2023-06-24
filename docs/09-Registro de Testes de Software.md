@@ -43,7 +43,7 @@ Material sendo registrado corretamente na tela de lista de materiais.
 
 ## Registro de teste 05:
 
-Funcionalidade de pesquisar por um determinado produto utilizando palavras chaves através do caractere (*) 
+Funcionalidade de pesquisar por um determinado produto utilizando palavras chaves.
 
 ![Exemplo de Wireframe](img/13-pesquisar.PNG) <br>
 <sub> Figura 05 - Pesquisar por produto <sub>
@@ -54,16 +54,13 @@ Funcionalidade de pesquisar por um determinado produto utilizando palavras chave
 
 Funcionalidade de adicionar material ao carrinho dentro do campo de descrição do material.
 
-**Falhas encontradas:**
-Botão de adicionar ao carrinho fora de posição dependendo do tamanho da imagem.
-
-**Solução:**
-Corrigir a responsividade da tela de descrição de materiais.
+**Pendências**
+Falta subtrair a quantidade de materias do estoque após requisição e a aprovação do pedido pelo admin.
 
 ![Exemplo de Wireframe](img/4-descricao-lista-materiais-cart-fav-proj.PNG) <br>
 <sub> Figura 06 - Adicionar material ao carrinho <sub>
 
-
+<br>
 
 ## Registro de teste 07:
 
@@ -71,41 +68,29 @@ Notificação ao adicionar material ao carrinho.
 
 ![Exemplo de Wireframe](img/14-msg-add-cart.PNG) <br>
 <sub> Figura 07 -  Notificação<sub>
-
+<br>
 
 
 ## Registro de teste 08:
 
 Material sendo transferido para tela de carrinho.
 
-**Falhas encontradas:**
-1 - Somatório total dos produtos não corresponde ao total de produtos selecionados no carrinho.
-
-2 - Não permite ao usuário escolher a quantidade de materiais desejados.
-
-**Solução:**
-1 - Corrigir lógica de cálculo referente a quantidade de produtos adicionados ao carrinho.
-
-2 - Implementar opção de escolha da quantidade de podutos desejados pelo usuário.
 
 ![Exemplo de Wireframe](img/17-material-no-cart.PNG) <br>
 <sub> Figura 08 - Material transferido <sub>
 
 
+<br>
 
 ## Registro de teste 09:
 
 Notificação após o usuário finalizar pedido de requisição de materiais.
 
-**Pontos fracos:**
-Não apresenta número aleatório para aprovação de reserva solicitada.
 
-**Solução:**
- Implementar gerador de números aleatórios contendo 6 números usando javascript.
 ![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG)<br>
  <sub> Figura 09 -  Notificação<sub>
 
-
+<br>
 
 ## Registro de teste 10:
 
@@ -113,11 +98,12 @@ Notificação ao adicionar material aos favoritos.
 
 ![Exemplo de Wireframe](img/15-msg-add-fav.PNG)<br>
 <sub> Figura 10 -  Notificação<sub>
+<br>
 
 
-## Avaliação
+## Avaliação:
 
-Durante os testes, foram indentificadas funcionalidades bem-sucedidas assim como também foram identificadas falhas, após a implementação de melhorias, o objetivo é apresentar um sistema estável e confiável. 
+Durante os testes, foram indentificadas funcionalidades bem-sucedidas assim como também foram identificados pendências, após a implementação de melhorias, o objetivo é apresentar um sistema estável e confiável. 
 
 
 
