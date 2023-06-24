@@ -14,6 +14,8 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Passos|**1.** Acessar o Navegador; <br> **2.** Informar o endereço do Site; <br> **3.** Realizar login como administrador;<br> **4.** Acessar a página de “Cadastro de materiais”.|
 |Critérios de Êxito|Se um campo obrigatório não for preenchido, deve exibir uma mensagem de erro. |
 
+<br>
+
  |Caso de teste  | CT-02 – Lista de materiais |
 |-------|-------------------------|
 |Requisitos Associados| **RF-07** – O site deve conter todas as informações fornecidas durante o cadastro e permitir a pesquisa de materiais através do campo "Pesquisar". Nesse campo de pesquisa, tanto o usuário quanto o administrador podem usar o caractere coringa asterisco (*) para que o material correspondente seja exibido independentemente da ordem das palavras digitadas. Além disso, o site deve permitir que um material desejado seja adicionado ao carrinho e aos favoritos, possibilitando que o usuário ou admin finalize o pedido de requisição do produto e adicione a lista de favoritos. | 
@@ -21,6 +23,7 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Passos|**1.** Acessar o Navegador;<br> **2.** Informar o endereço do Site;<br> **3.** Visualizar a página principal;<br> **4.** Clicar no menu lateral esquerdo;<br> **5.** Acessar a opção de “Lista de materiais”; <br> **6.** Para acessar a tela favoritos ou carrinho, basta clicar nos respectivos ícones que estão localizados no cabeçalho de qualquer tela no canto superior direito.|
 |Critérios de Êxito| Após finalizar o pedido de requisição, a página deve atualizar e limpar todos os dados de materiais selecionados no carinho. Os materiais contidos em carrinho ou favoritos devem apresentar um botão de remover material.|
 
+<br>
 
 |Caso de teste  | CT-03 – Carrinho  |
 |-------|-------------------------|
@@ -28,6 +31,8 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 |Objetivo do Teste|Verificar se após requisição os materiais vão sair do carrinho;| 
 |Passos|**1.** Acessar o Navegador;<br> **2.** Informar o endereço do Site;<br> **3.** Através de qualquer tela;<br> **4.** Acesse o ícone de carrinho disponível no cabeçalho.|
 |Critérios de Êxito| O site deve informar o somatório em R$ (reais) dos produtos no carrinho, considerando a quantidade escolhida multiplicado pelo valor do produto. |
+
+<br>
 
 |Caso de teste  | CT-04 – Mensagem de status (requisição de material) |
 |-------|-------------------------|
