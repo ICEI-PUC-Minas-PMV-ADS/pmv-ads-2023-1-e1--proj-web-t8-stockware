@@ -8,9 +8,9 @@
 <br>
 <br>
 
-### Tela de login:
+### Login:
 
- Permite ao usuário acessar o sistema ao preencher os campos solicitados. Requisitos funcionais atendidos: RF-01.
+ Permite ao usuário acessar o sistema ao preencher os campos solicitados. Requisitos funcionais atendidos: RF-001.
 
 ![Exemplo de Wireframe](img/9-tela-login-proj.PNG) <sub> Figura 02 - Tela de login<sub>
 
@@ -18,18 +18,37 @@
 <br>
 <br>
 
-### Tela Home:
- Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10.
+### Home:
+ Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-010.
 
-![Exemplo de Wireframe](img/18-tela-home-admin.PNG)<sub> Figura 03 - Tela de home <sub>
+![Exemplo de Wireframe](img/18-tela-home-admin.PNG) <sub> Figura 03 - Tela de home <sub>
 
 
 <br>
 <br>
 
-### Tela lista de materiais:
+### Lista de materiais:
 
- Permite ao usuário localizar o material desejado, bem como outras funcionalidades descritas na seção lista de materiais descritas anteriormente no projeto de interface. Requisitos funcionais atendidos: RF-06.
+  Permite ao usuário consultar todos os materiais disponíveis, apresentando um feed de produtos, cada produto apresentado contem sua imagem, quantidade disponível, além de suas informações de cadastro. Requisitos funcionais atendidos: RF-007.
 
 ![Exemplo de Wireframe](img/7-lista-materiais-proj.PNG)<sub> Figura 04 - Tela lista de materiais <sub>
 
+
+<br>
+<br>
+
+### Carrinho:
+
+Permite ao usuário requisitar mais de um produto por operação, os produtos selecionados ficarão salvos no carrinho. Requisitos funcionais atendidos: RF-008.
+
+![Exemplo de Wireframe](img/2-carrinho-proj.PNG) <sub> Figura 05 - Tela carrinho <sub>
+
+
+<br>
+<br>
+
+### Mensagem de status - Carrinho:
+
+Apresentar uma mensagem de status de requisição ao usuário assim que ele finalizar o processo. Requisitos funcionais atendidos: RF-009.
+
+![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG) <sub> Figura 06 - Mensagem de status - Carrinho <sub>
