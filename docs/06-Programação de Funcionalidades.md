@@ -18,30 +18,30 @@ RF-02
 
 ## Artefatos da funcionalidade:
 
-●	Produtc-registration.html
-●	script.js
-●	Produtc-registration.css
+●	Produtc-registration.html <br>
+●	script.js <br>
+●	Produtc-registration.css <br>
 
 
 
 ## Instruções de acesso:
 
-1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub através do link: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware;
+1.	Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub através do link: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware; <br>
 
-2.	Abra o Visual Studio Code e execute o Live Server;
-
-
-3.	Abra um navegador de Internet e digite a seguinte URL: http://127.0.0.1:5500/;
-
-4.	Faça o login como administrador, informando o usuário e a senha;
+2.	Abra o Visual Studio Code e execute o Live Server; <br>
 
 
-5.	Acesse o menu lateral esquerdo e selecione a opção "Cadastrar produtos";
+3.	Abra um navegador de Internet e digite a seguinte URL: http://127.0.0.1:5500/; <br>
 
-6.	Preencha todos os dados do material e, por fim, clique em "Cadastrar";
+4.	Faça o login como administrador, informando o usuário e a senha; <br>
 
 
-7.	O material cadastrado será apresentado na tela de lista de materiais.
+5.	Acesse o menu lateral esquerdo e selecione a opção "Cadastrar produtos"; <br>
+
+6.	Preencha todos os dados do material e, por fim, clique em "Cadastrar"; <br>
+
+
+7.	O material cadastrado será apresentado na tela de lista de materiais. <br>
 
 
 ## Estrutura de dados:
@@ -85,15 +85,15 @@ A tela lista de materiais apresenta todos os materiais cadastrados e suas respec
 
 
 ## Artefatos da funcionalidade:
-●	list.html
-●	script.js
-●	list.css
+●	list.html <br>
+●	script.js <br>
+●	list.css <br>
 
 
 
 ## Instruções de acesso:
 
-1.	Após realizar o login com a conta de usuário ou administrador, acesse o menu lateral esquerdo;
+1.	Após realizar o login com a conta de usuário ou administrador, acesse o menu lateral esquerdo; <br>
 
 2.	Selecione a opção "Lista de materiais" ou acesse o link http://127.0.0.1:5500/pages/list.html para visualizar a lista de todos os materiais cadastrados.
 
@@ -111,15 +111,15 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 
 
 ## Artefatos da funcionalidade:
-●	Cart-page.html
-●	cart-page.js
-●	Cart-page.css
+●	Cart-page.html<br>
+●	cart-page.js<br>
+●	Cart-page.css<br>
 
 
 
 ## Instruções de acesso:
 
-1.	Através de qualquer tela, acesse o cabeçalho e clique no ícone de “carrinho”;
+1.	Através de qualquer tela, acesse o cabeçalho e clique no ícone de “carrinho”; <br>
 
 2.	Todos os materiais desejados para requisição serão apresentados.
 
@@ -136,9 +136,9 @@ Após finalizar um pedido de requisição através do “carrinho”, será apre
 
 
 ## Artefatos da funcionalidade:
-●	Cart-page.html
-●	cart-page.js
-●	Cart-page.css
+●	Cart-page.html <br>
+●	cart-page.js <br>
+●	Cart-page.css <br>
 
 
 ## Instruções de acesso:
