@@ -5,6 +5,7 @@ Para o desenvolvimento deste projeto, será utilizada a metodologia Scrum.
  
 De acordo com SUTHERLAND (2020), o Scrum é um método ágil que se baseia em entregas incrementais e iterativas, com o objetivo de maximizar a entrega de valor para o cliente. Esse método é composto por papéis, eventos, artefatos e regras que visam facilitar o gerenciamento do processo de desenvolvimento de software. 
 
+<br>
 
 ## Controle de Versão
 
@@ -30,8 +31,11 @@ etiquetas:
 
 Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
 
+<br>
 
 ## Gerenciamento de Projeto
+
+<br>
 
 ### Divisão de Papéis
 
@@ -50,6 +54,7 @@ Saulo Lima De Carvalho.
 - `Equipe de Design:`
 Marcos Teixeira Dias 
 
+<br>
 
 ### Processo
 
@@ -65,7 +70,7 @@ Estruturado com as seguintes listas:
  
 ● **Done:** nesta lista são colocadas as tarefas concluídas, que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário; 
 
-
+<br>
 
 ### Ferramentas
 
