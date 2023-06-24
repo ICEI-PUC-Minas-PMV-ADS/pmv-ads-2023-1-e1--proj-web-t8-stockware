@@ -10,13 +10,13 @@ Para realizar as atividades do almoxarifado de forma eficiente, os almoxarifes r
 
 Diante disso, é de suma importância a existência de um sistema de controle para requisição e cadastro de materiais nos almoxarifados. Esse sistema deve ser adaptado conforme as necessidades da organização e dispor de campos com informações relevantes. Somente assim, será possível garantir que as informações dos materiais armazenados sejam mantidas e precisas, o que evitará falhas no processo de requisição e garantirá o bom funcionamento da organização.
 
-
+<br>
 
 ## Problema
 No caso da aplicação em questão, busca-se resolver problemas relacionados à garantia da integridade das informações, evitando possíveis falhas nas organizações. A expectativa é que, com o uso da aplicação, essa possibilidade de erro seja reduzida significativamente, aumentando a eficiência do processo de requisição de materiais. Ao melhorar a gestão de estoques nas organizações, espera-se um aumento na produtividade e uma redução nos custos decorrentes de falhas na requisição. 
 
 
-
+<br>
 ## Objetivos
 
 O objetivo desse projeto é desenvolver um sistema de controle de almoxarifado, permitindo o cadastro e requisição de materiais de forma eficiente, por meio de uma plataforma intuitiva e de fácil uso.
@@ -28,13 +28,13 @@ Como objetivos específicos pode-se destacar:
 
 •	Garantir precisão e confiabilidade nas informações registradas a fim de possibilitar tomadas de decisão estratégicas fundamentadas, contribuindo para o desempenho sustentável da organização a longo prazo.
 
-
+<br>
 
 ## Justificativa
 
 A elaboração desse sistema é motivada pela compreensão de que a inexistência de uma solução adequada, pode ocasionar erros e problemas, comprometendo a produtividade e a rentabilidade da organização. Desse modo, será desenvolvido um sistema de controle de almoxarifado personalizado e eficiente, capaz de satisfazer as necessidades particulares de diferentes setores e portes, que almejam aprimorar a efetividade e a eficiência por meio da utilização desse sistema. Tendo em vista a ausência de um sistema de controle de almoxarifado eficaz no mercado, objetiva-se atender a essas lacunas e oferecer soluções para as exigências específicas de cada organização.
 
-
+<br>
 
 ## Público-Alvo
 
