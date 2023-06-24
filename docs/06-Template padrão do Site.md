@@ -6,7 +6,6 @@
 
 
 <br>
-<br>
 
 ### Login:
 
@@ -16,7 +15,7 @@
 
 
 <br>
-<br>
+
 
 ### Home:
  Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-010.
