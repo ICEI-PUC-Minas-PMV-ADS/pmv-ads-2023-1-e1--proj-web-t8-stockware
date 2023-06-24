@@ -21,7 +21,7 @@
 ### Tela Home:
  Permite ao usuário navegar pelas funcionalidades existentes no sistema.  Requisitos funcionais atendidos: RF-10.
 
-![Exemplo de Wireframe](img/8-tela-home-admin-proj.PNG)<sub> Figura 03 - Tela de home <sub>
+![Exemplo de Wireframe](img/18-tela-home-admin-proj.PNG)<sub> Figura 03 - Tela de home <sub>
 
 
 <br>
