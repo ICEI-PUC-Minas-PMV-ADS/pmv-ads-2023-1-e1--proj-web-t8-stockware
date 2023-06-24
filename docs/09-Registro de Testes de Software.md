@@ -3,97 +3,107 @@
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+<br>
 
 ## Registro de teste 01:
 
 Notificação caso o usuário não preencha todos os campos obrigatórios.
 
-![Exemplo de Wireframe](img/rts01.png)
+![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG)  <br>
+ <sub> Figura 01 - Notificação 01 <sub>
 
+<br>
 
 ## Registro de teste 02:
 
 Notificação após o usuário preencher todos os campos obrigatórios  e clicar em cadastrar.
 
-![Exemplo de Wireframe](img/rts02.png)
+![Exemplo de Wireframe](img/11-msg-cadastrar-material-ok.PNG) <br>
+ <sub> Figura 02 -  Notificação 02<sub>
 
+<br>
 
 ## Registro de teste 03:
 
 Limpar formulário após finalizar cadastro.
 
-![Exemplo de Wireframe](img/rts03.png)
+![Exemplo de Wireframe](img/1-cadastro-produto-proj.PNG) <br>
+<sub> Figura 03 - Limpar formulário <sub>
 
+<br>
 
 ## Registro de teste 04:
 
 Material sendo registrado corretamente na tela de lista de materiais.
 
-![Exemplo de Wireframe](img/rts04.png)
+![Exemplo de Wireframe](img/12-material-add-list.PNG) <br>
+<sub> Figura 04 -  Material sendo registrado<sub>
 
+<br>
 
 ## Registro de teste 05:
 
-Funcionalidade de pesquisar por um determinado produto utilizando palavras chaves através do caractere (*) 
+Funcionalidade de pesquisar por um determinado produto utilizando palavras chaves.
 
-![Exemplo de Wireframe](img/rts05.png)
+![Exemplo de Wireframe](img/13-pesquisar.PNG) <br>
+<sub> Figura 05 - Pesquisar por produto <sub>
 
+<br>
 
 ## Registro de teste 06:
 
 Funcionalidade de adicionar material ao carrinho dentro do campo de descrição do material.
 
-**Falhas encontradas:**
-Botão de adicionar ao carrinho fora de posição dependendo do tamanho da imagem.
+**Pendências**
+Falta subtrair a quantidade de materias do estoque após requisição e a aprovação do pedido pelo admin.
 
-**Solução:**
-Corrigir a responsividade da tela de descrição de materiais.
+![Exemplo de Wireframe](img/4-descricao-lista-materiais-cart-fav-proj.PNG) <br>
+<sub> Figura 06 - Adicionar material ao carrinho <sub>
 
-![Exemplo de Wireframe](img/rts06.png)
-
+<br>
 
 ## Registro de teste 07:
 
-Notificação ao adicionar material ao carrinho.
+Notificação ao adicionar material ao carrinho, caso o mesmo já exista no carrinho uma mensagem informativa é apresentada.
 
-![Exemplo de Wireframe](img/rts07.png)
+![Exemplo de Wireframe](img/14-msg-add-cart.PNG) <br>
+<sub> Figura 07 -  Notificação<sub>
+<br>
 
 
 ## Registro de teste 08:
 
 Material sendo transferido para tela de carrinho.
 
-**Falhas encontradas:**
-1 - Somatório total dos produtos não corresponde ao total de produtos selecionados no carrinho.
 
-2 - Não permite ao usuário escolher a quantidade de materiais desejados.
+![Exemplo de Wireframe](img/17-material-no-cart.PNG) <br>
+<sub> Figura 08 - Material transferido <sub>
 
-**Solução:**
-1 - Corrigir lógica de cálculo referente a quantidade de produtos adicionados ao carrinho.
 
-2 - Implementar opção de escolha da quantidade de podutos desejados pelo usuário.
-
-![Exemplo de Wireframe](img/rts08.png)
-
+<br>
 
 ## Registro de teste 09:
 
 Notificação após o usuário finalizar pedido de requisição de materiais.
 
-**Pontos fracos:**
-Não apresenta número aleatório para aprovação de reserva solicitada.
 
-**Solução:**
- Implementar gerador de números aleatórios contendo 6 números usando javascript.
-![Exemplo de Wireframe](img/rts09.png)
+![Exemplo de Wireframe](img/3-carrinho-requ-proj.PNG)<br>
+ <sub> Figura 09 -  Notificação<sub>
+
+<br>
+
+## Registro de teste 10:
+
+Notificação ao adicionar material aos favoritos, caso o mesmo já exista nos favoritos uma mensagem informativa é apresentada.
+
+![Exemplo de Wireframe](img/15-msg-add-fav.PNG)<br>
+<sub> Figura 10 -  Notificação<sub>
+<br>
 
 
+## Avaliação:
 
-
-
-## Avaliação
-
-Durante os testes, foram indentificadas funcionalidades bem-sucedidas assim como também foram identificadas falhas, após a implementação de melhorias, o objetivo é apresentar um sistema estável e confiável. 
+Durante os testes, foram indentificadas funcionalidades bem-sucedidas assim como também foram identificados pendências, após a implementação de melhorias, o objetivo é apresentar um sistema estável e confiável. 
 
 
 

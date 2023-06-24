@@ -1,8 +1,6 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
 Para o desenvolvimento deste projeto, será utilizada a metodologia Scrum. 
  
 De acordo com SUTHERLAND (2020), o Scrum é um método ágil que se baseia em entregas incrementais e iterativas, com o objetivo de maximizar a entrega de valor para o cliente. Esse método é composto por papéis, eventos, artefatos e regras que visam facilitar o gerenciamento do processo de desenvolvimento de software. 

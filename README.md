@@ -1,17 +1,17 @@
 #  STOCKWARE
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS EAD`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - EAD`
 
 `PROJETO`
 
 `1° SEMESTRE`
 
-Elaboração de um sistema de controle de almoxarifado que seja personalizado e atenda as necessidades de diferentes tipos de organizações.
+Elaboração de um sistema de controle de estoque que seja personalizado e atenda as necessidades de diferentes tipos de organizações.
 
 ## Integrantes
 
 * Marcos Teixeira Dias 
-*  Saulo Lima De Carvalho
+* Saulo Lima De Carvalho
 * Richard Da Silva Monteiro 
 * Irene Aparecida Couto Ferraz
 
@@ -21,7 +21,17 @@ Elaboração de um sistema de controle de almoxarifado que seja personalizado e 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+1 - Acesse o link: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware do repositório GitHub;
+
+2 - Acesse o botão "verde" <código>;
+
+3 - Selecione a opção HTTPS e clique em baixar Zip;
+
+4 - Descompacte a pasta .zip e abra a mesma no seu editor VS code ou acesse o site clicando no arquivo login.html que se encontra dentro da pasta;
+
+5 - Forneça um login válido. Usuários cadastrados ( usuário: admin - senha: admin PERFIL ADM) ou (usuário: usuario1 - senha: senha1 PERFIL USUÁRIO).
+
+6 - Cadastre um material para poder usufluir do sistema.
 
 # Documentação
 

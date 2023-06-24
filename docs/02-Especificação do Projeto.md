@@ -1,6 +1,5 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
 Após observação direta de alguns componentes do grupo em seus próprios ambientes de trabalho, bem como pesquisa aprofundada de toda a equipe sobre o tema em questão, analisando o problema existente, os objetivos e o público-alvo ideal citados acima para o sistema, foi possível consolidar as Personas e Histórias de Usuários. 
 
@@ -16,7 +15,7 @@ Vanessa Santos, 34 anos, gerente, funcionária de uma loja de venda de peças au
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
