@@ -1,7 +1,7 @@
 # Introdução
 
 
-<pre> Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, 
+      Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, 
 seja ela de pequeno, médio ou grande porte. É um ambiente planejado para o bom funcionamento de qualquer organização, pois é responsável por garantir que os materiais estejam disponíveis conforme as demandas de uso. Tem o objetivo de garantir a disponibilidade dos materiais para atender às necessidades operacionais e administrativas da organização.
 
 O almoxarife é responsável por controlar a entrada e a saída desses materiais, garantir sua conservação e manter um estoque mínimo para que não permita falta ou excesso de produtos. Além disso, é de sua responsabilidade manter um registro preciso de todos os movimentos de estoque e fornecer informações para os setores responsáveis pela gestão de compras e planejamento de produção.
