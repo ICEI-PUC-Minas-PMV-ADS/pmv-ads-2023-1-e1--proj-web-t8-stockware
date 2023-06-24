@@ -9,7 +9,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 Notificação caso o usuário não preencha todos os campos obrigatórios.
 
 ![Exemplo de Wireframe](img/10-msg-cadastrar-material.PNG)  <br>
- <sub> Figura 01 - Notificação <sub>
+ <sub> Figura 01 - Notificação 01 <sub>
 
 
 
@@ -18,7 +18,7 @@ Notificação caso o usuário não preencha todos os campos obrigatórios.
 Notificação após o usuário preencher todos os campos obrigatórios  e clicar em cadastrar.
 
 ![Exemplo de Wireframe](img/11-msg-cadastrar-material-ok.PNG) <br>
- <sub> Figura 02 -  Notificação<sub>
+ <sub> Figura 02 -  Notificação 02<sub>
 
 
 
