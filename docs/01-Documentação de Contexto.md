@@ -1,14 +1,14 @@
 # Introdução
 
 
-> Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, 
-seja ela de pequeno, médio ou grande porte. É um ambiente planejado para o bom funcionamento de qualquer organização, pois é responsável por garantir que os materiais estejam disponíveis conforme as demandas de uso. Tem o objetivo de garantir a disponibilidade dos materiais para atender às necessidades operacionais e administrativas da organização.
+<pre> Almoxarifado é um setor responsável por armazenar e gerenciar materiais utilizados por uma organização, 
+seja ela de pequeno, médio ou grande porte. É um ambiente planejado para o bom funcionamento de qualquer organização, pois é responsável por garantir que os materiais estejam disponíveis conforme as demandas de uso. Tem o objetivo de garantir a disponibilidade dos materiais para atender às necessidades operacionais e administrativas da organização. </pre>
 
-> O almoxarife é responsável por controlar a entrada e a saída desses materiais, garantir sua conservação e manter um estoque mínimo para que não permita falta ou excesso de produtos. Além disso, é de sua responsabilidade manter um registro preciso de todos os movimentos de estoque e fornecer informações para os setores responsáveis pela gestão de compras e planejamento de produção.
+O almoxarife é responsável por controlar a entrada e a saída desses materiais, garantir sua conservação e manter um estoque mínimo para que não permita falta ou excesso de produtos. Além disso, é de sua responsabilidade manter um registro preciso de todos os movimentos de estoque e fornecer informações para os setores responsáveis pela gestão de compras e planejamento de produção.
 
-> Para realizar as atividades do almoxarifado de forma eficiente, os almoxarifes registram a entrada de novos materiais em softwares de controle, incluindo informações relevantes como nome, códigos, descrição, entre outros. No entanto, devido à falta de integridade das informações registradas de alguns materiais, é possível que haja falhas no processo de requisição. Uma das falhas mais recorrentes é a requisição de materiais incorretos, o que pode causar entraves à organização.
+Para realizar as atividades do almoxarifado de forma eficiente, os almoxarifes registram a entrada de novos materiais em softwares de controle, incluindo informações relevantes como nome, códigos, descrição, entre outros. No entanto, devido à falta de integridade das informações registradas de alguns materiais, é possível que haja falhas no processo de requisição. Uma das falhas mais recorrentes é a requisição de materiais incorretos, o que pode causar entraves à organização.
 
-> Diante disso, é de suma importância a existência de um sistema de controle para requisição e cadastro de materiais nos almoxarifados. Esse sistema deve ser adaptado conforme as necessidades da organização e dispor de campos com informações relevantes. Somente assim, será possível garantir que as informações dos materiais armazenados sejam mantidas e precisas, o que evitará falhas no processo de requisição e garantirá o bom funcionamento da organização.
+Diante disso, é de suma importância a existência de um sistema de controle para requisição e cadastro de materiais nos almoxarifados. Esse sistema deve ser adaptado conforme as necessidades da organização e dispor de campos com informações relevantes. Somente assim, será possível garantir que as informações dos materiais armazenados sejam mantidas e precisas, o que evitará falhas no processo de requisição e garantirá o bom funcionamento da organização.
 
 
 
