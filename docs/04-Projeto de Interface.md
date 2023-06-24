@@ -13,7 +13,7 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
 
 [Link Wireframe Canva](https://www.canva.com/design/DAFgFftKRoY/N6YyGuvak7SBy0QgmF6TiA/edit?utm_content=DAFgFf)
   
-![Exemplo de UserFlow](img/fluxo-usuario.png ) <center><sub>Figura 01 - Fluxo do Usuário<sub><center>
+![Exemplo de UserFlow](img/fluxo-usuario.png ) <center> Figura 01 - Fluxo do Usuário <center>
 
 
 
