@@ -18,9 +18,9 @@ RF-02
 
 ## Artefatos da funcionalidade:
 
-●	Produtc-registration.html <br>
+●	produtc-registration.html <br>
 ●	script.js <br>
-●	Produtc-registration.css <br>
+●	produtc-registration.css <br>
 
 
 
@@ -111,9 +111,9 @@ Na tela carrinho serão apresentados todos os materiais que o usuário deseja re
 
 
 ## Artefatos da funcionalidade:
-●	Cart-page.html<br>
+●	cart-page.html<br>
 ●	cart-page.js<br>
-●	Cart-page.css<br>
+●	cart-page.css<br>
 
 
 
@@ -136,9 +136,9 @@ Após finalizar um pedido de requisição através do “carrinho”, será apre
 
 
 ## Artefatos da funcionalidade:
-●	Cart-page.html <br>
+●	cart-page.html <br>
 ●	cart-page.js <br>
-●	Cart-page.css <br>
+●	cart-page.css <br>
 
 
 ## Instruções de acesso:
