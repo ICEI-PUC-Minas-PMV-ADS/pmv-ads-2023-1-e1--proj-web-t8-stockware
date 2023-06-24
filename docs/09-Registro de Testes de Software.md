@@ -64,7 +64,7 @@ Falta subtrair a quantidade de materias do estoque após requisição e a aprova
 
 ## Registro de teste 07:
 
-Notificação ao adicionar material ao carrinho.
+Notificação ao adicionar material ao carrinho, caso o mesmo já exista no carrinho uma mensagem informativa é apresentada.
 
 ![Exemplo de Wireframe](img/14-msg-add-cart.PNG) <br>
 <sub> Figura 07 -  Notificação<sub>
@@ -94,7 +94,7 @@ Notificação após o usuário finalizar pedido de requisição de materiais.
 
 ## Registro de teste 10:
 
-Notificação ao adicionar material aos favoritos.
+Notificação ao adicionar material aos favoritos, caso o mesmo já exista nos favoritos uma mensagem informativa é apresentada.
 
 ![Exemplo de Wireframe](img/15-msg-add-fav.PNG)<br>
 <sub> Figura 10 -  Notificação<sub>
