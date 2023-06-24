@@ -1,7 +1,8 @@
 # Especificações do Projeto
 
-
 Após observação direta de alguns componentes do grupo em seus próprios ambientes de trabalho, bem como pesquisa aprofundada de toda a equipe sobre o tema em questão, analisando o problema existente, os objetivos e o público-alvo ideal citados acima para o sistema, foi possível consolidar as Personas e Histórias de Usuários. 
+
+<br>
 
 ## Personas
 
@@ -10,13 +11,12 @@ Eduardo Gonçalves, 24 anos, é técnico em manutenção eletrônica em um empre
 Marcelo Silva, 28 anos, almoxarife, responsável pelo gerenciamento de materiais em uma empresa multinacional. Nos momentos livres gosta de jogar futebol, praticar natação e jogar videogame.
 
 Vanessa Santos, 34 anos, gerente, funcionária de uma loja de venda de peças automotivas. Nos momentos livres pratica natação e ciclismo e aos finais de semana viaja para o interior da cidade para casa de seus pais.
-
-
+<br>
 
 ## Histórias de Usuários
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
-
+<br>
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Vanessa Santos  | Receber alertas quando a quantidade de um determinado material atingir um nível mínimo           | Para que eu possa providenciar a prevenção de compras e evitar paralisações nas vendas
@@ -31,11 +31,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Marcelo Silva|Localizar os materiais nos estoques rapidamente|Para que eu possa atender mais pessoas durante meu turno de trabalho|
 |Marcelo Silva|Receber atualizações do estoque|Facilitar no gerenciamento dos materiais|
 
+<br>
 
 ## Requisitos
 
 Os requisitos funcionais e não funcionais que descrevem as possibilidades de interação dos usuários e os aspectos que o sistema deverá apresentar de maneira geral, definem o escopo funcional do projeto. Esses requisitos são apresentados a seguir.
 
+<br>
 
 ### Requisitos Funcionais
 
@@ -55,7 +57,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-010| O sistema deve apresentar na tela Home um menu de navegação, com as seguintes opções, listagem de materiais, consulta de reserva e devolução de material, incluindo o motivo da devolução, o produto devolvido, quantidade e data.  | MÉDIA |
 
 
-
+<br>
 
 ### Requisitos não Funcionais
 
@@ -70,7 +72,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-005| O sistema deve ser compatível com os principais navegadores: Google Chrome, Firefox, Opera, Edge, com todas as funcionalidades sendo acessíveis em computadores Linux, Windows e IOS, além de dispositivos mobile | ALTA |
 |RNF-006| Manutenção: O sistema deve ser fácil de manter e atualizar, com uma arquitetura modular que permite a adição de novos recursos e funcionalidades sem afetar o desempenho e a disponibilidade do sistema | MÉDIA |
 
-  
+  <br>
 
 ## Restrições
 
