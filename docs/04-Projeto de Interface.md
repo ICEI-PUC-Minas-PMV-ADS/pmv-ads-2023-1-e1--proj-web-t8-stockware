@@ -129,7 +129,7 @@ Nesta tela, o usuário que já fez a sua solicitação de algum(ns) produto(s) p
 Pela tela principal o administrador ou usuário, pode fazer logout (sair da conta)
 
 ![Exemplo de Wireframe](img/Sair-da-conta.png)<sub>Figura 16 - Tela principal - (perfil administrador) <sub> 
-
+<br>
 Na tela principal, será apresentado ao administrador um alerta sempre que um determinado material atingir uma quantidade mínima ou zerar o estoque. 
 
 ![Exemplo de Wireframe](img/Resumo-notificação.png) <sub>Figura 17 - Tela principal - (perfil administrador) <sub> 
