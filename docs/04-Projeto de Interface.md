@@ -3,7 +3,7 @@
 
 A interface do sistema foi projetada com foco na usabilidade e experiência do usuário, utilizando design interativo, visando garantir a facilidade de navegação e compreensão das funcionalidades.  
 
-
+<br>
 
 ## Fluxo do Usuário  
 
@@ -15,11 +15,13 @@ Nas figuras a seguir consta a representação visual da interação do usuário 
   
 ![Exemplo de UserFlow](img/fluxo-usuario.png ) <sub>Figura 01 - Fluxo do Usuário <sub>
 
-
+<br>
 
 ## Fluxo do Administrador 
 
 ![Exemplo de UserFlow](img/Fluxo-administrador.png) <sub> Figura 02 - Fluxo do Administrador <sub>
+
+<br>
 
 ## Wireframes
 
@@ -33,7 +35,7 @@ De acordo com o fluxo de interface do projeto exposto na seção anterior, os de
 
  <sub>Figura 03 - Wireframes<sub>
 
-
+<br>
 
 ## Tela – Login (perfil usuário e administrador)
 
@@ -41,7 +43,7 @@ A tela login permite o usuário fazer login no sistema ao preencher os campos: u
 
 ![Exemplo de Wireframe](img/Login.png)  <sub>Figura 04 - Tela – Login (perfil usuário e administrador)<sub>
 
-
+<br>
 
 ## Tela – Lista de materiais (perfil usuário)
 
@@ -53,7 +55,7 @@ Ao clicar ao algum item da lista de materiais, o sistema exibe na lateral direit
 
 ![Exemplo de Wireframe](img/Lista-de-materiais-2.png) <sub>Figura 06 - ela – Lista de materiais (perfil Admin)<sub>
 
-
+<br>
 
 ## Tela – Filtros (perfil usuário e administrador)
 
@@ -61,7 +63,7 @@ A Tela filtros permite o usuário localizar determinado produto através de camp
 
 ![Exemplo de Wireframe](img/Filtros.png) <sub>Figura 07 - Tela – Filtros (perfil usuário e administrador)<sub>
 
-
+<br>
 
 ## Tela - Carrinho (perfil usuário e administrador)
 
@@ -69,7 +71,7 @@ Na tela do carrinho, o usuário pode visualizar uma lista de todos os produtos q
 
 ![Exemplo de Wireframe](img/Carrinho.png) <sub>Figura 08 - Tela - Carrinho (perfil usuário e administrador)<sub>
 
-
+<br>
 
 ## Tela - Número de solicitação de reserva (perfil usuário e administrador)
 
@@ -77,7 +79,7 @@ Após a solicitação de reserva, o usuário receberá um código de 6 dígitos 
 
 ![Exemplo de Wireframe](img/Solicitação-de-reserva.png)<sub> Figura 09 - Tela - Número de solicitação de reserva (perfil usuário e administrador)<sub>
 
-
+<br>
 
 ## Tela principal (perfil usuário e administrador) 
 
@@ -88,7 +90,7 @@ No perfil do administrador, a tela principal é composta por mais componentes, p
 ![Exemplo de Wireframe](img/Principal-usurio.png)<sub>  Figura 10 - Tela principal (perfil usuário)<sub>  
 ![Exemplo de Wireframe](img/Principal-ADM.png) <sub>Figura 11- Tela principal (perfil administrador) <sub>
 
-
+<br>
 
 ## Tela - Devolução (perfil usuário e administrador) 
 
@@ -96,7 +98,7 @@ Na tela de devolução, após o solicitante ter o código de 6 dígitos, ele pod
 
 ![Exemplo de Wireframe](img/Devolução.png) <sub>Figura 12 - Tela - Devolução (perfil usuário e administrador) <sub>
 
-
+<br>
 
 ## Tela - Solicitação de devolução (perfil usuário e administrador) 
 
@@ -104,7 +106,7 @@ Após a solicitação de devolução, será apresentado o mesmo código de 6 dí
 
 ![Exemplo de Wireframe](img/Imprimir-devolução.png) <sub>Figura 13 - Tela - Solicitação de devolução (perfil usuário e administrador) <sub>
 
-
+<br>
 
 ## Tela - Favoritos (perfil usuário e administrador) 
 
@@ -112,7 +114,7 @@ Na tela favoritos, o usuário tem a oportunidade de visualizar através de uma l
 
 ![Exemplo de Wireframe](img/Favoritos.png)  <sub>Figura 14 - Tela - Favoritos (perfil usuário e administrador) <sub>
 
-
+<br>
 
 ## Tela – Consultar reserva (perfil usuário) 
 
@@ -120,7 +122,7 @@ Nesta tela, o usuário que já fez a sua solicitação de algum(ns) produto(s) p
 
 ![Exemplo de Wireframe](img/consultar-reserva-usuario.png)<sub>Figura 15 - Tela – Consultar reserva (perfil usuário) <sub>
 
-
+<br>
 
 ##   Tela principal - (perfil administrador) 
 
@@ -132,7 +134,7 @@ Na tela principal, será apresentado ao administrador um alerta sempre que um de
 
 ![Exemplo de Wireframe](img/Resumo-notificação.png) <sub>Figura 17 - Tela principal - (perfil administrador) <sub> 
 
-
+<br>
 
 ## Tela – Lista de materiais (perfil administrador)
 
@@ -140,7 +142,7 @@ Ao clicar em algum item da lista de materiais, o sistema exibe na lateral direit
 
 ![Exemplo de Wireframe](img/Lista-de-materiais-ADM.png) <sub>Figura 18 - Tela – Lista de materiais (perfil administrador)<sub>
 
-
+<br>
 
 ## Tela – Cadastrar materiais (perfil administrador) 
 
@@ -148,7 +150,7 @@ O administrador registrará novos materiais no sistema, colocando informações 
 
 ![Exemplo de Wireframe](img/cadastrar-materiais.png) <sub>Figura 19 - Tela – Cadastrar materiais (perfil administrador) <sub>
 
-
+<br>
 
 ## Tela – Editar material (perfil administrador) 
 
@@ -156,7 +158,7 @@ Ao clicar no botão "editar", o sistema permite o administrador atualizar os dad
 
 ![Exemplo de Wireframe](img/Editar-material.png) <sub>Figura 20 - Tela – Editar material (perfil administrador) <sub>
 
-
+<br>
 
 ## Tela – Histórico de produtos (perfil administrador) 
 
@@ -164,7 +166,7 @@ Pela tela de histórico de produtos, o administrador pode consultar as informaç
 
 ![Exemplo de Wireframe](img/Histórico.png)  <sub>Figura 21 - Tela – Histórico de produtos (perfil administrador) <sub>
 
-
+<br>
 
 ## Tela - Editar temas (perfil administrador e usuário) 
 
@@ -172,7 +174,7 @@ O administrador e usuário podem editar o tema do layout do sistema, ao clicar n
 
 ![Exemplo de Wireframe](img/Cor.png) <sub>Figura 22 - Tela - Editar temas (perfil administrador e usuário) <sub>
 
-
+<br>
 
 ## Tela - Editar layout - (perfil administrador e usuário) 
 
@@ -180,7 +182,7 @@ Na tela principal, ao clicar em "layout" e "editar", será possível a personali
 
 ![Exemplo de Wireframe](img/editar-layout.png) <sub>Figura 23 - Tela - Editar layout - (perfil administrador e usuário) <sub>
 
-
+<br>
 
 ## Tela – Gerenciamento de reserva (perfil administrador) 
 
@@ -188,7 +190,7 @@ Pela tela de gerenciamento de reservas, o administrador pode verificar as inform
 
 ![Exemplo de Wireframe](img/Gerenciar-reserva.png) <sub>Figura 24 - Tela – Gerenciamento de reserva (perfil administrador) <sub> 
 
-
+<br>
 
 ##   Tela – Cadastrar usuário (perfil administrador)
 
