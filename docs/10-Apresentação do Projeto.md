@@ -10,7 +10,7 @@
 
 ## Título do Projeto
 
-StockWare
+# StockWare
 
 ## Identidade Visual (Marca, Design)
 
