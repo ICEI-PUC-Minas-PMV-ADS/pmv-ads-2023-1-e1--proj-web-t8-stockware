@@ -56,7 +56,7 @@ Elaboração de um sistema de controle de estoque que seja personalizado e atend
 
 # Armazenamento do Código-Fonte
 
-* <a href="src/README.md">Código Fonte</a>
+* [Código Fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1--proj-web-t8-stockware/tree/main/pages)
 
 # Armazenamento da Apresentação
 
